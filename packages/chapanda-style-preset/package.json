@@ -1,0 +1,62 @@
+{
+  "name": "@chapanda/style-preset",
+  "description": "chapanda style preset",
+  "private": false,
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.7.1",
+  "keywords": [
+    "typescript",
+    "javascript",
+    "utils",
+    "vue",
+    "vue3",
+    "vite",
+    "react",
+    "web component"
+  ],
+  "license": "MIT",
+  "author": "baiwusanyu-c",
+  "homepage": "https://github.com/baiwusanyu-c/chapanda-style-preset",
+  "repository": "https://github.com/baiwusanyu-c/chapanda-style-preset",
+  "bugs": "https://github.com/baiwusanyu-c/chapanda-style-preset/issues",
+  "exports": {
+    "./antd": {
+      "types": "./antd/dist/index.d.ts",
+      "require": "./antd/dist/index.js",
+      "import": "./antd/dist/index.mjs"
+    },
+    "./element-plus": {
+      "types": "./element-plus/dist/index.d.ts",
+      "require": "./element-plus/dist/index.js",
+      "import": "./element-plus/dist/index.mjs"
+    },
+    "./unocss": {
+      "types": "./unocss/dist/index.d.ts",
+      "require": "./unocss/dist/index.js",
+      "import": "./unocss/dist/index.mjs"
+    },
+    "./vant": {
+      "types": "./vant/dist/index.d.ts",
+      "require": "./vant/dist/index.js",
+      "import": "./vant/dist/index.mjs"
+    },
+    "./utils": {
+      "types": "./utils/dist/index.d.ts",
+      "require": "./utils/dist/index.js",
+      "import": "./utils/dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "publish:npm": "pnpm publish --no-git-checks --access public"
+  },
+  "dependencies": {
+    "@chapanda/style-preset-antd": "workspace:*",
+    "@chapanda/style-preset-ep": "workspace:*",
+    "@chapanda/style-preset-tailwind": "workspace:*",
+    "@chapanda/style-preset-unocss": "workspace:*",
+    "@chapanda/style-preset-utils": "workspace:*",
+    "@chapanda/style-preset-vant": "workspace:*"
+  },
+  "devDependencies": {}
+}
