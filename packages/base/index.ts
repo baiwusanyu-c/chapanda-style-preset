@@ -1,0 +1,1 @@
+export { genThemeColors } from './colors'

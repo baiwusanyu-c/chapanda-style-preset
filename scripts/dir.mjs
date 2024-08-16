@@ -20,8 +20,16 @@ export const entry = [
     outputPath: "vant",
   },
   {
+    entryPath: "../packages/base/index.ts",
+    outputPath: "base",
+  },
+  {
     entryPath: "../packages/utils/index.ts",
     outputPath: "utils",
+  },
+  {
+    entryPath: "../packages/chapanda-style-preset/index.ts",
+    outputPath: "chapanda-style-preset",
   },
   {
     entryPath: "../packages/chapanda-style-preset/antd/index.ts",
@@ -57,5 +65,6 @@ export const entryPkg = {
   'unocss': '../packages/unocss',
   'vant': '../packages/vant',
   'chapanda-style-preset': '../packages/chapanda-style-preset',
+  'base': '../packages/base',
   'utils': '../packages/utils',
 }

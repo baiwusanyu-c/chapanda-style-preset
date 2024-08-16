@@ -21,6 +21,11 @@
   "repository": "https://github.com/baiwusanyu-c/chapanda-style-preset",
   "bugs": "https://github.com/baiwusanyu-c/chapanda-style-preset/issues",
   "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
     "./antd": {
       "types": "./antd/dist/index.d.ts",
       "require": "./antd/dist/index.js",
@@ -56,7 +61,8 @@
     "@chapanda/style-preset-tailwind": "workspace:*",
     "@chapanda/style-preset-unocss": "workspace:*",
     "@chapanda/style-preset-utils": "workspace:*",
-    "@chapanda/style-preset-vant": "workspace:*"
+    "@chapanda/style-preset-vant": "workspace:*",
+    "@chapanda/style-preset-base": "workspace:*"
   },
   "devDependencies": {}
 }
