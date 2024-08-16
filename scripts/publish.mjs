@@ -1,10 +1,12 @@
 import gulp from 'gulp'
 import { runTask } from './utils.mjs'
+
 export default gulp.series(
-  runTask('publish @vue-tea/utils', 'cd dist/utils && pnpm run publish:npm'),
-  runTask('publish @vue-tea/compiler', 'cd dist/compiler && pnpm run publish:npm'),
-  runTask('publish @vue-tea/runtime', 'cd dist/runtime && pnpm run publish:npm'),
-  runTask('publish @vue-tea/unplugin', 'cd dist/unplugin && pnpm run publish:npm'),
-  runTask('publish @vue-tea/test', 'cd dist/test && pnpm run publish:npm'),
-  runTask('publish vue-tea', 'cd dist/vue-tea && pnpm run publish:npm'),
+  //runTask('publish @chapanda/style-preset-utils', 'cd dist/utils && pnpm run publish:npm'),
+  //runTask('publish @chapanda/style-preset-vant', 'cd dist/vant && pnpm run publish:npm'),
+  runTask('publish @chapanda/style-preset-unocss', 'cd dist/unocss && pnpm run publish:npm'),
+  runTask('publish @chapanda/style-preset-tailwind', 'cd dist/tailwindcss && pnpm run publish:npm'),
+  runTask('publish @chapanda/style-preset-antd', 'cd dist/antd && pnpm run publish:npm'),
+  runTask('publish @chapanda/style-preset-ep', 'cd dist/element-plus && pnpm run publish:npm'),
+  runTask('publish @chapanda/style-preset', 'cd dist/chapanda-style-preset && pnpm run publish:npm'),
 )

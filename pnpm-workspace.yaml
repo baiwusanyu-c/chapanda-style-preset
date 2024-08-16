@@ -1,7 +1,4 @@
 packages:
   - 'packages/**'
-  - build
-  - play
-  - playground
-  - docs
-  - utils
+  - scripts
+  - 'play/**'

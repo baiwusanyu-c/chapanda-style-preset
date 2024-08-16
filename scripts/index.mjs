@@ -29,14 +29,14 @@ if (buildMode === 'prod') {
     const config = JSON.parse(JSON.stringify(baseConfig))
     // path
     config.entry = [entry[i].entryPath]
-    config.external = [/@vue-tea/]
+    config.external = [/@chapanda/]
     config.outDir = path.resolve(process.cwd(), `../dist/${entry[i].outputPath}`)
     config.dts = true
     configOptions.push(config)
   }
 }
 
-if (buildMode === 'dev' || buildMode === 'play') {
+if (buildMode === 'dev') {
   entry = entryConfig
   for (let i = 0; i < entry.length; i++) {
     const config = JSON.parse(JSON.stringify(baseConfig))
@@ -54,7 +54,7 @@ if (buildMode === 'dev' || buildMode === 'play') {
       '../packages/**/dist/**/**.js',
       '../packages/**/dist/**/**.mjs',
     ]
-    config.external = [/@vue-tea/]
+    config.external = [/@chapanda/]
     config.dts = true
     config.outDir = path.resolve(process.cwd(), `../packages/${entry[i].outputPath}/dist`)
     configOptions.push(config)

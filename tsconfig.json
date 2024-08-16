@@ -20,10 +20,6 @@
     "packages/**/*.vue",
     "play/**/*.ts",
     "play/**/*.vue",
-    "docs/**/*.ts",
-    "docs/**/*.vue",
-    "playground/**/*.ts",
-    "playground/**/*.vue",
     "build/**/*.ts",
   ],
   // ts 排除的文件
