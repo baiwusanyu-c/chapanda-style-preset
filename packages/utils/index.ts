@@ -1,3 +1,3 @@
-export function isDemo(){
-  console.log('utils-demo')
+export function demo(){
+  console.log('utils')
 }

@@ -20,6 +20,11 @@ const copyPackageJsonFiles = async(
       // transform
       if(srcDir.includes('chapanda-style-preset')) {{
         packageJson.exports = {
+          ".": {
+            "types": "./index.d.ts",
+            "require": "./index.js",
+            "import": "./index.mjs"
+          },
           "./antd": {
             "types": "./antd/index.d.ts",
             "require": "./antd/index.js",
