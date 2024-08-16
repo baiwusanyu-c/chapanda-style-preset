@@ -5,13 +5,10 @@ const OUTPUT_NODE_MODULES = [
 	'../dist',
 	'../packages/**/dist',
 	'../play/**/dist',
-	'../docs/.vitepress/**/dist',
-	'../playground/**/dist',
-	'../docs/**/dist',
 ];
 async function doCleanOutput() {
 	// set log prefix
-	setGlobalPrefix('[vue-tea]: ');
+	setGlobalPrefix('[@chapanda]: ');
 
 	log('info', 'Start clearing all output.');
 	try {

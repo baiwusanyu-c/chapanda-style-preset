@@ -6,6 +6,10 @@
     "allowSyntheticDefaultImports": true
   },
   "include": [
-    "play/vite.config.ts"
+    "play/antd/vite.config.ts",
+    "play/element-plus/vite.config.ts",
+    "play/tailwindcss/vite.config.ts",
+    "play/unocss/vite.config.ts",
+    "play/vant/vite.config.ts"
   ]
 }

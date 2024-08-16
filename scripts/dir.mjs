@@ -1,39 +1,61 @@
 export const entry = [
   {
-    entryPath: "../packages/compiler/index.ts",
-    outputPath: "compiler",
+    entryPath: "../packages/antd/index.ts",
+    outputPath: "antd",
   },
   {
-    entryPath: "../packages/runtime/index.ts",
-    outputPath: "runtime",
+    entryPath: "../packages/element-plus/index.ts",
+    outputPath: "element-plus",
+  },
+  {
+    entryPath: "../packages/tailwindcss/index.ts",
+    outputPath: "tailwindcss",
+  },
+  {
+    entryPath: "../packages/unocss/index.ts",
+    outputPath: "unocss",
+  },
+  {
+    entryPath: "../packages/vant/index.ts",
+    outputPath: "vant",
   },
   {
     entryPath: "../packages/utils/index.ts",
     outputPath: "utils",
   },
   {
-    entryPath: "../packages/unplugin/index.ts",
-    outputPath: "unplugin",
+    entryPath: "../packages/chapanda-style-preset/antd/index.ts",
+    outputPath: "chapanda-style-preset/antd",
   },
   {
-    entryPath: "../packages/vue-tea/index.ts",
-    outputPath: "vue-tea",
+    entryPath: "../packages/chapanda-style-preset/element-plus/index.ts",
+    outputPath: "chapanda-style-preset/element-plus",
   },
   {
-    entryPath: "../packages/vue-tea/plugin/index.ts",
-    outputPath: "vue-tea/plugin",
+    entryPath: "../packages/chapanda-style-preset/tailwindcss/index.ts",
+    outputPath: "chapanda-style-preset/tailwindcss",
   },
   {
-    entryPath: "../packages/test/index.ts",
-    outputPath: "test",
+    entryPath: "../packages/chapanda-style-preset/unocss/index.ts",
+    outputPath: "chapanda-style-preset/unocss",
+  },
+  {
+    entryPath: "../packages/chapanda-style-preset/vant/index.ts",
+    outputPath: "chapanda-style-preset/vant",
+  },
+  {
+    entryPath: "../packages/chapanda-style-preset/utils/index.ts",
+    outputPath: "chapanda-style-preset/utils",
   },
 ]
 
+
 export const entryPkg = {
-  'compiler': '../packages/compiler',
-  'test': '../packages/test',
-  'runtime': '../packages/runtime',
+  'antd': '../packages/antd',
+  'element-plus': '../packages/element-plus',
+  'tailwindcss': '../packages/tailwindcss',
+  'unocss': '../packages/unocss',
+  'vant': '../packages/vant',
+  'chapanda-style-preset': '../packages/chapanda-style-preset',
   'utils': '../packages/utils',
-  'vue-tea': '../packages/vue-tea',
-  'unplugin': '../packages/unplugin',
 }

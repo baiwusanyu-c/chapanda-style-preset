@@ -1,5 +1,5 @@
 {
-  "name": "@chapanda/style-preset-play-ep",
+  "name": "@chapanda/style-preset-play-vant",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,12 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.35",
-    "element-plus": "^2.8.0"
+    "vant": "^4.9.4",
+    "vue": "^3.4.38"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",
-    "typescript": "^5.5.3",
+    "typescript": "^5.5.4",
     "vite": "^5.4.0",
     "vue-tsc": "^2.0.29"
   }

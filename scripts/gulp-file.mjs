@@ -18,18 +18,33 @@ const copyPackageJsonFiles = async(
     } else if (file === 'package.json') {
       let packageJson = fs.readJsonSync(filePath) // 读取原始 package.json 文件
       // transform
-      if(srcDir.includes('vue-tea')) {{
+      if(srcDir.includes('chapanda-style-preset')) {{
         packageJson.exports = {
-          '.': {
-            types: './index.d.ts',
-            require: './index.js',
-            import: './index.mjs',
+          "./antd": {
+            "types": "./antd/index.d.ts",
+            "require": "./antd/index.js",
+            "import": "./antd/index.mjs"
           },
-          './plugin': {
-            types: './plugin/index.d.ts',
-            require: './plugin/index.js',
-            import: './plugin/index.mjs',
+          "./element-plus": {
+            "types": "./element-plus/index.d.ts",
+            "require": "./element-plus/index.js",
+            "import": "./element-plus/index.mjs"
           },
+          "./unocss": {
+            "types": "./unocss/index.d.ts",
+            "require": "./unocss/index.js",
+            "import": "./unocss/index.mjs"
+          },
+          "./vant": {
+            "types": "./vant/index.d.ts",
+            "require": "./vant/index.js",
+            "import": "./vant/index.mjs"
+          },
+          "./utils": {
+            "types": "./utils/index.d.ts",
+            "require": "./utils/index.js",
+            "import": "./utils/index.mjs"
+          }
         }
       }} else {
         packageJson.main = './index.mjs'
@@ -56,21 +71,6 @@ const copyPackageJsonFiles = async(
 }
 
 const movePkgToRootDist = async(entryPkg) => {
- // let packageJson = fs.readJsonSync(`${path.resolve('../package.json')}`) // 读取原始 package.json 文件
- // // transform
- // packageJson.main = './index.mjs'
- // packageJson.module = './index.mjs'
- // packageJson.exports = {
- //   '.': {
- //     types: './index.d.ts',
- //     require: './index.js',
- //     import: './index.mjs',
- //   },
- // }
- // const version = packageJson.version
- // const packageJsonContentStr = JSON.stringify(packageJson).replaceAll('workspace:*', `^${version}`)
- // packageJson = JSON.parse(packageJsonContentStr)
- // fs.outputJsonSync(`${distRoot}/package.json`, packageJson, { spaces: 2 })
   for (const srcKey in entryPkg) {
     await copyPackageJsonFiles(
       entryPkg[srcKey],
@@ -78,13 +78,13 @@ const movePkgToRootDist = async(entryPkg) => {
   }
 }
 
-const moveREADMEToRootDist = async(entryPkg) => {
-  for (const srcKey in entryPkg) {
-    await fs.copy(
-        `${entryPkg[srcKey]}/README.md`,
-        `${distRoot}/${srcKey}/README.md`)
-  }
-}
+// const moveREADMEToRootDist = async(entryPkg) => {
+//   for (const srcKey in entryPkg) {
+//     await fs.copy(
+//         `${entryPkg[srcKey]}/README.md`,
+//         `${distRoot}/${srcKey}/README.md`)
+//   }
+// }
 
 export default gulp.series(
   // 移动 package.json 到 dist
@@ -93,8 +93,8 @@ export default gulp.series(
     return res
   },
   // 移动 README 到 dist
-  async() => {
-    const res = await moveREADMEToRootDist(entryPkg)
-    return res
-  },
+  // async() => {
+  //   const res = await moveREADMEToRootDist(entryPkg)
+  //   return res
+  // },
 )

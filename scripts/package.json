@@ -1,10 +1,10 @@
 {
-  "name": "@vue-tea/build",
-  "description": "Vue custom element capability extension library",
+  "name": "@chapanda/style-preset-scripts",
+  "description": "chapanda style preset",
   "private": false,
   "type": "commonjs",
   "version": "0.0.0",
-  "packageManager": "pnpm@9.4.0",
+  "packageManager": "pnpm@9.7.1",
   "keywords": [
     "typescript",
     "javascript",
@@ -17,33 +17,29 @@
   ],
   "license": "MIT",
   "author": "baiwusanyu-c",
-  "homepage": "https://github.com/baiwusanyu-c/vue-tea",
-  "repository": "https://github.com/baiwusanyu-c/vue-tea",
-  "bugs": "https://github.com/baiwusanyu-c/vue-tea/issues",
+  "homepage": "https://github.com/baiwusanyu-c/chapanda-style-preset",
+  "repository": "https://github.com/baiwusanyu-c/chapanda-style-preset",
+  "bugs": "https://github.com/baiwusanyu-c/chapanda-style-preset/issues",
   "scripts": {
     "dev": "cross-env BUILD_MODE=dev tsup-node --config index.mjs",
-    "playground": "cross-env BUILD_MODE=play tsup-node --config index.mjs",
     "build": "cross-env BUILD_MODE=prod tsup-node --config index.mjs && pnpm run gulp:script",
     "gulp:script": "gulp -f gulp-file.mjs",
     "publish:npm": "gulp -f publish.mjs",
     "clean": "node clean.mjs"
   },
-  "dependencies": {
-    "vue": "^3.4.30"
-  },
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
     "@types/gulp": "^4.0.17",
+    "baiwusanyu-utils": "^1.0.18",
+    "del": "^7.1.0",
     "fast-glob": "^3.3.2",
     "fs-extra": "^11.2.0",
     "gulp": "^5.0.0",
     "npm-run-all": "^4.1.5",
-    "rimraf": "^5.0.7",
-    "rollup": "^4.18.0",
+    "rimraf": "^5.0.10",
+    "rollup": "^4.20.0",
     "shelljs": "^0.8.5",
-    "tsup": "^8.1.0",
-    "vite": "^5.3.1",
-    "del": "^7.1.0",
-    "baiwusanyu-utils": "^1.0.18"
+    "tsup": "^8.2.4",
+    "vite": "^5.4.0"
   }
 }
