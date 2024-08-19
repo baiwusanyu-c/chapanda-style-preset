@@ -1,7 +1,7 @@
-@use '../../../packages/base/index';
+@use '../../../packages/base/theme/index' as cbd;
 
 
-$colorBlack: index.generate-color-map(
+$colorBlack: cbd.generate-color-map(
 "--cbd",
 "black",
  (
@@ -9,12 +9,12 @@ $colorBlack: index.generate-color-map(
           2,
  ),
  (
-         red,
+       red,
        #00ffff
  )
 );
 
 
 :root {
-  @include index.generate-root-css-variables($colorBlack);
+  @include cbd.generate-root-css-variables($colorBlack);
 }

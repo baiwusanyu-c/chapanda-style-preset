@@ -68,3 +68,8 @@ export const entryPkg = {
   'base': '../packages/base',
   'utils': '../packages/utils',
 }
+
+export const entryTheme = {
+  'chapanda-style-preset': '../packages/base',
+  'base': '../packages/base',
+}
