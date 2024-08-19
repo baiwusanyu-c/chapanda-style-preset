@@ -1,4 +1,4 @@
-@use '../../../packages/base/theme/index' as cbd;
+@use '@chapanda/style-preset-base/theme/index' as cbd;
 
 
 $colorBlack: cbd.generate-color-map(
@@ -18,3 +18,5 @@ $colorBlack: cbd.generate-color-map(
 :root {
   @include cbd.generate-root-css-variables($colorBlack);
 }
+
+

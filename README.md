@@ -14,9 +14,9 @@ chapanda style preset
 ## TODO: vant
 
 
-## 提供样式预设 scss(布局，字体，font-family)
-## 提供样式预设 unocss(布局，字体，font-family)
-## 提供样式预设 tailwind(布局，字体，font-family)
+## 提供样式预设 scss(✅布局，✅border, 字体，font-family)
+## 提供样式预设 unocss(布局，border, 字体，font-family)
+## 提供样式预设 tailwind(布局，border, 字体，font-family)
 
 ## 提供chapanda主题的 antd
 

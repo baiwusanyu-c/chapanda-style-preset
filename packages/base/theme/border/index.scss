@@ -1,0 +1,45 @@
+@mixin gen-border-style(
+  $width: 1px,
+  $borderColor: var(--cbd-gray-3),
+  $style: solid,
+) {
+ border-style: $style;
+ border-color: $borderColor;
+ border-width: $width;
+}
+.border-basic{
+  @include gen-border-style()
+}
+
+@mixin gen-border-error(
+$width: 1px,
+$style: solid,
+) {
+ @include gen-border-style($width, var(--cbd-red-3), $style)
+}
+
+.border-error{
+  @include gen-border-error()
+}
+
+@mixin gen-border-warning(
+  $width: 1px,
+  $style: solid,
+) {
+  @include gen-border-style($width, var(--cbd-yellow-3), $style)
+}
+
+.border-warning{
+  @include gen-border-warning()
+}
+
+@mixin gen-border-success(
+  $width: 1px,
+  $style: solid,
+) {
+  @include gen-border-style($width, var(--cbd-green-3), $style)
+}
+
+.border-success{
+  @include gen-border-success()
+}
