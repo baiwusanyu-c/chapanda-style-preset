@@ -1,2 +1,22 @@
-@import './index.ts';
-$colors: #{defaultThemeColors.red.1}
+
+@use './colors' as *;
+// SCSS 函数，用于生成 CSS 变量
+@mixin generate-css-variables($map) {
+  @each $key, $value in $map {
+    #{$key}: $value;
+  }
+}
+
+// 使用 SCSS 函数生成 CSS 变量
+:root {
+  --cbd-transparent:transparent;
+  --cbd-black:#000;
+  --cbd-white:#fff;
+  @include generate-css-variables($colorsYellow);
+  @include generate-css-variables($colorsRed);
+  @include generate-css-variables($colorsGreen);
+  @include generate-css-variables($colorsMint);
+  @include generate-css-variables($colorsPurple);
+  @include generate-css-variables($colorsGray);
+  @include generate-css-variables($colorsBrand);
+}
