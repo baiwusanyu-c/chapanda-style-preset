@@ -141,7 +141,9 @@ const brand = {
   '18': '#1E5EFF',
 }
 
-export const defaultThemeColors = {
+export declare type ThemeColors = Record<string, string |  Record<string, string >>
+
+export const defaultThemeColors: ThemeColors = {
   transparent: 'transparent',
   black: '#000',
   white: '#fff',
