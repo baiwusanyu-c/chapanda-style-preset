@@ -2,3 +2,15 @@
 @forward './colors/index' show generate-root-css-variables;
 // @public
 @forward './colors/index' show generate-color-map;
+
+// @public
+@forward './border/index' show gen-border-style;
+// @public
+@forward './border/index' show gen-border-error;
+// @public
+@forward './border/index' show gen-border-success;
+// @public
+@forward './border/index' show gen-border-warning;
+
+@use './border/index' as border;
+@use './layout/index' as layout;
