@@ -1,22 +1,227 @@
+@use "sass:map";
+@function generate-color-map($prefix, $name, $suffixes, $values) {
+  $color-map: ();
 
-@use './colors' as *;
-// SCSS 函数，用于生成 CSS 变量
-@mixin generate-css-variables($map) {
-  @each $key, $value in $map {
-    #{$key}: $value;
+  @each $suffix in $suffixes {
+    $index: index($suffixes, $suffix); // 获取当前 $suffix 的索引
+    $key: if($suffix == '', #{$prefix}-#{$name}, #{$prefix}-#{$name}-#{$suffix});
+    $value: nth($values, $index); // 使用正确的索引来获取 $value
+    $color-map: map-merge($color-map, ($key: $value));
   }
+
+  @return $color-map;
 }
 
-// 使用 SCSS 函数生成 CSS 变量
-:root {
-  --cbd-transparent:transparent;
-  --cbd-black:#000;
-  --cbd-white:#fff;
-  @include generate-css-variables($colorsYellow);
-  @include generate-css-variables($colorsRed);
-  @include generate-css-variables($colorsGreen);
-  @include generate-css-variables($colorsMint);
-  @include generate-css-variables($colorsPurple);
-  @include generate-css-variables($colorsGray);
-  @include generate-css-variables($colorsBrand);
-}
+$colorsYellow: generate-color-map(
+ "--cbd",
+ "yellow",
+(1, 2, 3, 4, 5, 6, 7),
+(
+        #FFF7EB,
+        #FFBB33,
+        #FF9900,
+        #EB8120,
+          // 以下为不在设计规范中但UI使用的颜色
+        #fef6c8,
+        #f99784,
+        #FABF00
+));
+
+$colorsRed: generate-color-map(
+"--cbd",
+"red",
+(1, 2, 3, 4, 5, 6),
+(
+        #FFF1F2,
+        #FF808A,
+        #FF5F66,
+        #F53F3F,
+          // 以下为不在设计规范中但UI使用的颜色
+        #dc0407,
+        #F12B43,
+));
+
+$colorsGreen: generate-color-map(
+"--cbd",
+"green",
+(1, 2, 3, 4, 5, 6, 7, 8),
+(
+        #F1F7EA,
+        #95DB42,
+        #72B22F,
+        #529908,
+          // 以下为不在设计规范中但UI使用的颜色
+        #f3feee,
+        #c5f89b,
+        #06A561,
+        #33D65F,
+));
+
+$colorsMint: generate-color-map(
+"--cbd",
+"mint",
+(1, 2, 3, 4, 5),
+(
+        #E9F7F9,
+        #77D5D4,
+        #14C7B8,
+        #00A590,
+          // 以下为不在设计规范中但UI使用的颜色
+        #008489,
+));
+
+$colorsPurple: generate-color-map(
+"--cbd",
+"purple",
+(1, 2, 3, 4),
+(
+        #EFEBFF,
+        #887DFD,
+        #5348CE,
+        #352BA5,
+));
+
+$colorsGray: generate-color-map(
+"--cbd",
+"gray",
+(
+        1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+        16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29,
+        30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43,
+        44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56,
+),
+(
+  //浅色背景
+        #F9FAFC,
+          // 深色背景/浅色分割线、边框
+        #F0F1F5,
+          // 深色色分割线、边框
+        #E5E6EB,
+          // 置灰/引导信息
+        #C9CDD4,
+          // 次要信息/辅助说明
+        #86909C,
+          // 次强调信息
+        #4E5969,
+          // 强调信息
+        #1D2129,
+          // 以下为不在设计规范中但UI使用的颜色
+        #2c3e50,
+        #2c3e50,
+        #d0d0d0,
+        #d3dce6,
+        #99a9bf,
+        #97a8be,
+        #5a5e66,
+        #2b2f3a,
+        #676a6c,
+        #707070,
+        #484848,
+        #bdc1c8,
+        #D9E1EC,
+        #1A1819,
+        #131523,
+        #5A607F,
+        #888F9E,
+        #535C6B,
+        #969799,
+        #ECF2FF,
+        #1D2026,
+        #586070,
+        #8D97A8,
+        #F5F8FC,
+        #323233,
+        #F5F5F5,
+        #1c1c1e,
+        #3a3a3c,
+        #6C7294,
+        #5C5C5C,
+        #F5F6FA,
+        #E2E2E2,
+        #BBBDBF,
+        #d9d9d9,
+        #d4d4d4,
+        #F2F4FD,
+        #4f4f4f,
+        #F7F8FC,
+        #F7F8FA,
+        #282F38,
+        #F4F5F7,
+        #8C94A3,
+        #EDF0F7,
+        #F8F8F8,
+        #e1e8ee,
+        #f3f4f6,
+        #ebedf0,
+        #EAEDF0,
+        #7f8fa4,
+        ));
+
+$colorsBrand: generate-color-map(
+"--cbd",
+"brand",
+(
+        1, 2, 3, 4, 5, 7, 8, 9,
+        10, 11, 12, 13, 14, 15, 16, 17, 18,
+),
+(
+  // 浅色背景
+        #F2F5FD,
+          // 特殊场景
+        #ECF1FD,
+          // 填充/悬浮
+        #3775FC,
+          // 填充/常规
+        #105CFF,
+          // 品牌色/字体/点击
+        #0A4CDE,
+          // 深色填充/字体
+        #18284A,
+          // 以下为不在设计规范中但UI使用的颜色
+        #F7F9FF,
+        #bcd1ff,
+        #337ab7,
+        #4662e6,
+        #476DAB,
+        #5a89cf,
+        #CEDDFF,
+        #94BFFF,
+        #a9e6f8,
+        #3f9fe9,
+        #1a5da1,
+        #1E5EFF,
+));
+
+$colorTransparent: generate-color-map(
+ "--cbd",
+ "transparent",
+        (
+           ''
+        ),
+        (
+          transparent
+        )
+);
+
+$colorWhite: generate-color-map(
+"--cbd",
+"white",
+        (
+                ''
+        ),
+        (
+                #fff
+        )
+);
+
+
+$colorBlack: generate-color-map(
+"--cbd",
+"black",
+        (
+                ''
+        ),
+        (
+                #000
+        )
+);

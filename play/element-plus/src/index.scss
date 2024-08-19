@@ -1,0 +1,20 @@
+@use '../../../packages/base/index';
+
+
+$colorBlack: index.generate-color-map(
+"--cbd",
+"black",
+ (
+         '',
+          2,
+ ),
+ (
+         red,
+       #00ffff
+ )
+);
+
+
+:root {
+  @include index.generate-root-css-variables($colorBlack);
+}
