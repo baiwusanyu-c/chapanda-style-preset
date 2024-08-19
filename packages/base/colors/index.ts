@@ -44,3 +44,6 @@ export const genThemeColors = (
 };
 
 export * from './colors'
+export type {
+  ThemeColors
+} from './colors'
