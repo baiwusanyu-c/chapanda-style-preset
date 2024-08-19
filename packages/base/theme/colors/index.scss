@@ -8,7 +8,7 @@
 }
 
 
-@mixin generate-root-css-variables($customColor) {
+@mixin generate-root-css-variables($customColor:null) {
   @include generate-css-variables($colorTransparent);
   @include generate-css-variables($colorWhite);
   @include generate-css-variables($colorBlack);

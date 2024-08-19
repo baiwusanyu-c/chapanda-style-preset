@@ -1,7 +1,7 @@
 import path from 'path'
 import gulp from 'gulp'
 import fs from 'fs-extra'
-import { entryPkg } from './dir.mjs'
+import {entryPkg, entryTheme} from './dir.mjs'
 
 const distRoot = path.resolve(process.cwd(), '../dist')
 
@@ -49,7 +49,8 @@ const copyPackageJsonFiles = async(
             "types": "./utils/index.d.ts",
             "require": "./utils/index.js",
             "import": "./utils/index.mjs"
-          }
+          },
+          "./theme/index": "./theme/index.scss"
         }
       }} else {
         packageJson.main = './index.mjs'
@@ -60,6 +61,7 @@ const copyPackageJsonFiles = async(
             require: './index.js',
             import: './index.mjs',
           },
+          "./theme/index": "./theme/index.scss"
         }
       }
       const packageDir = path.dirname(filePath)
@@ -83,6 +85,14 @@ const movePkgToRootDist = async(entryPkg) => {
   }
 }
 
+const moveThemeToRootDist = async(entryPkg) => {
+  for (const srcKey in entryPkg) {
+    await fs.copy(
+        `${entryPkg[srcKey]}/theme`,
+        `${distRoot}/${srcKey}/theme`)
+  }
+}
+
 // const moveREADMEToRootDist = async(entryPkg) => {
 //   for (const srcKey in entryPkg) {
 //     await fs.copy(
@@ -95,6 +105,11 @@ export default gulp.series(
   // 移动 package.json 到 dist
   async() => {
     const res = await movePkgToRootDist(entryPkg)
+    return res
+  },
+   // 移动 theme 到 dist
+  async() => {
+    const res = await moveThemeToRootDist(entryTheme)
     return res
   },
   // 移动 README 到 dist
