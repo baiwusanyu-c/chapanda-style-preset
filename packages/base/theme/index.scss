@@ -12,5 +12,17 @@
 // @public
 @forward './border/index' show gen-border-warning;
 
+// @public
+@forward './font/index' show font-pingfang;
+// @public
+@forward './font/index' show font-din;
+// @public
+@forward './font/index' show font-din-bold;
+// @public
+@forward './font/index' show font-din-heavy;
+// @public
+@forward './font/index' show font-din-heavy-lighter;
+
 @use './border/index' as border;
 @use './layout/index' as layout;
+@use './font/index' as font;

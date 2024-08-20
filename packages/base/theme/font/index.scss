@@ -1,0 +1,187 @@
+
+@mixin font-pingfang {
+  font-family: PingFang-SC, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol"
+}
+
+.pf-regular-24 {
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 24pt;
+  @include font-pingfang()
+}
+
+.pf-medium-24 {
+  font-weight: 500;
+  line-height: 1.4;
+  font-size: 24pt;
+  @include font-pingfang()
+}
+
+.pf-regular-20 {
+  font-weight: 400;
+  font-size: 20pt;
+  @include font-pingfang()
+}
+
+.pf-medium-20 {
+  font-weight: 500;
+  font-size: 20pt;
+  @include font-pingfang()
+}
+
+.pf-regular-18 {
+  font-weight: 400;
+  font-size: 18pt;
+  @include font-pingfang()
+}
+
+.pf-medium-18 {
+  font-weight: 500;
+  font-size: 18pt;
+  @include font-pingfang()
+}
+
+.pf-regular-17 {
+  font-weight: 400;
+  font-size: 17pt;
+  @include font-pingfang()
+}
+
+.pf-medium-17 {
+  font-weight: 500;
+  font-size: 17pt;
+  @include font-pingfang()
+}
+
+.pf-regular-16 {
+  font-weight: 400;
+  font-size: 16pt;
+  @include font-pingfang()
+}
+
+.pf-medium-16 {
+  font-weight: 500;
+  font-size: 16pt;
+  @include font-pingfang()
+}
+
+.pf-regular-15 {
+  font-weight: 400;
+  font-size: 15pt;
+  @include font-pingfang()
+}
+
+.pf-medium-15 {
+  font-weight: 500;
+  font-size: 15pt;
+  @include font-pingfang()
+}
+
+.pf-regular-14 {
+  font-weight: 400;
+  font-size: 14pt;
+  @include font-pingfang()
+}
+
+.pf-regular-12 {
+  font-weight: 400;
+  font-size: 12pt;
+  @include font-pingfang()
+}
+
+.pf-regular-11 {
+  font-weight: 400;
+  font-size: 11pt;
+  @include font-pingfang()
+}
+
+.pf-regular-10 {
+  font-weight: 400;
+  font-size: 10pt;
+  @include font-pingfang()
+}
+
+.pf-regular-9 {
+  font-weight: 400;
+  font-size: 9pt;
+  @include font-pingfang()
+}
+
+// 以下是非设计规范里所使用的字体，
+// 在移动端看板的数字显示上使用了
+@font-face {
+  font-family: 'DIN';
+  src: url('@chapanda/style-preset-base/theme/font/DIN-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-din($important:null) {
+  @if type-of($important) != null {
+    font-family: DIN, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  } @else {
+    font-family: DIN, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol"
+  }
+}
+
+@font-face {
+  font-family: 'DIN-Bold';
+  src: url('@chapanda/style-preset-base/theme/font/DINNextLTPro-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-din-bold($important:null) {
+  @if type-of($important) != null {
+    font-family: DIN-Bold, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  } @else {
+    font-family: DIN-Bold, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol"
+  }
+}
+
+
+@font-face {
+  font-family: 'DIN-Heavy';
+  src: url('@chapanda/style-preset-base/theme/font/DINNextLTPro-Heavy.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin font-din-heavy($important:null) {
+  @if type-of($important) != null {
+    font-family: DIN-Heavy, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  } @else {
+    font-family: DIN-Heavy, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol"
+  }
+}
+
+@font-face {
+  font-family: 'DIN-Heavy-Lighter';
+  src: url('@chapanda/style-preset-base/theme/font/DINNextLTPro-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@mixin font-din-heavy-lighter($important:null) {
+  @if type-of($important) != null {
+    font-family: DIN-Heavy-Lighter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  } @else {
+    font-family: DIN-Heavy-Lighter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol"
+  }
+}

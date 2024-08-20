@@ -5,13 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "element-plus": "^2.8.0",
     "vue": "^3.4.38",
-    "@chapanda/style-preset-base": "workspace:*"
+    "@chapanda/style-preset": "workspace:*"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",
