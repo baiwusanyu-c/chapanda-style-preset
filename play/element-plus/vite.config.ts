@@ -9,12 +9,12 @@ export default defineConfig({
   resolve: {
     alias: {
       // TODO 写入文档
-      '@chapanda/style-preset-base/theme/font': path.resolve(
-        __dirname, 'node_modules/@chapanda/style-preset/theme/font'
-      ),
       // '@chapanda/style-preset-base/theme/font': path.resolve(
-      //   __dirname, 'node_modules/@chapanda/style-preset-base/theme/font'
+      //   __dirname, 'node_modules/@chapanda/style-preset/theme/font'
       // ),
+      '@chapanda/style-preset-base/theme/font': path.resolve(
+        __dirname, 'node_modules/@chapanda/style-preset-base/theme/font'
+      ),
     },
   },
 
