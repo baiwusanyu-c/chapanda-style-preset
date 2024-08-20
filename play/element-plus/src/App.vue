@@ -1,30 +1,36 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div class="fcc border-success">
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
+  <p class="pf-regular-24">pf-regular-24 </p>
+  <p class="pf-medium-24"> pf-medium-24 </p>
+  <p class="pf-regular-20">pf-regular-20 </p>
+  <p class="pf-medium-20"> pf-medium-20 </p>
+  <p class="pf-regular-18">pf-regular-18 </p>
+  <p class="pf-medium-18"> pf-medium-18 </p>
+  <p class="pf-regular-17">pf-regular-17 </p>
+  <p class="pf-medium-17"> pf-medium-17 </p>
+  <p class="pf-regular-16">pf-regular-16 </p>
+  <p class="pf-medium-16"> pf-medium-16 </p>
+  <p class="pf-regular-15">pf-regular-15 </p>
+  <p class="pf-medium-15"> pf-medium-15 </p>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+  <p class="din">din 9999 </p>
+  <p class="din-bold"> din-bold 7600</p>
+  <p class="din-heavy">din-heavy 9999</p>
+  <p class="din-heavy-lighter"> din-heavy-lighter 9999</p>
+</template>
+<style scoped lang="scss">
+@use '@chapanda/style-preset/theme/index' as cbd;
+ .din {
+   @include cbd.font-din(true);
+   font-weight: 700;
+ }
+ .din-bold{
+   @include cbd.font-din-bold();
+   font-weight: 700;
+ }
+ .din-heavy{
+   @include cbd.font-din-heavy(true)
+ }
+ .din-heavy-lighter{
+   @include cbd.font-din-heavy-lighter()
+ }
 </style>

@@ -50,7 +50,8 @@
       "types": "./utils/dist/index.d.ts",
       "require": "./utils/dist/index.js",
       "import": "./utils/dist/index.mjs"
-    }
+    },
+    "./theme/index": "./theme/index.scss"
   },
   "scripts": {
     "publish:npm": "pnpm publish --no-git-checks --access public"
