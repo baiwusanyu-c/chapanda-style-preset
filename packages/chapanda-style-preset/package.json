@@ -41,6 +41,11 @@
       "require": "./unocss/dist/index.js",
       "import": "./unocss/dist/index.mjs"
     },
+    "./tailwindcss": {
+      "types": "./tailwindcss/dist/index.d.ts",
+      "require": "./tailwindcss/dist/index.js",
+      "import": "./tailwindcss/dist/index.mjs"
+    },
     "./vant": {
       "types": "./vant/dist/index.d.ts",
       "require": "./vant/dist/index.js",

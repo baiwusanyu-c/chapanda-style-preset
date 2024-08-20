@@ -35,6 +35,11 @@ const copyPackageJsonFiles = async(
             "require": "./element-plus/index.js",
             "import": "./element-plus/index.mjs"
           },
+          "./tailwindcss": {
+            "types": "./tailwindcss/index.d.ts",
+            "require": "./tailwindcss/index.js",
+            "import": "./tailwindcss/index.mjs"
+          },
           "./unocss": {
             "types": "./unocss/index.d.ts",
             "require": "./unocss/index.js",
