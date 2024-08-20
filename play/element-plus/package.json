@@ -11,7 +11,7 @@
   "dependencies": {
     "element-plus": "^2.8.0",
     "vue": "^3.4.38",
-    "@chapanda/style-preset": "workspace:*"
+    "@chapanda/style-preset-base": "workspace:*"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",

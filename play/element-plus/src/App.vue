@@ -18,7 +18,7 @@
   <p class="din-heavy-lighter"> din-heavy-lighter 9999</p>
 </template>
 <style scoped lang="scss">
-@use '@chapanda/style-preset/theme/index' as cbd;
+@use '@chapanda/style-preset-base/theme/index' as cbd;
  .din {
    @include cbd.font-din(true);
    font-weight: 700;
