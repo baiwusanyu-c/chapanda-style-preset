@@ -22,7 +22,7 @@ export const genThemeColors = (
       const resolveKey = `--${prefix}-${k}`
       const resolveValue = resolveThemeColors[key]
       colorsVariable[resolveKey] = resolveValue
-      colors[`${prefix}-${k}`] = `var(${resolveKey})`
+      colors[`${prefix}-${k}`] = `${resolveValue}`
       preflights = preflights + '\n' + `${resolveKey}:${resolveValue};`;
     } else {
       Object.keys(resolveThemeColors[key]).forEach((v) => {
@@ -30,7 +30,7 @@ export const genThemeColors = (
         const resolveKey = `--${prefix}-${k}-${v}`
         const resolveValue = resolveThemeColors[key][keyV]
         colorsVariable[resolveKey] = resolveValue
-        colors[`${prefix}-${k}-${v}`] = `var(${resolveKey})`
+        colors[`${prefix}-${k}-${v}`] = `${resolveValue}`
         preflights = preflights + '\n' + `${resolveKey}:${resolveValue};`;
 
       });
