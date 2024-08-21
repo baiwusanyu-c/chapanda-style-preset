@@ -13,107 +13,90 @@
 .pf-medium-24 {
   font-weight: 500;
   line-height: 1.4;
-  font-size: 24pt;
+  font-size: 24px;
   @include font-pingfang()
 }
 .pf-medium-20 {
   font-weight: 500;
-  font-size: 20pt;
+  font-size: 20px;
   @include font-pingfang()
 }
 .pf-medium-18 {
   font-weight: 500;
-  font-size: 18pt;
+  font-size: 18px;
   @include font-pingfang()
 }
 
 .pf-medium-17 {
   font-weight: 500;
-  font-size: 17pt;
+  font-size: 17px;
   @include font-pingfang()
 }
 
 .pf-medium-16 {
   font-weight: 500;
-  font-size: 16pt;
+  font-size: 16px;
   @include font-pingfang()
 }
 
 .pf-medium-15 {
   font-weight: 500;
-  font-size: 15pt;
+  font-size: 15px;
   @include font-pingfang()
 }
 
 .pf-regular-24 {
   font-weight: 400;
   line-height: 1.4;
-  font-size: 24pt;
+  font-size: 24px;
   @include font-pingfang()
 }
 
 .pf-regular-20 {
   font-weight: 400;
-  font-size: 20pt;
+  font-size: 20px;
   @include font-pingfang()
 }
 
 .pf-regular-18 {
   font-weight: 400;
-  font-size: 18pt;
+  font-size: 18px;
   @include font-pingfang()
 }
 
 
 .pf-regular-17 {
   font-weight: 400;
-  font-size: 17pt;
+  font-size: 17px;
   @include font-pingfang()
 }
 
 
 .pf-regular-16 {
   font-weight: 400;
-  font-size: 16pt;
+  font-size: 16px;
   @include font-pingfang()
 }
 
 .pf-regular-15 {
   font-weight: 400;
-  font-size: 15pt;
+  font-size: 15px;
   @include font-pingfang()
 }
 
 
 .pf-regular-14 {
   font-weight: 400;
-  font-size: 14pt;
+  font-size: 14px;
   @include font-pingfang()
 }
 
 .pf-regular-12 {
   font-weight: 400;
-  font-size: 12pt;
+  font-size: 12px;
   @include font-pingfang()
 }
 
-.pf-regular-11 {
-  font-weight: 400;
-  font-size: 11pt;
-  @include font-pingfang()
-}
-
-.pf-regular-10 {
-  font-weight: 400;
-  font-size: 10pt;
-  @include font-pingfang()
-}
-
-.pf-regular-9 {
-  font-weight: 400;
-  font-size: 9pt;
-  @include font-pingfang()
-}
 
 @mixin font-harmony {
   font-family: 'HarmonyOS Sans SC', -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -129,107 +112,90 @@
 .hm-medium-24 {
   font-weight: 500;
   line-height: 1.4;
-  font-size: 24pt;
+  font-size: 24px;
   @include font-harmony()
 }
 .hm-medium-20 {
   font-weight: 500;
-  font-size: 20pt;
+  font-size: 20px;
   @include font-harmony()
 }
 .hm-medium-18 {
   font-weight: 500;
-  font-size: 18pt;
+  font-size: 18px;
   @include font-harmony()
 }
 
 .hm-medium-17 {
   font-weight: 500;
-  font-size: 17pt;
+  font-size: 17px;
   @include font-harmony()
 }
 
 .hm-medium-16 {
   font-weight: 500;
-  font-size: 16pt;
+  font-size: 16px;
   @include font-harmony()
 }
 
 .hm-medium-15 {
   font-weight: 500;
-  font-size: 15pt;
+  font-size: 15px;
   @include font-harmony()
 }
 
 .hm-regular-24 {
   font-weight: 400;
   line-height: 1.4;
-  font-size: 24pt;
+  font-size: 24px;
   @include font-harmony()
 }
 
 .hm-regular-20 {
   font-weight: 400;
-  font-size: 20pt;
+  font-size: 20px;
   @include font-harmony()
 }
 
 .hm-regular-18 {
   font-weight: 400;
-  font-size: 18pt;
+  font-size: 18px;
   @include font-harmony()
 }
 
 
 .hm-regular-17 {
   font-weight: 400;
-  font-size: 17pt;
+  font-size: 17px;
   @include font-harmony()
 }
 
 
 .hm-regular-16 {
   font-weight: 400;
-  font-size: 16pt;
+  font-size: 16px;
   @include font-harmony()
 }
 
 .hm-regular-15 {
   font-weight: 400;
-  font-size: 15pt;
+  font-size: 15px;
   @include font-harmony()
 }
 
 
 .hm-regular-14 {
   font-weight: 400;
-  font-size: 14pt;
+  font-size: 14px;
   @include font-harmony()
 }
 
 .hm-regular-12 {
   font-weight: 400;
-  font-size: 12pt;
+  font-size: 12px;
   @include font-harmony()
 }
 
-.hm-regular-11 {
-  font-weight: 400;
-  font-size: 11pt;
-  @include font-harmony()
-}
-
-.hm-regular-10 {
-  font-weight: 400;
-  font-size: 10pt;
-  @include font-harmony()
-}
-
-.hm-regular-9 {
-  font-weight: 400;
-  font-size: 9pt;
-  @include font-harmony()
-}
 
 // 以下是非设计规范里所使用的字体，
 // 在移动端看板的数字显示上使用了
