@@ -42,15 +42,6 @@ export function chaPandaUnoConfig<T extends object = Theme>(
     userConfig.rules = chaPandaPresetUnoRules([], themeColors) as Rule<T>[]
   }
 
-  // 载入预设的快捷短语
-  // if(userConfig.plugins && Array.isArray(userConfig.plugins)){
-  //   userConfig.plugins.push(chaPandaPresetShortcut(options.shortcut))
-  // } else if(!userConfig.plugins ){
-  //   userConfig.plugins = [
-  //     plugin(chaPandaPresetShortcut(options.shortcut))
-  //   ]
-  // }
-
   return userConfig
 }
 
