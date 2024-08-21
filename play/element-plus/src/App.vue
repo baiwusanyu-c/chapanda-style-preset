@@ -11,6 +11,9 @@
   <p class="pf-medium-16"> pf-medium-16 </p>
   <p class="pf-regular-15">pf-regular-15 </p>
   <p class="pf-medium-15"> pf-medium-15 </p>
+  <p class="pf-regular-14">pf-regular-14 </p>
+  <p class="pf-regular-12">pf-regular-12 </p>
+
 
   <p class="din">din 9999 </p>
   <p class="din-bold"> din-bold 7600</p>
@@ -33,4 +36,7 @@
  .din-heavy-lighter{
    @include cbd.font-din-heavy-lighter()
  }
+
 </style>
+<script setup lang="ts">
+</script>
