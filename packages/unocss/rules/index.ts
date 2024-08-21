@@ -1,6 +1,7 @@
 import { chaPandaLayoutRules } from '../layout'
 import type { Rule } from "unocss";
 import type { Theme } from "@unocss/preset-uno";
+import { chaPandaBorderRules } from "../border";
 
 function normalizeRules(staticRules: Record<string, any>) {
   const res: Array<Array<Record<string, any>>> = [];
@@ -14,6 +15,9 @@ function normalizeRules(staticRules: Record<string, any>) {
 
 export function chaPandaPresetUnoRules(
   customShortcut: Rule<Theme>[],
+  themeColors: Record<string, string>
 ){
-  return normalizeRules(chaPandaLayoutRules).concat(customShortcut) as Rule<Theme>[]
+  return normalizeRules(chaPandaLayoutRules)
+    .concat(normalizeRules(chaPandaBorderRules(themeColors)))
+    .concat(customShortcut) as Rule<Theme>[]
 }

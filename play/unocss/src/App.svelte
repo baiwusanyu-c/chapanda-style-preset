@@ -2,7 +2,7 @@
 
 <main>
   <p class="
-      bg-cbd-brand-5 fccc border-success">
+      bg-cbd-brand-5 fcc border-success">
     Hello world! 7600
   </p>
   <p class="pf-regular-24">pf-regular-24 </p>
