@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss'
 import plugin from 'tailwindcss/plugin'
 import { genThemeColors } from './colors'
-import { chaPandaPresetShortcut } from './shortcut'
+import { chaPandaPresetTailWindShortcut } from './shortcut'
 
 export * from './colors'
 export * from './shortcut'
@@ -34,10 +34,10 @@ export const chaPandaTailwindConfig = (
   }
   // 载入预设的快捷短语
   if(userConfig.plugins && Array.isArray(userConfig.plugins)){
-    userConfig.plugins.push(chaPandaPresetShortcut(options.shortcut))
+    userConfig.plugins.push(chaPandaPresetTailWindShortcut(options.shortcut))
   } else if(!userConfig.plugins ){
     userConfig.plugins = [
-      plugin(chaPandaPresetShortcut(options.shortcut))
+      plugin(chaPandaPresetTailWindShortcut(options.shortcut))
     ]
   }
   return userConfig

@@ -3,7 +3,6 @@ function App() {
   return (
     <>
       <h1 class="
-      test
       bg-cbd-brand-5 fcc border-success">
         Hello world! 7600
       </h1>

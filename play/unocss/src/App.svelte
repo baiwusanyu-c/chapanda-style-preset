@@ -1,47 +1,26 @@
-<script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './lib/Counter.svelte'
-</script>
+
 
 <main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-      <img src={viteLogo} class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
+  <p class="
+      bg-cbd-brand-5 fccc border-success">
+    Hello world! 7600
   </p>
+  <p class="pf-regular-24">pf-regular-24 </p>
+  <p class="pf-medium-24"> pf-medium-24 </p>
+  <p class="pf-regular-20">pf-regular-20 </p>
+  <p class="pf-medium-20"> pf-medium-20 </p>
+  <p class="pf-regular-18">pf-regular-18 </p>
+  <p class="pf-medium-18"> pf-medium-18 </p>
+  <p class="pf-regular-17">pf-regular-17 </p>
+  <p class="pf-medium-17"> pf-medium-17 </p>
+  <p class="pf-regular-16">pf-regular-16 </p>
+  <p class="pf-medium-16"> pf-medium-16 </p>
+  <p class="pf-regular-15">pf-regular-15 </p>
+  <p class="pf-medium-15"> pf-medium-15 </p>
 
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
+  <p class="font-din">din 9999 </p>
+  <p class="font-din-bold"> din-bold 7600</p>
+  <p class="font-din-heavy">din-heavy 9999</p>
+  <p class="font-din-heavy-lighter"> din-heavy-lighter 9999</p>
 </main>
 
-<style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
-  }
-</style>

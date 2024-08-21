@@ -21,8 +21,6 @@ export default defineConfig({
       // '@chapanda/style-preset-base/theme/font': path.resolve(
       //   __dirname, 'node_modules/@chapanda/style-preset/theme/font'
       // ),
-
-      // TODO 打包
     },
   },
 })

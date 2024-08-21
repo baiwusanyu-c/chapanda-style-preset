@@ -25,7 +25,8 @@
       "types": "./dist/index.d.ts",
       "require": "./dist/index.js",
       "import": "./dist/index.mjs"
-    }
+    },
+    "./theme/index": "./theme/index.scss"
   },
   "scripts": {
     "publish:npm": "pnpm publish --no-git-checks --access public"
@@ -34,7 +35,11 @@
     "unocss": "^0.62.1"
   },
   "dependencies": {
-    "unocss": "^0.62.1"
+    "unocss": "^0.62.1",
+    "@chapanda/style-preset-utils": "workspace:*",
+    "@chapanda/style-preset-base": "workspace:*"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@unocss/preset-uno": "^0.62.1"
+  }
 }
