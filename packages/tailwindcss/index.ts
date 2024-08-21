@@ -6,8 +6,12 @@ import { chaPandaPresetShortcut } from './shortcut'
 export * from './colors'
 export * from './shortcut'
 
+export type ChaPandaTailwindOptions = {
+  shortcut?: Record<string, string>
+}
 export const chaPandaTailwindConfig = (
-  userConfig: Config
+  userConfig: Config,
+  options: ChaPandaTailwindOptions = {}
 ) => {
   const { colors: themeColors } = genThemeColors()
   // 载入预设的颜色变量
@@ -30,10 +34,10 @@ export const chaPandaTailwindConfig = (
   }
   // 载入预设的快捷短语
   if(userConfig.plugins && Array.isArray(userConfig.plugins)){
-    userConfig.plugins.push(chaPandaPresetShortcut())
+    userConfig.plugins.push(chaPandaPresetShortcut(options.shortcut))
   } else if(!userConfig.plugins ){
     userConfig.plugins = [
-      plugin(chaPandaPresetShortcut())
+      plugin(chaPandaPresetShortcut(options.shortcut))
     ]
   }
   return userConfig
