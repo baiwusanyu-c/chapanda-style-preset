@@ -33,13 +33,13 @@ export function chaPandaUnoConfig<T extends object = Theme>(
   if(userConfig.rules){
     let rules = userConfig.rules as Rule<Theme>[]
     if(rules){
-      rules = chaPandaPresetUnoRules(rules)
+      rules = chaPandaPresetUnoRules(rules, themeColors)
     } else {
-      rules = chaPandaPresetUnoRules([])
+      rules = chaPandaPresetUnoRules([], themeColors)
     }
     userConfig.rules = rules as Rule<T>[]
   } else {
-    userConfig.rules = chaPandaPresetUnoRules([]) as Rule<T>[]
+    userConfig.rules = chaPandaPresetUnoRules([], themeColors) as Rule<T>[]
   }
 
   // 载入预设的快捷短语
