@@ -16,7 +16,7 @@ chapanda style preset
 
 ## 提供样式预设 scss(✅布局，✅border, ✅字体，✅font-family)
 ## 提供样式预设 tailwind(✅颜色，✅布局，✅border, ✅字体，✅font-family)
-## 提供样式预设 unocss(✅颜色，布局，border, 字体，font-family)
+## 提供样式预设 unocss(✅颜色，✅布局，border, 字体，font-family)
 
 ## TODO: 鸿蒙字体
 
