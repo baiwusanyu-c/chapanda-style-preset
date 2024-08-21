@@ -1,7 +1,7 @@
 
 import { genThemeColors } from './colors'
 import type { Theme } from "@unocss/preset-uno";
-import type { UserConfig, UserShortcuts } from "unocss";
+import type {Rule, UserConfig, UserShortcuts} from "unocss";
 import { chaPandaPresetUnoRules } from './rules'
 
 export * from './colors'
@@ -31,18 +31,17 @@ export function chaPandaUnoConfig<T extends object = Theme>(
 
   // 载入预设的规则
   if(userConfig.rules){
-    let rules = userConfig.rules
+    let rules = userConfig.rules as Rule<Theme>[]
     if(rules){
       rules = chaPandaPresetUnoRules(rules)
     } else {
       rules = chaPandaPresetUnoRules([])
     }
-    userConfig.rules = rules
+    userConfig.rules = rules as Rule<T>[]
   } else {
-    userConfig.rules = chaPandaPresetUnoRules([])
+    userConfig.rules = chaPandaPresetUnoRules([]) as Rule<T>[]
   }
 
-  console.log(userConfig.rules)
   // 载入预设的快捷短语
   // if(userConfig.plugins && Array.isArray(userConfig.plugins)){
   //   userConfig.plugins.push(chaPandaPresetShortcut(options.shortcut))
