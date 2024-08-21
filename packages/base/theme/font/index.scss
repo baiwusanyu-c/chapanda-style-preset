@@ -130,6 +130,11 @@
     "Segoe UI Emoji", "Segoe UI Symbol"
   }
 }
+.font-din{
+  font-family: DIN, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol"
+}
 
 @font-face {
   font-family: 'DIN-Bold';
@@ -150,6 +155,12 @@
   }
 }
 
+.font-din-bold{
+  font-family: DIN-Bold, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol"
+}
+
 
 @font-face {
   font-family: 'DIN-Heavy';
@@ -168,6 +179,12 @@
     "Segoe UI Emoji", "Segoe UI Symbol"
   }
 }
+.font-din-heavy{
+  font-family: DIN-Heavy, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol"
+}
+
 
 @font-face {
   font-family: 'DIN-Heavy-Lighter';
@@ -185,4 +202,10 @@
     Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol"
   }
+}
+
+.font-din-heavy-lighter{
+  font-family: DIN-Heavy-Lighter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol"
 }

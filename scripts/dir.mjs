@@ -72,4 +72,5 @@ export const entryPkg = {
 export const entryTheme = {
   'chapanda-style-preset': '../packages/base',
   'base': '../packages/base',
+  'tailwindcss': '../packages/tailwindcss',
 }
