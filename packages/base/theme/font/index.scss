@@ -4,6 +4,11 @@
   Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol"
 }
+.font-pingfang{
+  font-family: PingFang-SC, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol"
+}
 
 .pf-medium-24 {
   font-weight: 500;
@@ -108,6 +113,122 @@
   font-weight: 400;
   font-size: 9pt;
   @include font-pingfang()
+}
+
+@mixin font-harmony {
+  font-family: 'HarmonyOS Sans SC', -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol"
+}
+.font-harmony{
+  font-family: 'HarmonyOS Sans SC', -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol"
+}
+
+.hm-medium-24 {
+  font-weight: 500;
+  line-height: 1.4;
+  font-size: 24pt;
+  @include font-harmony()
+}
+.hm-medium-20 {
+  font-weight: 500;
+  font-size: 20pt;
+  @include font-harmony()
+}
+.hm-medium-18 {
+  font-weight: 500;
+  font-size: 18pt;
+  @include font-harmony()
+}
+
+.hm-medium-17 {
+  font-weight: 500;
+  font-size: 17pt;
+  @include font-harmony()
+}
+
+.hm-medium-16 {
+  font-weight: 500;
+  font-size: 16pt;
+  @include font-harmony()
+}
+
+.hm-medium-15 {
+  font-weight: 500;
+  font-size: 15pt;
+  @include font-harmony()
+}
+
+.hm-regular-24 {
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 24pt;
+  @include font-harmony()
+}
+
+.hm-regular-20 {
+  font-weight: 400;
+  font-size: 20pt;
+  @include font-harmony()
+}
+
+.hm-regular-18 {
+  font-weight: 400;
+  font-size: 18pt;
+  @include font-harmony()
+}
+
+
+.hm-regular-17 {
+  font-weight: 400;
+  font-size: 17pt;
+  @include font-harmony()
+}
+
+
+.hm-regular-16 {
+  font-weight: 400;
+  font-size: 16pt;
+  @include font-harmony()
+}
+
+.hm-regular-15 {
+  font-weight: 400;
+  font-size: 15pt;
+  @include font-harmony()
+}
+
+
+.hm-regular-14 {
+  font-weight: 400;
+  font-size: 14pt;
+  @include font-harmony()
+}
+
+.hm-regular-12 {
+  font-weight: 400;
+  font-size: 12pt;
+  @include font-harmony()
+}
+
+.hm-regular-11 {
+  font-weight: 400;
+  font-size: 11pt;
+  @include font-harmony()
+}
+
+.hm-regular-10 {
+  font-weight: 400;
+  font-size: 10pt;
+  @include font-harmony()
+}
+
+.hm-regular-9 {
+  font-weight: 400;
+  font-size: 9pt;
+  @include font-harmony()
 }
 
 // 以下是非设计规范里所使用的字体，
