@@ -227,9 +227,9 @@ importers:
 
   play/unocss:
     dependencies:
-      '@chapanda/style-preset-unocss':
+      '@chapanda/style-preset':
         specifier: workspace:*
-        version: link:../../packages/unocss
+        version: link:../../packages/chapanda-style-preset
     devDependencies:
       '@sveltejs/vite-plugin-svelte':
         specifier: ^3.1.1
