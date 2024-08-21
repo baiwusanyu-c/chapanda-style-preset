@@ -189,9 +189,9 @@ importers:
 
   play/tailwindcss:
     dependencies:
-      '@chapanda/style-preset':
+      '@chapanda/style-preset-tailwind':
         specifier: workspace:*
-        version: link:../../packages/chapanda-style-preset
+        version: link:../../packages/tailwindcss
       solid-js:
         specifier: ^1.8.21
         version: 1.8.21
