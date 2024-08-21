@@ -5,15 +5,43 @@
   "Segoe UI Emoji", "Segoe UI Symbol"
 }
 
-.pf-regular-24 {
-  font-weight: 400;
+.pf-medium-24 {
+  font-weight: 500;
   line-height: 1.4;
   font-size: 24pt;
   @include font-pingfang()
 }
-
-.pf-medium-24 {
+.pf-medium-20 {
   font-weight: 500;
+  font-size: 20pt;
+  @include font-pingfang()
+}
+.pf-medium-18 {
+  font-weight: 500;
+  font-size: 18pt;
+  @include font-pingfang()
+}
+
+.pf-medium-17 {
+  font-weight: 500;
+  font-size: 17pt;
+  @include font-pingfang()
+}
+
+.pf-medium-16 {
+  font-weight: 500;
+  font-size: 16pt;
+  @include font-pingfang()
+}
+
+.pf-medium-15 {
+  font-weight: 500;
+  font-size: 15pt;
+  @include font-pingfang()
+}
+
+.pf-regular-24 {
+  font-weight: 400;
   line-height: 1.4;
   font-size: 24pt;
   @include font-pingfang()
@@ -25,23 +53,12 @@
   @include font-pingfang()
 }
 
-.pf-medium-20 {
-  font-weight: 500;
-  font-size: 20pt;
-  @include font-pingfang()
-}
-
 .pf-regular-18 {
   font-weight: 400;
   font-size: 18pt;
   @include font-pingfang()
 }
 
-.pf-medium-18 {
-  font-weight: 500;
-  font-size: 18pt;
-  @include font-pingfang()
-}
 
 .pf-regular-17 {
   font-weight: 400;
@@ -49,20 +66,9 @@
   @include font-pingfang()
 }
 
-.pf-medium-17 {
-  font-weight: 500;
-  font-size: 17pt;
-  @include font-pingfang()
-}
 
 .pf-regular-16 {
   font-weight: 400;
-  font-size: 16pt;
-  @include font-pingfang()
-}
-
-.pf-medium-16 {
-  font-weight: 500;
   font-size: 16pt;
   @include font-pingfang()
 }
@@ -73,11 +79,6 @@
   @include font-pingfang()
 }
 
-.pf-medium-15 {
-  font-weight: 500;
-  font-size: 15pt;
-  @include font-pingfang()
-}
 
 .pf-regular-14 {
   font-weight: 400;
