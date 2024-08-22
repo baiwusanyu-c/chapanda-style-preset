@@ -44,6 +44,12 @@ importers:
       '@ant-design/colors':
         specifier: ^7.1.0
         version: 7.1.0
+      '@chapanda/style-preset-base':
+        specifier: workspace:*
+        version: link:../base
+      '@chapanda/style-preset-utils':
+        specifier: workspace:*
+        version: link:../utils
       antd:
         specifier: ^5.20.1
         version: 5.20.1(moment@2.30.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -125,6 +131,9 @@ importers:
       '@ant-design/colors':
         specifier: ^7.1.0
         version: 7.1.0
+      '@chapanda/style-preset':
+        specifier: workspace:*
+        version: link:../../packages/chapanda-style-preset
       antd:
         specifier: ^5.20.1
         version: 5.20.1(moment@2.30.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)

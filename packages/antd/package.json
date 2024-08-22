@@ -36,7 +36,9 @@
   },
   "dependencies": {
     "@ant-design/colors": "^7.1.0",
-    "antd": "^5.20.1"
+    "antd": "^5.20.1",
+    "@chapanda/style-preset-utils": "workspace:*",
+    "@chapanda/style-preset-base": "workspace:*"
   },
   "devDependencies": {}
 }
