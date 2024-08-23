@@ -6,9 +6,9 @@ export const genMenuToken  = (colors: Record<string, string>) => {
       'itemHoverBg': colors['cbd-gray-3'],
       'itemSelectedBg': colors['cbd-gray-2'],
       'itemDisabledColor': colors['cbd-gray-4'],
-      'itemSelectedColor': colors['cbd-gray-7'],
-      'horizontalItemSelectedColor': colors['cbd-gray-7'],
       'groupTitleColor': colors['cbd-gray-5'],
+      'itemSelectedColor': colors['cbd-brand-5'],
+      'horizontalItemSelectedColor': colors['cbd-brand-5'],
     }
   }
 }
