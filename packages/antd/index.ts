@@ -4,7 +4,6 @@ import { genAntdTheme } from "./theme";
 
 export { genButtonToken } from "./theme";
 export { genAvatarToken } from "./theme";
-export { genCalendarToken } from "./theme";
 export { genCardToken } from "./theme";
 export { genCollapseToken } from "./theme";
 export { genDescriptionsToken } from "./theme";
@@ -16,7 +15,6 @@ export { genTableToken } from "./theme";
 export { genTabsToken } from "./theme";
 export { genTagToken } from "./theme";
 export { genTimelineToken } from "./theme";
-export { genTreeToken } from "./theme";
 export { genCascaderToken } from "./theme";
 export { genCheckboxToken } from "./theme";
 export { genDatePickerToken } from "./theme";
@@ -24,9 +22,7 @@ export { genFormToken } from "./theme";
 export { genInputToken } from "./theme";
 export { genInputNumberToken } from "./theme";
 export { genMentionsToken } from "./theme";
-export { genRadioToken } from "./theme";
 export { genSelectToken } from "./theme";
-export { genSliderToken } from "./theme";
 export { genSwitchToken } from "./theme";
 export { genTransferToken } from "./theme";
 export { genTreeSelectToken } from "./theme";
@@ -36,12 +32,20 @@ export { genMessageToken } from "./theme";
 export { genNotificationToken } from "./theme";
 export { genPopconfirmToken } from "./theme";
 export { genProgressToken } from "./theme";
-export { genModalToken } from "./theme";
 export { genBreadcrumbToken } from "./theme";
 export { genMenuToken } from "./theme";
-export { genPaginationToken } from "./theme";
 
+// TODO: 有问题, 需要 css 覆盖
+export { genCalendarToken } from "./theme";
+export { genRadioToken } from "./theme";
+export { genSliderToken } from "./theme";
+export { genModalToken } from "./theme";
+export { genPaginationToken } from "./theme";
+export { genTreeToken } from "./theme";
 export function genChaPandaAntdTheme(theme: ThemeConfig = {}){
-  return mergeObjects<ThemeConfig>(genAntdTheme(), theme)
+  return {
+    ...mergeObjects<ThemeConfig>(genAntdTheme(), theme),
+    cssVar: { key: '--cbd' }
+  }
 }
 
