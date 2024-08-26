@@ -1,0 +1,5 @@
+@use '@chapanda/style-preset-base/theme/index' as cbd;
+:root {
+  @include cbd.generate-root-css-variables();
+}
+
