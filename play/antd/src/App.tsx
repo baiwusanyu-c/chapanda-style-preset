@@ -38,6 +38,7 @@ import MenuDemo from './components/menu.tsx'
 import PaginationDemo from './components/pagination.tsx'
 import InputNumberDemo from './components/input-number.tsx'
 import SwitchDemo from './components/switch.tsx'
+import CalendarDemo from './components/calendar.tsx'
 
 function App() {
   return (
@@ -189,9 +190,9 @@ function App() {
         <SwitchDemo/>
       </Flex>
 
-      {/*<Flex gap="small" wrap>
-        <Calendar onPanelChange={onPanelChange} />
-      </Flex>*/}
+      <Flex gap="small" wrap>
+        <CalendarDemo />
+      </Flex>
     </ConfigProvider>
   )
 }

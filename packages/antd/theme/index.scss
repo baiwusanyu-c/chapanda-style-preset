@@ -3,3 +3,54 @@
   @include cbd.generate-root-css-variables();
 }
 
+/** 覆盖 Calendar  **/
+.ant-picker-calendar-mode-switch .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  color: var(--ant-radio-button-solid-checked-color);
+  background: var(--ant-radio-button-solid-checked-bg);
+  border-color: var(--ant-radio-button-solid-checked-bg);
+}
+
+.ant-picker-calendar-mode-switch .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+  color: var(--ant-radio-button-solid-checked-color);
+  background: var(--ant-radio-button-solid-checked-hover-bg);
+  border-color: var(--ant-radio-button-solid-checked-hover-bg);
+}
+
+.ant-picker-calendar-mode-switch .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):active {
+  color: var(--ant-radio-button-solid-checked-color);
+  background: var(--ant-radio-button-solid-checked-active-bg);
+  border-color: var(--ant-radio-button-solid-checked-active-bg);
+}
+
+
+/** 覆盖 modal  **/
+.ant-modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ant-modal-footer .ant-btn-default{
+  background-color: var(--cbd-gray-2);
+  border-color: var(--cbd-gray-2)
+}
+.ant-modal-footer .ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover{
+  background-color: var(--cbd-gray-3);
+  border-color: var(--cbd-gray-3);
+  color: var(--cbd-brand-3)
+}
+
+.ant-modal-footer .ant-btn-default:not(:disabled):not(.ant-btn-disabled):active{
+  background-color: var(--cbd-gray-3);
+  border-color: var(--cbd-gray-3);
+  color: var(--cbd-brand-5)
+}
+
+/** 覆盖 Pagination  **/
+
+.ant-pagination .ant-pagination-item-active a {
+  color: var(--cbd-white);
+}
+
+.ant-pagination .ant-pagination-item-active {
+  background-color: var(--ant-color-primary);
+}
