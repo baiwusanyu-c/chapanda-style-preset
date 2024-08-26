@@ -70,8 +70,18 @@ export const entryPkg = {
 }
 
 export const entryTheme = {
-  'chapanda-style-preset': '../packages/base',
-  'base': '../packages/base',
-  'tailwindcss': '../packages/tailwindcss',
-  'unocss': '../packages/unocss',
+  'chapanda-style-preset': [
+      '../packages/base',
+    '../packages/chapanda-style-preset/'
+  ],
+  'base': ['../packages/base'],
+  'tailwindcss': ['../packages/tailwindcss'],
+  'unocss': ['../packages/unocss'],
+  'antd': ['../packages/antd'],
+}
+
+export const entryThemePost = {
+  'chapanda-style-preset': [
+    '../packages/chapanda-style-preset/theme/antd'
+  ],
 }
