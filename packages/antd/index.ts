@@ -39,7 +39,6 @@ export { genRadioToken } from "./theme-config";
 export { genSliderToken } from "./theme-config";
 export { genModalToken } from "./theme-config";
 export { genPaginationToken } from "./theme-config";
-
 export { genTreeToken } from "./theme-config";
 export function genChaPandaAntdTheme(theme: ThemeConfig = {}){
   return {
