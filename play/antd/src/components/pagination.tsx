@@ -8,20 +8,28 @@ const onShowSizeChange: PaginationProps['onShowSizeChange'] = (current, pageSize
 
 const App: React.FC = () => (
   <>
-      <Pagination
-        showSizeChanger
-        onShowSizeChange={onShowSizeChange}
-        defaultCurrent={3}
-        total={500}
-      />
-      <br />
-      <Pagination
-        showSizeChanger
-        onShowSizeChange={onShowSizeChange}
-        defaultCurrent={3}
-        total={500}
-        disabled
-      />
+    <Pagination
+      showSizeChanger
+      onShowSizeChange={onShowSizeChange}
+      defaultCurrent={3}
+      total={500}
+    />
+    <br/>
+    <Pagination
+      showSizeChanger
+      onShowSizeChange={onShowSizeChange}
+      defaultCurrent={3}
+      total={500}
+      size='small'
+    />
+    <br/>
+    <Pagination
+      showSizeChanger
+      onShowSizeChange={onShowSizeChange}
+      defaultCurrent={3}
+      total={500}
+      disabled
+    />
   </>
 );
 

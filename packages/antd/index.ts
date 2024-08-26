@@ -34,13 +34,12 @@ export { genPopconfirmToken } from "./theme-config";
 export { genProgressToken } from "./theme-config";
 export { genBreadcrumbToken } from "./theme-config";
 export { genMenuToken } from "./theme-config";
-
-// TODO: 有问题, 需要 css 覆盖
 export { genCalendarToken } from "./theme-config";
 export { genRadioToken } from "./theme-config";
 export { genSliderToken } from "./theme-config";
 export { genModalToken } from "./theme-config";
 export { genPaginationToken } from "./theme-config";
+
 export { genTreeToken } from "./theme-config";
 export function genChaPandaAntdTheme(theme: ThemeConfig = {}){
   return {

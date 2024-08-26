@@ -17,7 +17,7 @@ export default defineConfig({
 
 
 
-      //
+      // ✅
       // TODO 使用 @chapanda/style-preset 写入文档
        '@chapanda/style-preset-base/theme/font': path.resolve(
          __dirname, 'node_modules/@chapanda/style-preset/theme/font'
