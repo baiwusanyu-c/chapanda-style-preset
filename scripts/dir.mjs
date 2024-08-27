@@ -77,11 +77,13 @@ export const entryTheme = {
   'base': ['../packages/base'],
   'tailwindcss': ['../packages/tailwindcss'],
   'unocss': ['../packages/unocss'],
+  'vant': ['../packages/vant'],
   'antd': ['../packages/antd'],
 }
 
 export const entryThemePost = {
   'chapanda-style-preset': [
-    '../packages/chapanda-style-preset/theme/antd'
+    '../packages/chapanda-style-preset/theme/antd',
+    '../packages/chapanda-style-preset/theme/vant'
   ],
 }

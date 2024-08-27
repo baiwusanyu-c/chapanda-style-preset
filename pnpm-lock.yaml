@@ -122,6 +122,12 @@ importers:
 
   packages/vant:
     dependencies:
+      '@chapanda/style-preset-base':
+        specifier: workspace:*
+        version: link:../base
+      '@chapanda/style-preset-utils':
+        specifier: workspace:*
+        version: link:../utils
       vant:
         specifier: ^4.9.4
         version: 4.9.4(vue@3.4.38(typescript@5.5.4))
