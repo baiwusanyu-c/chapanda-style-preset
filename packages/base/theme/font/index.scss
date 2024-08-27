@@ -16,6 +16,13 @@
   font-size: 24px;
   @include font-pingfang()
 }
+
+.pf-medium-22 {
+  font-weight: 500;
+  font-size: 24px;
+  @include font-pingfang()
+}
+
 .pf-medium-20 {
   font-weight: 500;
   font-size: 20px;
@@ -48,6 +55,12 @@
 .pf-regular-24 {
   font-weight: 400;
   line-height: 1.4;
+  font-size: 24px;
+  @include font-pingfang()
+}
+
+.pf-regular-22 {
+  font-weight: 500;
   font-size: 24px;
   @include font-pingfang()
 }

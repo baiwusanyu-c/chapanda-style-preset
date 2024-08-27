@@ -8,8 +8,8 @@ export const chaPandaFontRules = () => {
   "Segoe UI Emoji", "Segoe UI Symbol"`
   const pfFontFamily = `PingFang-SC, ${basicFontFamily}`
   const hmFontFamily = `'HarmonyOS Sans SC', ${basicFontFamily}`
-  const regular = [24,20,18,17,16,15,14,12]
-  const medium = [24,20,18,17,16,15]
+  const regular = [24,22,20,18,17,16,15,14,12]
+  const medium = [24,22,20,18,17,16,15]
   const rules:Rule<Theme>[] = []
   regular.forEach(p => {
     rules.push([
@@ -17,6 +17,7 @@ export const chaPandaFontRules = () => {
       {
         'font-weight': '400',
         'font-size': `${p}px`,
+        'line-height': p === 24 ? '1.4' : '',
         'font-family': pfFontFamily
       }
     ])
@@ -25,6 +26,7 @@ export const chaPandaFontRules = () => {
       `hm-regular-${p}`,
       {
         'font-weight': '400',
+        'line-height': p === 24 ? '1.4' : '',
         'font-size': `${p}px`,
         'font-family': hmFontFamily
       }
@@ -36,6 +38,7 @@ export const chaPandaFontRules = () => {
       `pf-medium-${p}`,
       {
         'font-weight': '500',
+        'line-height': p === 24 ? '1.4' : '',
         'font-size': `${p}px`,
         'font-family': pfFontFamily
       }
@@ -45,6 +48,7 @@ export const chaPandaFontRules = () => {
       `hm-medium-${p}`,
       {
         'font-weight': '500',
+        'line-height': p === 24 ? '1.4' : '',
         'font-size': `${p}px`,
         'font-family': hmFontFamily
       }
