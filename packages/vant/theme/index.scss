@@ -2,3 +2,5 @@
 :root {
   @include cbd.generate-root-css-variables();
 }
+
+// 覆盖 vant 的 tab 组件
