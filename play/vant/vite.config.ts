@@ -5,6 +5,7 @@ import Components from "unplugin-vue-components/vite";
 import { VantResolver } from "@vant/auto-import-resolver";
 import CnjmPostcssPxToViewport from 'cnjm-postcss-px-to-viewport'
 import autoprefixer from 'autoprefixer'
+import path from "path";
 
 export default defineConfig({
   plugins: [
@@ -29,6 +30,13 @@ export default defineConfig({
           // exclude: [/regional-daily\.vue/],
         }),
       ],
+    },
+  },
+  resolve: {
+    alias: {
+      '@chapanda/style-preset-base/theme/font': path.resolve(
+        __dirname, 'node_modules/@chapanda/style-preset-base/theme/font'
+      ),
     },
   },
 });

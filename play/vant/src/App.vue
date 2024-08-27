@@ -1,11 +1,11 @@
 <template>
-  <van-button type="primary">主要按钮</van-button>
-  <van-button type="success">成功按钮</van-button>
-  <van-button type="default">默认按钮</van-button>
-  <van-button type="danger">危险按钮</van-button>
-  <van-button type="warning">警告按钮</van-button>
-  <van-button plain type="primary">朴素按钮</van-button>
-  <van-button plain type="success">朴素按钮</van-button>
-  <van-button disabled type="primary">禁用状态</van-button>
-  <van-button disabled type="success">禁用状态</van-button>
+  <VanConfigProvider :theme-vars='genChaPandaVantTheme()' theme-vars-scope="global">
+    <ButtonDemo/>
+    <FieldDemo/>
+  </VanConfigProvider>
 </template>
+<script setup lang="ts">
+import ButtonDemo from '../components/button/index.vue'
+import FieldDemo from '../components/field/index.vue'
+import { genChaPandaVantTheme } from '@chapanda/style-preset/vant'
+</script>

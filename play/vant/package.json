@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "vant": "^4.9.4",
-    "vue": "^3.4.38"
+    "vue": "^3.4.38",
+    "@chapanda/style-preset": "workspace:*"
   },
   "devDependencies": {
     "@vant/auto-import-resolver": "^1.1.0",
