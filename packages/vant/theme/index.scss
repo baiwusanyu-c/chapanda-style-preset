@@ -4,3 +4,37 @@
 }
 
 // 覆盖 vant 的 tab 组件
+.van-tabs__nav.van-tabs__nav--card{
+  border: none;
+  border-radius: 4px;
+}
+// deep
+.van-tabs .van-tabs__wrap .van-tabs__nav .van-tab.van-tab--active {
+  background: var(--cbd-brand-4);
+  color: var(--cbd-white);
+}
+// deep
+.van-tabs .van-tabs__wrap .van-tabs__nav .van-tab {
+  background: var(--cbd-gray-37);
+  color: var(--cbd-gray-20);
+}
+.van-tab.van-tab--card{
+  border: none;
+  border-radius: 4px;
+}
+
+// 覆盖 vant 的 picker 组件
+.van-picker__columns .van-picker-column:not(:last-child) {
+  border-right: 1px solid;
+  border-image: linear-gradient(to bottom,
+          var(--cbd-white),
+          var(--cbd-gray-56),
+          var(--cbd-gray-57),
+          var(--cbd-gray-56),
+          var(--cbd-white)
+  ) 1;
+}
+
+.van-picker-column__item--selected{
+ color: var(--cbd-brand-4);
+}
