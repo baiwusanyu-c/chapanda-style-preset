@@ -57,7 +57,7 @@ const copyPackageJsonFiles = async(
           },
           "./theme/index": "./theme/index.scss",
           "./theme/antd": "./theme/antd/index.scss",
-          "./theme/vant": "./theme/vant/vant.scss"
+          "./theme/vant": "./theme/vant/index.scss"
         }
       }} else {
         packageJson.main = './index.mjs'
