@@ -1,6 +1,6 @@
 export function genToken(){
   return {
-    blue: 'var(--cbd-brand-5)',
+    blue: 'var(--cbd-brand-4)',
     red: 'var(--cbd-red-3)',
     orange: 'var(--cbd-yellow-3)',
     green: 'var(--cbd-green-3)',
@@ -13,7 +13,7 @@ export function genToken(){
     grayColor7: 'var(--cbd-gray-7)',
     grayColor8: 'var(--cbd-gray-8)',
     // 主题色
-    primaryColor: 'var(--cbd-brand-5)',
+    primaryColor: 'var(--cbd-brand-4)',
     // 成功色
     successColor: 'var(--cbd-green-3)',
     // 报警色
