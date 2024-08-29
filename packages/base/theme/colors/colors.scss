@@ -1,7 +1,7 @@
 @use "sass:map";
+@use "sass:string";
 @function generate-color-map($prefix, $name, $suffixes, $values) {
   $color-map: ();
-
   @each $suffix in $suffixes {
     $index: index($suffixes, $suffix); // 获取当前 $suffix 的索引
     $key: if($suffix == '', #{$prefix}-#{$name}, #{$prefix}-#{$name}-#{$suffix});
@@ -193,7 +193,7 @@ $colorsBrand: generate-color-map(
         #1E5EFF,
 ));
 
-$colorTransparent: generate-color-map(
+$colorsTransparent: generate-color-map(
  "--cbd",
  "transparent",
         (
@@ -204,7 +204,7 @@ $colorTransparent: generate-color-map(
         )
 );
 
-$colorWhite: generate-color-map(
+$colorsWhite: generate-color-map(
 "--cbd",
 "white",
         (
@@ -216,7 +216,7 @@ $colorWhite: generate-color-map(
 );
 
 
-$colorBlack: generate-color-map(
+$colorsBlack: generate-color-map(
 "--cbd",
 "black",
         (
@@ -226,3 +226,31 @@ $colorBlack: generate-color-map(
                 #000
         )
 );
+
+@function get-color-value($key) {
+        $color-maps: (
+                $colorsTransparent,
+                $colorsWhite,
+                $colorsBlack,
+                $colorsYellow,
+                $colorsRed,
+                $colorsGreen,
+                $colorsMint,
+                $colorsPurple,
+                $colorsGray,
+                $colorsBrand
+        );
+
+        // 遍历颜色映射表列表
+        @each $color-map in $color-maps {
+                $color-value: map.get($color-map, $key);
+                @if $color-value != null {
+                        @return $color-value;
+                }
+        }
+
+        // 如果没有找到颜色值，抛出错误
+        @warn "Color value for `#{$key}` not found in any color map.";
+        // 如果未找到颜色值，返回 null
+        @return null;
+}

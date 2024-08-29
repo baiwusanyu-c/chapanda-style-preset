@@ -2,6 +2,8 @@
 @forward './colors/index' show generate-root-css-variables;
 // @public
 @forward './colors/index' show generate-color-map;
+// @public
+@forward './colors/index' show get-color-value;
 
 // @public
 @forward './border/index' show gen-border-style;
