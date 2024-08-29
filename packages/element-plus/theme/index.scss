@@ -1,19 +1,33 @@
-// @use '@chapanda/style-preset-base/theme/index' as cbd;
-/*:root {
-  @include cbd.generate-root-css-variables();
-}*/
+@use '@chapanda/style-preset-base/theme/index' as cbd;
 
-
-$primary-color: var(--cbd-brand-4, #ff0000);
 @forward 'element-plus/theme-chalk/src/common/var.scss' with (
   $colors: (
+    'white':cbd.get-color-value('--cbd-white'),
+    'black': cbd.get-color-value('--cbd-black'),
     'primary': (
-      'base': $primary-color,
+      'base': cbd.get-color-value('--cbd-brand-5'),
     ),
+    'success': (
+      'base': cbd.get-color-value('--cbd-green-3'),
+    ),
+    'warning': (
+      'base': cbd.get-color-value('--cbd-yellow-3'),
+    ),
+    'danger': (
+      'base': cbd.get-color-value('--cbd-red-3'),
+    ),
+    'error': (
+      'base': cbd.get-color-value('--cbd-red-3'),
+    ),
+    'info': (
+      'base': cbd.get-color-value('--cbd-gray-4'),
+    ),
+  ),
+  $button-border-radius: (
+   'large': 2px,
+   'default': 2px,
+   'small': 2px,
   ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
-:root {
-  --cbd-brand-4: red
-}
