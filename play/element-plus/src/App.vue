@@ -1,5 +1,5 @@
 <template>
-  <p class="pf-regular-24">pf-regular-24 </p>
+<!--  <p class="pf-regular-24">pf-regular-24 </p>
   <p class="pf-medium-24"> pf-medium-24 </p>
   <p class="pf-regular-20">pf-regular-20 </p>
   <p class="pf-medium-20"> pf-medium-20 </p>
@@ -18,8 +18,10 @@
   <p class="din">din 9999 </p>
   <p class="din-bold"> din-bold 7600</p>
   <p class="din-heavy">din-heavy 9999</p>
-  <p class="din-heavy-lighter"> din-heavy-lighter 9999</p>
+  <p class="din-heavy-lighter"> din-heavy-lighter 9999</p>-->
+  <ButtonDemo></ButtonDemo>
 </template>
+<!--
 <style scoped lang="scss">
 @use '@chapanda/style-preset/theme/index' as cbd;
  .din {
@@ -37,6 +39,8 @@
    @include cbd.font-din-heavy-lighter()
  }
 
-</style>
+</style>-->
 <script setup lang="ts">
+import ButtonDemo from './components/button.vue'
 </script>
+

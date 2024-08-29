@@ -1,7 +1,7 @@
 import path from 'path'
 import gulp from 'gulp'
 import fs from 'fs-extra'
-import {entryPkg, entryTheme, entryThemePost} from './dir.mjs'
+import {entryPkg, entryTheme} from './dir.mjs'
 
 const distRoot = path.resolve(process.cwd(), '../dist')
 
