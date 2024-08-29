@@ -12,8 +12,14 @@ export default defineConfig({
       // '@chapanda/style-preset-base/theme/font': path.resolve(
       //   __dirname, 'node_modules/@chapanda/style-preset/theme/font'
       // ),
+
+      // '@chapanda/style-preset-base/theme/font': path.resolve(
+      //   __dirname, 'node_modules/@chapanda/style-preset-base/theme/font'
+      // ),
+
+      // TODO 使用 @chapanda/style-preset 写入文档
       '@chapanda/style-preset-base/theme/font': path.resolve(
-        __dirname, 'node_modules/@chapanda/style-preset-base/theme/font'
+        __dirname, 'node_modules/@chapanda/style-preset/theme/font'
       ),
     },
   },

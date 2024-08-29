@@ -4,10 +4,6 @@ export const entry = [
     outputPath: "antd",
   },
   {
-    entryPath: "../packages/element-plus/index.ts",
-    outputPath: "element-plus",
-  },
-  {
     entryPath: "../packages/tailwindcss/index.ts",
     outputPath: "tailwindcss",
   },
@@ -34,10 +30,6 @@ export const entry = [
   {
     entryPath: "../packages/chapanda-style-preset/antd/index.ts",
     outputPath: "chapanda-style-preset/antd",
-  },
-  {
-    entryPath: "../packages/chapanda-style-preset/element-plus/index.ts",
-    outputPath: "chapanda-style-preset/element-plus",
   },
   {
     entryPath: "../packages/chapanda-style-preset/tailwindcss/index.ts",
@@ -70,20 +62,11 @@ export const entryPkg = {
 }
 
 export const entryTheme = {
-  'chapanda-style-preset': [
-      '../packages/base',
-    '../packages/chapanda-style-preset/'
-  ],
+  'chapanda-style-preset': ['../packages/chapanda-style-preset'],
   'base': ['../packages/base'],
   'tailwindcss': ['../packages/tailwindcss'],
   'unocss': ['../packages/unocss'],
   'vant': ['../packages/vant'],
+  'element-plus': ['../packages/element-plus'],
   'antd': ['../packages/antd'],
-}
-
-export const entryThemePost = {
-  'chapanda-style-preset': [
-    '../packages/chapanda-style-preset/theme/antd',
-    '../packages/chapanda-style-preset/theme/vant'
-  ],
 }

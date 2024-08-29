@@ -57,7 +57,8 @@ const copyPackageJsonFiles = async(
           },
           "./theme/index": "./theme/index.scss",
           "./theme/antd": "./theme/antd/index.scss",
-          "./theme/vant": "./theme/vant/index.scss"
+          "./theme/vant": "./theme/vant/index.scss",
+          "./theme/element-plus": "./theme/element-plus/index.scss"
         }
       }} else {
         packageJson.main = './index.mjs'
@@ -109,7 +110,7 @@ const moveThemePostToRootDist = async(entryPkg) => {
     for (let i = 0; i < vs.length; i++) {
       await fs.copy(
           `${vs[i]}`,
-          `${distRoot}/${srcKey}/theme/antd`)
+          `${distRoot}/${srcKey}/theme`)
     }
   }
 }
@@ -133,10 +134,7 @@ export default gulp.series(
     const res = await moveThemeToRootDist(entryTheme)
     return res
   },
-  async() => {
-    const res = await moveThemePostToRootDist(entryThemePost)
-    return res
-  },
+
   // 移动 README 到 dist
   // async() => {
   //   const res = await moveREADMEToRootDist(entryPkg)
