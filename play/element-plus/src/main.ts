@@ -4,6 +4,7 @@ import ElementPlus from 'element-plus'
 
 // TODO: 写进文档
 import '@chapanda/style-preset/theme/element-plus'
+import '@chapanda/style-preset/theme/element-plus/component'
 // import 'element-plus/dist/index.css'
 const app = createApp(App)
 
