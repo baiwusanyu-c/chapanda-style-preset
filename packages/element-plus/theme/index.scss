@@ -1,5 +1,6 @@
 @use '@chapanda/style-preset-base/theme/index' as cbd;
-
+@use 'sass:math';
+@use 'sass:map';
 @forward 'element-plus/theme-chalk/src/common/var.scss' with (
   $colors: (
     'white':cbd.get-color-value('--cbd-white'),
@@ -23,6 +24,7 @@
       'base': cbd.get-color-value('--cbd-gray-4'),
     ),
   ),
+  // button
   $button-border-radius: (
    'large': 2px,
    'default': 2px,
@@ -30,4 +32,8 @@
   ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
+
+:root {
+  @include cbd.generate-root-css-variables();
+}
 

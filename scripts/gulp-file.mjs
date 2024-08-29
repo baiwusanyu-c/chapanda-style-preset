@@ -58,7 +58,8 @@ const copyPackageJsonFiles = async(
           "./theme/index": "./theme/index.scss",
           "./theme/antd": "./theme/antd/index.scss",
           "./theme/vant": "./theme/vant/index.scss",
-          "./theme/element-plus": "./theme/element-plus/index.scss"
+          "./theme/element-plus": "./theme/element-plus/index.scss",
+          "./theme/element-plus/component": "./theme/element-plus/component.scss"
         }
       }} else {
         packageJson.main = './index.mjs'
@@ -69,7 +70,8 @@ const copyPackageJsonFiles = async(
             require: './index.js',
             import: './index.mjs',
           },
-          "./theme/index": "./theme/index.scss"
+          "./theme/index": "./theme/index.scss",
+          "./theme/component": "./theme/components/index.scss"
         }
       }
       const packageDir = path.dirname(filePath)
