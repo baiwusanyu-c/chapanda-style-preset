@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
-import './index.scss'
+// TODO: 写进文档
+import '@chapanda/style-preset/theme/element-plus'
 createApp(App).mount('#app')

@@ -58,7 +58,8 @@
     },
     "./theme/index": "./theme/index.scss",
     "./theme/antd": "./theme/antd/index.scss",
-    "./theme/vant": "./theme/vant/index.scss"
+    "./theme/vant": "./theme/vant/index.scss",
+    "./theme/element-plus": "./theme/element-plus/index.scss"
   },
   "scripts": {
     "publish:npm": "pnpm publish --no-git-checks --access public"
