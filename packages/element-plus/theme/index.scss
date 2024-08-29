@@ -1,4 +1,19 @@
-@use '@chapanda/style-preset-base/theme/index' as cbd;
-:root {
+// @use '@chapanda/style-preset-base/theme/index' as cbd;
+/*:root {
   @include cbd.generate-root-css-variables();
+}*/
+
+
+$primary-color: var(--cbd-brand-4, #ff0000);
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': $primary-color,
+    ),
+  ),
+);
+@use "element-plus/theme-chalk/src/index.scss" as *;
+
+:root {
+  --cbd-brand-4: red
 }
