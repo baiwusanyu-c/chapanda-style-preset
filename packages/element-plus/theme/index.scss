@@ -46,6 +46,10 @@
    'hover-bg-color': cbd.get-color-value('--cbd-gray-2'),
    'active-color': cbd.get-color-value('--cbd-brand-5'),
   ),
+   // $avatar
+  $avatar: (
+   'bg-color': cbd.get-color-value('--cbd-gray-3'),
+  ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
@@ -61,16 +65,19 @@
 }
 
 // TODO: 整理一遍 user tower 用到的组件主题，优先适配
+// el-popover （无需）
+// el-tooltip （无需）
+// el-upload （无需）
+
 // el-breadcrumb （已完成）
 // el-pagination（已完成）
 // el-dialog （已完成）
 // el-button （已完成）
 // el-transfer （已完成）
 // el-menu （已完成）
-// el-popover
-// el-avatar
-// el-dropdown
+// el-avatar （已完成）
 // el-radio
+// el-radio-button
 // el-checkbox
 // el-select
 // el-date-picker
@@ -79,7 +86,7 @@
 // el-table
 // el-tag
 // el-tabs
-// el-radio-button
+// el-dropdown
 // el-cascader
 // el-input  -> analysis-dimension-item.vue
 // el-descriptions --> src/views/crowd-insight/components/set-condition/index.vue
