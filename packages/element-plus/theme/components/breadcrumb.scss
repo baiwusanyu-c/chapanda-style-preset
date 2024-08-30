@@ -1,0 +1,14 @@
+.el-breadcrumb__separator {
+  --el-text-color-placeholder: var(--cbd-gray-4);
+  font-weight: normal;
+}
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner.is-link{
+  font-weight: normal;
+}
+
+
+.el-breadcrumb .el-breadcrumb__item:last-child> .el-breadcrumb__inner {
+  font-weight: bold;
+}
