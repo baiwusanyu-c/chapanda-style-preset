@@ -26,6 +26,8 @@
   <TransferDemo></TransferDemo>
   <MenuDemo></MenuDemo>
   <AvatarDemo></AvatarDemo>
+  <RadioDemo></RadioDemo>
+  <RadioButtonDemo></RadioButtonDemo>
 </template>
 <!--
 <style scoped lang="scss">
@@ -54,5 +56,7 @@ import DialogDemo from './components/dialog.vue'
 import TransferDemo from './components/transfer.vue'
 import MenuDemo from './components/menu.vue'
 import AvatarDemo from './components/avatar.vue'
+import RadioDemo from './components/radio.vue'
+import RadioButtonDemo from './components/radio-button.vue'
 </script>
 

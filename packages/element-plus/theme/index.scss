@@ -50,6 +50,11 @@
   $avatar: (
    'bg-color': cbd.get-color-value('--cbd-gray-3'),
   ),
+  // $radio-button
+  $radio-button:(
+  'checked-bg-color': cbd.get-color-value('--cbd-brand-5'),
+  'checked-text-color': cbd.get-color-value('--cbd-white'),
+  ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
@@ -68,6 +73,7 @@
 // el-popover （无需）
 // el-tooltip （无需）
 // el-upload （无需）
+// el-radio （无需）
 
 // el-breadcrumb （已完成）
 // el-pagination（已完成）
@@ -76,8 +82,7 @@
 // el-transfer （已完成）
 // el-menu （已完成）
 // el-avatar （已完成）
-// el-radio
-// el-radio-button
+// el-radio-button （已完成）
 // el-checkbox
 // el-select
 // el-date-picker
