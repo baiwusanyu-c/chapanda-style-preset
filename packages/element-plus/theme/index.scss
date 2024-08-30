@@ -59,6 +59,15 @@
   $checkbox: (
    'input-border': 2px solid cbd.get-color-value('--cbd-gray-3'),
   ),
+    // $table
+  $table: (
+   'border-color': cbd.get-color-value('--cbd-gray-3'),
+   'border': 1px solid cbd.get-color-value('--cbd-gray-3'),
+   'header-text-color': cbd.get-color-value('--cbd-gray-7'),
+   'text-color': cbd.get-color-value('--cbd-gray-7'),
+    'row-hover-bg-color': cbd.get-color-value('--cbd-gray-1'),
+    'header-bg-color': cbd.get-color-value('--cbd-gray-2'),
+  ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
