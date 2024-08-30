@@ -28,7 +28,8 @@
   <AvatarDemo></AvatarDemo>
   <RadioDemo></RadioDemo>
   <RadioButtonDemo></RadioButtonDemo>
-  <checkboxDemo></checkboxDemo>
+  <CheckboxDemo></CheckboxDemo>
+  <TableDemo></TableDemo>
 </template>
 <!--
 <style scoped lang="scss">
@@ -59,6 +60,7 @@ import MenuDemo from './components/menu.vue'
 import AvatarDemo from './components/avatar.vue'
 import RadioDemo from './components/radio.vue'
 import RadioButtonDemo from './components/radio-button.vue'
-import checkboxDemo from './components/checkbox.vue'
+import CheckboxDemo from './components/checkbox.vue'
+import TableDemo from './components/table.vue'
 </script>
 
