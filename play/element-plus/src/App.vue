@@ -20,6 +20,7 @@
   <p class="din-heavy">din-heavy 9999</p>
   <p class="din-heavy-lighter"> din-heavy-lighter 9999</p>-->
   <ButtonDemo></ButtonDemo>
+  <BreadcrumbDemo></BreadcrumbDemo>
 </template>
 <!--
 <style scoped lang="scss">
@@ -42,5 +43,6 @@
 </style>-->
 <script setup lang="ts">
 import ButtonDemo from './components/button.vue'
+import BreadcrumbDemo from './components/breadcrumb.vue'
 </script>
 

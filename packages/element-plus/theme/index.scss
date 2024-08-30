@@ -35,5 +35,41 @@
 
 :root {
   @include cbd.generate-root-css-variables();
+  --el-color-primary:var(--cbd-brand-5);
+  --el-text-color-regular: var(--cbd-gray-6);
+  --el-text-color-primary: var(--cbd-gray-6);
+  --el-border-radius-base: 2px;
+  --el-color-primary-light-3: var(--cbd-brand-5);
 }
 
+// TODO: 整理一遍 user tower 用到的组件主题，优先适配
+// el-breadcrumb （已完成）
+// el-tooltip
+// el-input  -> analysis-dimension-item.vue
+// el-pagination
+// el-dialog
+// el-button
+// el-transfer
+// el-upload
+// el-menu
+// el-popover
+// el-avatar
+// el-dropdown
+// el-radio
+// el-checkbox
+// el-select
+// el-date-picker
+// el-input-number
+// el-select-v2
+// el-table
+// el-tag
+// el-tabs
+// el-descriptions --> src/views/crowd-insight/components/set-condition/index.vue
+// el-radio-button
+// el-form -> src/views/crowd-insight/view.vue、src/views/label-manage/user-label/view.vue
+// el-cascader
+
+// sidebar.scss
+// ruoyi.scss
+// element-ui.scss
+// TODO: 没用到的再根据组件库去适配
