@@ -1,3 +1,8 @@
-.el-pagination.is-background .el-pager li.is-disabled{
-  --el-disabled-bg-color: var(--cbd-gray-1)
+.el-pagination.is-background .btn-prev:disabled,
+.el-pagination.is-background .btn-prev.is-disabled,
+.el-pagination.is-background .btn-next:disabled,
+.el-pagination.is-background .btn-next.is-disabled,
+.el-pagination.is-background .el-pager li:disabled,
+.el-pagination.is-background .el-pager li.is-disabled {
+  --el-disabled-bg-color: var(--cbd-white)
 }
