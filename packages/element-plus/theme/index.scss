@@ -39,6 +39,13 @@
   $transfer: (
    'border-color': cbd.get-color-value('--cbd-gray-3'),
   ),
+   // $menu
+  $menu: (
+   'text-color': cbd.get-color-value('--cbd-gray-6'),
+   'hover-text-color': cbd.get-color-value('--cbd-gray-6'),
+   'hover-bg-color': cbd.get-color-value('--cbd-gray-2'),
+   'active-color': cbd.get-color-value('--cbd-brand-5'),
+  ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
@@ -59,8 +66,7 @@
 // el-dialog （已完成）
 // el-button （已完成）
 // el-transfer （已完成）
-// el-upload
-// el-menu
+// el-menu （已完成）
 // el-popover
 // el-avatar
 // el-dropdown
