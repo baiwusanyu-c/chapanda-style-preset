@@ -30,6 +30,7 @@
   <RadioButtonDemo></RadioButtonDemo>
   <CheckboxDemo></CheckboxDemo>
   <TableDemo></TableDemo>
+  <TagDemo></TagDemo>
 </template>
 <!--
 <style scoped lang="scss">
@@ -62,5 +63,6 @@ import RadioDemo from './components/radio.vue'
 import RadioButtonDemo from './components/radio-button.vue'
 import CheckboxDemo from './components/checkbox.vue'
 import TableDemo from './components/table.vue'
+import TagDemo from './components/tag.vue'
 </script>
 
