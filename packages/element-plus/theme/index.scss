@@ -30,6 +30,11 @@
    'default': 2px,
    'small': 2px,
   ),
+  // $pagination
+  $pagination: (
+   'button-bg-color':cbd.get-color-value('--cbd-white'),
+   'button-disabled-color': cbd.get-color-value('--cbd-gray-4'),
+  ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
@@ -44,9 +49,7 @@
 
 // TODO: 整理一遍 user tower 用到的组件主题，优先适配
 // el-breadcrumb （已完成）
-// el-tooltip
-// el-input  -> analysis-dimension-item.vue
-// el-pagination
+// el-pagination（已完成）
 // el-dialog
 // el-button
 // el-transfer
@@ -64,10 +67,11 @@
 // el-table
 // el-tag
 // el-tabs
-// el-descriptions --> src/views/crowd-insight/components/set-condition/index.vue
 // el-radio-button
-// el-form -> src/views/crowd-insight/view.vue、src/views/label-manage/user-label/view.vue
 // el-cascader
+// el-input  -> analysis-dimension-item.vue
+// el-descriptions --> src/views/crowd-insight/components/set-condition/index.vue
+// el-form -> src/views/crowd-insight/view.vue、src/views/label-manage/user-label/view.vue
 
 // sidebar.scss
 // ruoyi.scss
