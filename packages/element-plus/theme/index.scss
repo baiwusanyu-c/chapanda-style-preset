@@ -59,7 +59,7 @@
   $checkbox: (
    'input-border': 2px solid cbd.get-color-value('--cbd-gray-3'),
   ),
-    // $table
+   // $table
   $table: (
    'border-color': cbd.get-color-value('--cbd-gray-3'),
    'border': 1px solid cbd.get-color-value('--cbd-gray-3'),
@@ -67,6 +67,10 @@
    'text-color': cbd.get-color-value('--cbd-gray-7'),
     'row-hover-bg-color': cbd.get-color-value('--cbd-gray-1'),
     'header-bg-color': cbd.get-color-value('--cbd-gray-2'),
+  ),
+   // $tag
+  $tag: (
+    'border-radius': 2px,
   ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
@@ -97,8 +101,8 @@
 // el-avatar （已完成）
 // el-radio-button （已完成）
 // el-checkbox（已完成）
-// el-table
-// el-tag
+// el-table（已完成）
+// el-tag（已完成）
 // el-tabs
 // el-select
 // el-date-picker
