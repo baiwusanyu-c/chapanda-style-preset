@@ -54,3 +54,8 @@
 .ant-pagination .ant-pagination-item-active {
   background-color: var(--ant-color-primary);
 }
+
+/** 覆盖 transfer **/
+.ant-transfer .ant-transfer-list-header {
+  background-color: var(--cbd-gray-1);
+}
