@@ -21,6 +21,7 @@
   <p class="din-heavy-lighter"> din-heavy-lighter 9999</p>-->
   <ButtonDemo></ButtonDemo>
   <BreadcrumbDemo></BreadcrumbDemo>
+  <PaginationDemo></PaginationDemo>
 </template>
 <!--
 <style scoped lang="scss">
@@ -44,5 +45,6 @@
 <script setup lang="ts">
 import ButtonDemo from './components/button.vue'
 import BreadcrumbDemo from './components/breadcrumb.vue'
+import PaginationDemo from './components/pagination.vue'
 </script>
 
