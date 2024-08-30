@@ -23,6 +23,7 @@
   <BreadcrumbDemo></BreadcrumbDemo>
   <PaginationDemo></PaginationDemo>
   <DialogDemo></DialogDemo>
+  <TransferDemo></TransferDemo>
 </template>
 <!--
 <style scoped lang="scss">
@@ -48,5 +49,6 @@ import ButtonDemo from './components/button.vue'
 import BreadcrumbDemo from './components/breadcrumb.vue'
 import PaginationDemo from './components/pagination.vue'
 import DialogDemo from './components/dialog.vue'
+import TransferDemo from './components/transfer.vue'
 </script>
 

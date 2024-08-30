@@ -35,6 +35,10 @@
    'button-bg-color':cbd.get-color-value('--cbd-white'),
    'button-disabled-color': cbd.get-color-value('--cbd-gray-4'),
   ),
+   // $transfer
+  $transfer: (
+   'border-color': cbd.get-color-value('--cbd-gray-3'),
+  ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
@@ -54,7 +58,7 @@
 // el-pagination（已完成）
 // el-dialog （已完成）
 // el-button （已完成）
-// el-transfer
+// el-transfer （已完成）
 // el-upload
 // el-menu
 // el-popover
