@@ -32,6 +32,7 @@
   <TableDemo></TableDemo>
   <TagDemo></TagDemo>
   <TabsDemo></TabsDemo>
+  <DropdownDemo></DropdownDemo>
 </template>
 <!--
 <style scoped lang="scss">
@@ -66,5 +67,6 @@ import CheckboxDemo from './components/checkbox.vue'
 import TableDemo from './components/table.vue'
 import TagDemo from './components/tag.vue'
 import TabsDemo from './components/tabs.vue'
+import DropdownDemo from './components/dropdown.vue'
 </script>
 
