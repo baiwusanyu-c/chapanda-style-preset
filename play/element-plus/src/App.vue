@@ -25,6 +25,7 @@
   <DialogDemo></DialogDemo>
   <TransferDemo></TransferDemo>
   <MenuDemo></MenuDemo>
+  <AvatarDemo></AvatarDemo>
 </template>
 <!--
 <style scoped lang="scss">
@@ -52,5 +53,6 @@ import PaginationDemo from './components/pagination.vue'
 import DialogDemo from './components/dialog.vue'
 import TransferDemo from './components/transfer.vue'
 import MenuDemo from './components/menu.vue'
+import AvatarDemo from './components/avatar.vue'
 </script>
 
