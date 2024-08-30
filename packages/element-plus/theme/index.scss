@@ -44,14 +44,16 @@
   --el-text-color-regular: var(--cbd-gray-6);
   --el-text-color-primary: var(--cbd-gray-6);
   --el-border-radius-base: 2px;
+  --el-border-radius-small: 2px;
+  --el-border-radius-round: 4px;
   --el-color-primary-light-3: var(--cbd-brand-5);
 }
 
 // TODO: 整理一遍 user tower 用到的组件主题，优先适配
 // el-breadcrumb （已完成）
 // el-pagination（已完成）
-// el-dialog
-// el-button
+// el-dialog （已完成）
+// el-button （已完成）
 // el-transfer
 // el-upload
 // el-menu
