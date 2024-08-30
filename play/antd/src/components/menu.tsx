@@ -34,6 +34,7 @@ const items: MenuItem[] = [
         key: 'sub2',
         label: 'Navigation Two',
         icon: <AppstoreOutlined />,
+        disabled: true,
         children: [
             { key: '5', label: 'Option 5' },
             { key: '6', label: 'Option 6' },
