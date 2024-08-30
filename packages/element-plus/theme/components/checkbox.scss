@@ -1,0 +1,7 @@
+.el-checkbox__inner::after {
+  top: 0;
+  left: 3px;
+}
+.el-checkbox__input.is-disabled + span.el-checkbox__label{
+  --el-disabled-text-color: var(--cbd-gray-4)
+}

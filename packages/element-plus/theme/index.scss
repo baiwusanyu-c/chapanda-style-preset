@@ -55,6 +55,10 @@
   'checked-bg-color': cbd.get-color-value('--cbd-brand-5'),
   'checked-text-color': cbd.get-color-value('--cbd-white'),
   ),
+   // $checkbox
+  $checkbox: (
+   'input-border': 2px solid cbd.get-color-value('--cbd-gray-3'),
+  ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
@@ -83,14 +87,14 @@
 // el-menu （已完成）
 // el-avatar （已完成）
 // el-radio-button （已完成）
-// el-checkbox
+// el-checkbox（已完成）
+// el-table
+// el-tag
+// el-tabs
 // el-select
 // el-date-picker
 // el-input-number
 // el-select-v2
-// el-table
-// el-tag
-// el-tabs
 // el-dropdown
 // el-cascader
 // el-input  -> analysis-dimension-item.vue
