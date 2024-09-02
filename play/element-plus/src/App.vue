@@ -34,6 +34,7 @@
   <TabsDemo></TabsDemo>
   <DropdownDemo></DropdownDemo>
   <InputDemo></InputDemo>
+  <SelectDemo></SelectDemo>
 </template>
 <!--
 <style scoped lang="scss">
@@ -70,5 +71,5 @@ import TagDemo from './components/tag.vue'
 import TabsDemo from './components/tabs.vue'
 import DropdownDemo from './components/dropdown.vue'
 import InputDemo from './components/input.vue'
+import SelectDemo from './components/select.vue'
 </script>
-

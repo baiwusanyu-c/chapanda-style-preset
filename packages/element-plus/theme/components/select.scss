@@ -1,0 +1,22 @@
+.el-select__wrapper.is-disabled{
+  --el-select-disabled-border: var(--cbd-gray-3);
+  --el-fill-color-light: var(--cbd-gray-2);
+  --el-text-color-placeholder: var(--cbd-gray-4);
+}
+.el-select__popper.el-popper.is-light{
+  background-color: var(--cbd-gray-1);
+}
+.el-select-dropdown__item.is-selected {
+  background-color: var(--cbd-brand-1);
+}
+
+.el-select-dropdown__item:hover{
+  background-color: var(--cbd-gray-2);
+}
+
+.el-select__selection .el-tag{
+  --el-tag-text-color: var(--cbd-gray-6);
+  --el-tag-bg-color: var(--cbd-gray-2);
+  --el-tag-border-color: var(--cbd-gray-2);
+  --el-tag-hover-color: var(--cbd-gray-7);
+}

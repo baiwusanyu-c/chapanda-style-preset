@@ -82,6 +82,15 @@
    'fill': cbd.get-color-value('--cbd-gray-2'),
    'text-color': cbd.get-color-value('--cbd-gray-4'),
   ),
+   // $select
+   $select: (
+    'disabled-color': cbd.get-color-value('--cbd-gray-4'),
+    'input-color': cbd.get-color-value('--cbd-gray-7'),
+    'multiple-input-color': cbd.get-color-value('--cbd-gray-7'),
+   ),
+   $select-option: (
+    'selected-text-color': cbd.get-color-value('--cbd-gray-7'),
+   )
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
