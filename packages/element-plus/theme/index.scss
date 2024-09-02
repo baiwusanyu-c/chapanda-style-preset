@@ -98,6 +98,10 @@
     'input-color': cbd.get-color-value('--cbd-gray-7'),
     'multiple-input-color': cbd.get-color-value('--cbd-gray-7'),
    ),
+   // $popover:
+   $popover :(
+    'bg-color': cbd.get-color-value('--cbd-gray-1'),
+   )
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
