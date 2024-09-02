@@ -1,0 +1,11 @@
+.el-cascader-node.is-active,
+.el-cascader-node.in-active-path{
+  background-color: var(--cbd-brand-1);
+}
+
+.el-cascader__tags .el-tag{
+  --el-tag-text-color: var(--cbd-gray-6);
+  --el-tag-bg-color: var(--cbd-gray-2);
+  --el-tag-border-color: var(--cbd-gray-2);
+  --el-tag-hover-color: var(--cbd-gray-7);
+}

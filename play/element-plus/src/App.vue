@@ -37,6 +37,8 @@
   <SelectDemo></SelectDemo>
   <DatePickerDemo></DatePickerDemo>
   <InputNumberDemo></InputNumberDemo>
+  <SelectV2Demo></SelectV2Demo>
+  <CascaderDemo></CascaderDemo>
 </template>
 <!--
 <style scoped lang="scss">
@@ -74,6 +76,8 @@ import TabsDemo from './components/tabs.vue'
 import DropdownDemo from './components/dropdown.vue'
 import InputDemo from './components/input.vue'
 import SelectDemo from './components/select.vue'
+import SelectV2Demo from './components/select-v2.vue'
 import DatePickerDemo from './components/date-picker.vue'
 import InputNumberDemo from './components/input-number.vue'
+import CascaderDemo from './components/cascader.vue'
 </script>
