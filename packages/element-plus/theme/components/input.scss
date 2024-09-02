@@ -1,0 +1,15 @@
+
+.el-input {
+  &:not(.is-disabled){
+    .el-input__wrapper:hover {
+      background-color: var(--cbd-gray-2);
+    }
+
+    .el-input__wrapper:active,
+    .el-input__wrapper:active.is-focus,
+    .el-input__wrapper.is-focus,
+    .el-input__wrapper.is-focus:hover{
+      background-color: var(--cbd-gray-3);
+    }
+  }
+}

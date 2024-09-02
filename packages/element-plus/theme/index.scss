@@ -72,6 +72,16 @@
   $tag: (
     'border-radius': 2px,
   ),
+  // $input
+  $input: (
+    'text-color': cbd.get-color-value('--cbd-gray-7'),
+     'border-radius': 2px,
+     'border-color': cbd.get-color-value('--cbd-gray-3'),
+  ),
+   $input-disabled: (
+   'fill': cbd.get-color-value('--cbd-gray-2'),
+   'text-color': cbd.get-color-value('--cbd-gray-4'),
+  ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
@@ -104,7 +114,7 @@
 // el-table（已完成）
 // el-tag（已完成）
 // el-tabs （已完成）
-// el-input  -> analysis-dimension-item.vue
+// el-input  -> analysis-dimension-item.vue （已完成）
 // el-select
 // el-date-picker
 // el-input-number
