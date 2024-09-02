@@ -1,0 +1,14 @@
+.el-date-table td .el-date-table-cell .el-date-table-cell__text{
+  border-radius: 50%;
+}
+
+.el-date-table td .el-date-table-cell .el-date-table-cell__text:hover{
+  background-color: var(--cbd-gray-3);
+}
+.el-date-table td.selected .el-date-table-cell__text:hover{
+    background-color: var(--cbd-brand-5);
+}
+
+.el-date-table td.today .el-date-table-cell__text{
+  border: 1px solid var(--cbd-brand-5);
+}

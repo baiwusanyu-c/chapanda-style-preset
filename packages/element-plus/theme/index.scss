@@ -90,7 +90,14 @@
    ),
    $select-option: (
     'selected-text-color': cbd.get-color-value('--cbd-gray-7'),
-   )
+   ),
+    // $datepicker
+   $datepicker: (
+    'text-color': cbd.get-color-value('--cbd-gray-7'),
+    'disabled-color': cbd.get-color-value('--cbd-gray-4'),
+    'input-color': cbd.get-color-value('--cbd-gray-7'),
+    'multiple-input-color': cbd.get-color-value('--cbd-gray-7'),
+   ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
@@ -124,8 +131,8 @@
 // el-tag（已完成）
 // el-tabs （已完成）
 // el-input  -> analysis-dimension-item.vue （已完成）
-// el-select
-// el-date-picker
+// el-select （已完成）
+// el-date-picker （已完成）
 // el-input-number
 // el-select-v2
 // el-cascader

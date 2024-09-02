@@ -35,6 +35,7 @@
   <DropdownDemo></DropdownDemo>
   <InputDemo></InputDemo>
   <SelectDemo></SelectDemo>
+  <DatePickerDemo></DatePickerDemo>
 </template>
 <!--
 <style scoped lang="scss">
@@ -72,4 +73,5 @@ import TabsDemo from './components/tabs.vue'
 import DropdownDemo from './components/dropdown.vue'
 import InputDemo from './components/input.vue'
 import SelectDemo from './components/select.vue'
+import DatePickerDemo from './components/date-picker.vue'
 </script>
