@@ -1,3 +1,4 @@
-.el-popper.is-light {
+.el-popper.is-light,
+.el-popper.is-light .el-popper__arrow::before{
   background-color: var(--cbd-gray-1);;
 }

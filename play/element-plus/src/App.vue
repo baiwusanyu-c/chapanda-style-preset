@@ -39,6 +39,7 @@
   <InputNumberDemo></InputNumberDemo>
   <SelectV2Demo></SelectV2Demo>
   <CascaderDemo></CascaderDemo>
+  <DescriptionsDemo></DescriptionsDemo>
 </template>
 <!--
 <style scoped lang="scss">
@@ -80,4 +81,5 @@ import SelectV2Demo from './components/select-v2.vue'
 import DatePickerDemo from './components/date-picker.vue'
 import InputNumberDemo from './components/input-number.vue'
 import CascaderDemo from './components/cascader.vue'
+import DescriptionsDemo from './components/descriptions.vue'
 </script>

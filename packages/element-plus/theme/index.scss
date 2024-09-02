@@ -101,7 +101,12 @@
    // $popover:
    $popover :(
     'bg-color': cbd.get-color-value('--cbd-gray-1'),
-   )
+   ),
+   // $descriptions:
+   $descriptions :(
+    'table-border': 1px solid cbd.get-color-value('--cbd-gray-3'),
+    'item-bordered-label-background':  cbd.get-color-value('--cbd-gray-1'),
+   ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
@@ -134,14 +139,14 @@
 // el-table（已完成）
 // el-tag（已完成）
 // el-tabs （已完成）
-// el-input  -> analysis-dimension-item.vue （已完成）
+// el-input  -> （已完成）analysis-dimension-item.vue
 // el-select （已完成）
 // el-date-picker （已完成）
 // el-input-number （已完成）
 // el-select-v2（已完成）
-// el-cascader
+// el-cascader（已完成）
 
-// el-descriptions --> src/views/crowd-insight/components/set-condition/index.vue
+// el-descriptions --> （已完成）src/views/crowd-insight/components/set-condition/index.vue
 // el-form -> src/views/crowd-insight/view.vue、src/views/label-manage/user-label/view.vue
 
 // sidebar.scss
