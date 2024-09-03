@@ -55,6 +55,7 @@
   <SliderDemo/>
   <TimepickerDemo/>
   <TreeSelectDemo/>
+  <ProgressDemo/>
 </template>
 <!--
 <style scoped lang="scss">
@@ -112,4 +113,5 @@ import SwitchDemo from "./components/switch.vue";
 import SliderDemo from './components/slider.vue'
 import TimepickerDemo from './components/timepicker.vue'
 import TreeSelectDemo from './components/tree-select.vue'
+import ProgressDemo from './components/progress.vue'
 </script>
