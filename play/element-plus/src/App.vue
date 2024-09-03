@@ -43,6 +43,7 @@
   <FormDemo/>
   <TextDemo/>
   <DividerDemo/>
+  <BadgeDemo/>
 </template>
 <!--
 <style scoped lang="scss">
@@ -88,4 +89,5 @@ import DescriptionsDemo from './components/descriptions.vue'
 import FormDemo from './components/form.vue'
 import TextDemo from './components/text.vue'
 import DividerDemo from './components/divider.vue'
+import BadgeDemo from './components/badge.vue'
 </script>
