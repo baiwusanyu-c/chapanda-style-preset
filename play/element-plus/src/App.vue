@@ -47,6 +47,7 @@
   <CalendarDemo/>
   <CardDemo/>
   <CollapseDemo/>
+  <TimelineDemo/>
 </template>
 <!--
 <style scoped lang="scss">
@@ -96,4 +97,5 @@ import BadgeDemo from './components/badge.vue'
 import CalendarDemo from './components/calendar.vue'
 import CardDemo from './components/card.vue'
 import CollapseDemo from './components/collapse.vue'
+import TimelineDemo from "./components/timeline.vue";
 </script>
