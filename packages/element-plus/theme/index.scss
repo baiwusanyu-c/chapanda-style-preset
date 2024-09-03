@@ -111,6 +111,11 @@
    $calendar :(
     'header-border-bottom':1px solid cbd.get-color-value('--cbd-transparent'),
    ),
+    // $card:
+   $card :(
+   'border-color': cbd.get-color-value('--cbd-gray-3'),
+    'bg-color': cbd.get-color-value('--cbd-gray-1'),
+   ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
@@ -118,7 +123,7 @@
   @include cbd.generate-root-css-variables();
   --el-color-primary:var(--cbd-brand-5);
   --el-text-color-regular: var(--cbd-gray-6);
-  --el-text-color-primary: var(--cbd-gray-6);
+  --el-text-color-primary: var(--cbd-gray-7);
   --el-border-radius-base: 2px;
   --el-border-radius-small: 2px;
   --el-border-radius-round: 4px;
@@ -165,7 +170,7 @@
 // el-divider（已完成）
 // el-badge（已完成）
 // el-calender（已完成）
-// el-card
+// el-card（已完成）
 // el-collapse
 // el-list
 // el-carousel
