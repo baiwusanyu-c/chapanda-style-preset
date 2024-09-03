@@ -126,6 +126,10 @@
    $tree :(
        'node-hover-bg-color': cbd.get-color-value('--cbd-gray-1'),
    ),
+   // $slider:
+   $slider :(
+    'runway-bg-color': cbd.get-color-value('--cbd-gray-3'),
+   ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
@@ -176,6 +180,8 @@
 // el-image（无需）
 // el-mentions（无需）
 // el-text（无需）
+// el-rate（无需）
+// el-switch（无需）
 
 // el-divider（已完成）
 // el-badge（已完成）
@@ -186,12 +192,11 @@
 // el-timeline（已完成）
 // el-tree （已完成）
 // el-autocomplete （已完成）
-// el-rate
-// el-switch
-// el-slider
+
+
+// el-slider（已完成）
 // el-timepicker
 // el-tree-select
-// el-transfer
 // el-alert
 // el-drawer
 // el-message
