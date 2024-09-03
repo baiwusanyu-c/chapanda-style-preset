@@ -26,7 +26,7 @@ const treeData = [
                 children: [
                     {
                         value: 'sss',
-                        title: <b style={{ color: '#08c' }}>sss</b>,
+                        title: <b style={{ color: '#08c' }}>custom style sss</b>,
                     },
                 ],
             },

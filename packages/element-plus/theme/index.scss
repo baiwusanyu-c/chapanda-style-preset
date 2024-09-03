@@ -122,6 +122,10 @@
     'header-bg-color': cbd.get-color-value('--cbd-gray-1'),
     'content-bg-color': cbd.get-color-value('--cbd-gray-1'),
    ),
+     // $tree:
+   $tree :(
+       'node-hover-bg-color': cbd.get-color-value('--cbd-gray-1'),
+   ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
@@ -179,8 +183,7 @@
 // el-card（已完成）
 // el-collapse（已完成）
 // el-statistic（已完成）
-
-// el-timeline
+// el-timeline（已完成）
 // el-tree
 // el-autocomplete
 // el-rate
