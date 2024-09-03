@@ -58,6 +58,7 @@
   <ProgressDemo/>
   <PopconfirmDemo/>
   <PageHeaderDemo/>
+  <StepsDemo/>
 </template>
 <!--
 <style scoped lang="scss">
@@ -118,4 +119,5 @@ import TreeSelectDemo from './components/tree-select.vue'
 import ProgressDemo from './components/progress.vue'
 import PopconfirmDemo from './components/popconfirm.vue'
 import PageHeaderDemo from './components/page-header.vue'
+import StepsDemo from './components/steps.vue'
 </script>
