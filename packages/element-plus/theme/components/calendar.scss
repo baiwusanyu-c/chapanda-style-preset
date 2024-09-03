@@ -1,0 +1,35 @@
+.el-calendar-table__row {
+  .current.is-selected{
+    color: var(--cbd-brand-5);
+    .el-calendar-day:hover {
+      --el-calendar-selected-bg-color: var(--el-color-primary-light-9)
+    }
+  }
+  .current.is-today{
+    border-top: 2px solid var(--cbd-brand-5);
+  }
+}
+
+.el-calendar-table tr:first-child td,
+.el-calendar-table td,
+.el-calendar-table__row .current{
+  border: none;
+  border-top: 2px solid var(--cbd-gray-2);
+}
+.el-calendar-table tr td:first-child{
+  border: none;
+  border-top: 2px solid var(--cbd-gray-2);
+}
+
+
+.el-calendar-table .el-calendar-day:hover{
+ --el-calendar-selected-bg-color: var(--cbd-gray-1);
+}
+
+.el-calendar-table .el-calendar-day {
+   text-align: right;
+}
+
+.el-calendar-table thead th {
+  text-align: right;
+}
