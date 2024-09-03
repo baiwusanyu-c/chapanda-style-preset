@@ -49,6 +49,7 @@
   <CollapseDemo/>
   <TimelineDemo/>
   <TreeDemo/>
+  <AutoCompleteDemo/>
 </template>
 <!--
 <style scoped lang="scss">
@@ -100,4 +101,5 @@ import CardDemo from './components/card.vue'
 import CollapseDemo from './components/collapse.vue'
 import TimelineDemo from "./components/timeline.vue";
 import TreeDemo from "./components/tree.vue";
+import AutoCompleteDemo from "./components/auto-complete.vue";
 </script>

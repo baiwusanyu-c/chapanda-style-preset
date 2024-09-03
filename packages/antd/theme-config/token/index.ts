@@ -147,6 +147,9 @@ export const genToken = (colors: Record<string, string>) => {
     // "colorBgMask": '',
     // 全局圆角
     "borderRadius": 4,
+    "borderRadiusXs": 4,
+    "borderRadiusSm": 4,
+    "borderRadiusLg": 4,
     "wireframe": false
   }
 }
