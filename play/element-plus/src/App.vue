@@ -56,6 +56,8 @@
   <TimepickerDemo/>
   <TreeSelectDemo/>
   <ProgressDemo/>
+  <PopconfirmDemo/>
+  <PageHeaderDemo/>
 </template>
 <!--
 <style scoped lang="scss">
@@ -114,4 +116,6 @@ import SliderDemo from './components/slider.vue'
 import TimepickerDemo from './components/timepicker.vue'
 import TreeSelectDemo from './components/tree-select.vue'
 import ProgressDemo from './components/progress.vue'
+import PopconfirmDemo from './components/popconfirm.vue'
+import PageHeaderDemo from './components/page-header.vue'
 </script>
