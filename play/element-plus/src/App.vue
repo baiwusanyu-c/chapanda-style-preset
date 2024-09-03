@@ -44,6 +44,7 @@
   <TextDemo/>
   <DividerDemo/>
   <BadgeDemo/>
+  <CalendarDemo/>
 </template>
 <!--
 <style scoped lang="scss">
@@ -90,4 +91,5 @@ import FormDemo from './components/form.vue'
 import TextDemo from './components/text.vue'
 import DividerDemo from './components/divider.vue'
 import BadgeDemo from './components/badge.vue'
+import CalendarDemo from './components/calendar.vue'
 </script>

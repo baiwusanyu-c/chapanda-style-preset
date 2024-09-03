@@ -107,6 +107,10 @@
     'table-border': 1px solid cbd.get-color-value('--cbd-gray-3'),
     'item-bordered-label-background':  cbd.get-color-value('--cbd-gray-1'),
    ),
+    // $calendar:
+   $calendar :(
+    'header-border-bottom':1px solid cbd.get-color-value('--cbd-transparent'),
+   ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
@@ -159,12 +163,13 @@
 // el-text（无需）
 
 // el-divider（已完成）
-// el-badge
-// el-calender
+// el-badge（已完成）
+// el-calender（已完成）
 // el-card
 // el-collapse
 // el-list
 // el-carousel
+
 // el-statistic
 // el-timeline
 // el-tree
