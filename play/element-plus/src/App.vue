@@ -53,6 +53,8 @@
   <RateDemo/>
   <SwitchDemo/>
   <SliderDemo/>
+  <TimepickerDemo/>
+  <TreeSelectDemo/>
 </template>
 <!--
 <style scoped lang="scss">
@@ -108,4 +110,6 @@ import AutoCompleteDemo from "./components/auto-complete.vue";
 import RateDemo from "./components/rate.vue";
 import SwitchDemo from "./components/switch.vue";
 import SliderDemo from './components/slider.vue'
+import TimepickerDemo from './components/timepicker.vue'
+import TreeSelectDemo from './components/tree-select.vue'
 </script>
