@@ -19,27 +19,27 @@
   <p class="din-bold"> din-bold 7600</p>
   <p class="din-heavy">din-heavy 9999</p>
   <p class="din-heavy-lighter"> din-heavy-lighter 9999</p>-->
-  <ButtonDemo></ButtonDemo>
-  <BreadcrumbDemo></BreadcrumbDemo>
-  <PaginationDemo></PaginationDemo>
-  <DialogDemo></DialogDemo>
-  <TransferDemo></TransferDemo>
-  <MenuDemo></MenuDemo>
-  <AvatarDemo></AvatarDemo>
-  <RadioDemo></RadioDemo>
-  <RadioButtonDemo></RadioButtonDemo>
-  <CheckboxDemo></CheckboxDemo>
-  <TableDemo></TableDemo>
-  <TagDemo></TagDemo>
-  <TabsDemo></TabsDemo>
-  <DropdownDemo></DropdownDemo>
-  <InputDemo></InputDemo>
-  <SelectDemo></SelectDemo>
-  <DatePickerDemo></DatePickerDemo>
-  <InputNumberDemo></InputNumberDemo>
-  <SelectV2Demo></SelectV2Demo>
-  <CascaderDemo></CascaderDemo>
-  <DescriptionsDemo></DescriptionsDemo>
+  <ButtonDemo/>
+  <BreadcrumbDemo/>
+  <PaginationDemo/>
+  <DialogDemo/>
+  <TransferDemo/>
+  <MenuDemo/>
+  <AvatarDemo/>
+  <RadioDemo/>
+  <RadioButtonDemo/>
+  <CheckboxDemo/>
+  <TableDemo/>
+  <TagDemo/>
+  <TabsDemo/>
+  <DropdownDemo/>
+  <InputDemo/>
+  <SelectDemo/>
+  <DatePickerDemo/>
+  <InputNumberDemo/>
+  <SelectV2Demo/>
+  <CascaderDemo/>
+  <DescriptionsDemo/>
   <FormDemo/>
   <TextDemo/>
   <DividerDemo/>
@@ -48,6 +48,7 @@
   <CardDemo/>
   <CollapseDemo/>
   <TimelineDemo/>
+  <TreeDemo/>
 </template>
 <!--
 <style scoped lang="scss">
@@ -98,4 +99,5 @@ import CalendarDemo from './components/calendar.vue'
 import CardDemo from './components/card.vue'
 import CollapseDemo from './components/collapse.vue'
 import TimelineDemo from "./components/timeline.vue";
+import TreeDemo from "./components/tree.vue";
 </script>
