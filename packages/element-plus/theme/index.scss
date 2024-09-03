@@ -116,6 +116,12 @@
    'border-color': cbd.get-color-value('--cbd-gray-3'),
     'bg-color': cbd.get-color-value('--cbd-gray-1'),
    ),
+     // $collapse:
+   $collapse :(
+    'border-color': cbd.get-color-value('--cbd-gray-3'),
+    'header-bg-color': cbd.get-color-value('--cbd-gray-1'),
+    'content-bg-color': cbd.get-color-value('--cbd-gray-1'),
+   ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
@@ -171,7 +177,7 @@
 // el-badge（已完成）
 // el-calender（已完成）
 // el-card（已完成）
-// el-collapse
+// el-collapse（已完成）
 // el-list
 // el-carousel
 
