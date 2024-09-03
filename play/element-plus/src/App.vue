@@ -41,6 +41,8 @@
   <CascaderDemo></CascaderDemo>
   <DescriptionsDemo></DescriptionsDemo>
   <FormDemo/>
+  <TextDemo/>
+  <DividerDemo/>
 </template>
 <!--
 <style scoped lang="scss">
@@ -84,4 +86,6 @@ import InputNumberDemo from './components/input-number.vue'
 import CascaderDemo from './components/cascader.vue'
 import DescriptionsDemo from './components/descriptions.vue'
 import FormDemo from './components/form.vue'
+import TextDemo from './components/text.vue'
+import DividerDemo from './components/divider.vue'
 </script>
