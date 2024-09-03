@@ -50,6 +50,9 @@
   <TimelineDemo/>
   <TreeDemo/>
   <AutoCompleteDemo/>
+  <RateDemo/>
+  <SwitchDemo/>
+  <SliderDemo/>
 </template>
 <!--
 <style scoped lang="scss">
@@ -102,4 +105,7 @@ import CollapseDemo from './components/collapse.vue'
 import TimelineDemo from "./components/timeline.vue";
 import TreeDemo from "./components/tree.vue";
 import AutoCompleteDemo from "./components/auto-complete.vue";
+import RateDemo from "./components/rate.vue";
+import SwitchDemo from "./components/switch.vue";
+import SliderDemo from './components/slider.vue'
 </script>
