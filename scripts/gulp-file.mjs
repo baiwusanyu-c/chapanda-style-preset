@@ -18,7 +18,7 @@ const copyPackageJsonFiles = async(
     } else if (file === 'package.json') {
       let packageJson = fs.readJsonSync(filePath) // 读取原始 package.json 文件
       // transform
-      if(srcDir.includes('chapanda-style-preset')) {{
+      if(srcDir.includes('chapanda-style-preset')) {
         packageJson.exports = {
           ".": {
             "types": "./index.d.ts",
@@ -61,7 +61,7 @@ const copyPackageJsonFiles = async(
           "./theme/element-plus": "./theme/element-plus/index.scss",
           "./theme/element-plus/component": "./theme/element-plus/component.scss"
         }
-      }} else {
+      } else {
         packageJson.main = './index.mjs'
         packageJson.module = './index.mjs'
         packageJson.exports = {
@@ -71,7 +71,16 @@ const copyPackageJsonFiles = async(
             import: './index.mjs',
           },
           "./theme": "./theme/index.scss",
-          "./theme/component": "./theme/components/index.scss"
+        }
+        if(srcDir.includes('@chapanda/style-preset-ep')) {
+          packageJson.exports["./theme/component"] = "./theme/components/index.scss"
+        }
+
+        if(srcDir.includes('@chapanda/style-preset-base')) {
+          packageJson.exports["./theme/font/DIN-Bold.otf"] = "./theme/font/DIN-Bold.otf"
+          packageJson.exports["./theme/font/DINNextLTPro-Medium.ttf"] = "./theme/font/DINNextLTPro-Medium.ttf"
+          packageJson.exports["./theme/font/DINNextLTPro-Bold.ttf"] = "./theme/font/DINNextLTPro-Bold.ttf"
+          packageJson.exports["./theme/font/DINNextLTPro-Heavy.ttf"] = "./theme/font/DINNextLTPro-Heavy.ttf"
         }
       }
       const packageDir = path.dirname(filePath)

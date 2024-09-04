@@ -26,7 +26,11 @@
       "require": "./dist/index.js",
       "import": "./dist/index.mjs"
     },
-    "./theme": "./theme/index.scss"
+    "./theme": "./theme/index.scss",
+    "./theme/font/DIN-Bold.otf": "./theme/font/DIN-Bold.ot",
+    "./theme/font/DINNextLTPro-Medium.ttf": "./theme/font/DINNextLTPro-Medium.ttf",
+    "./theme/font/DINNextLTPro-Bold.ttf": "./theme/font/DINNextLTPro-Bold.ttf",
+    "./theme/font/DINNextLTPro-Heavy.ttf": "./theme/font/DINNextLTPro-Heavy.ttf"
   },
   "scripts": {
     "publish:npm": "pnpm publish --no-git-checks --access public"
