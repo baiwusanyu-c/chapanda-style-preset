@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-import { chaPandaTailwindConfig } from '@chapanda/style-preset/tailwindcss'
+import { chaPandaTailwindConfig } from '@chapanda/style-preset-tailwind'
 export default chaPandaTailwindConfig({
   content: [
     "index.html",
@@ -8,6 +8,9 @@ export default chaPandaTailwindConfig({
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
+    colors: ({ colors }) => ({
+      baiwu: '#00ffff'
+    }),
     accentColor: ({ theme }) => ({
       ...theme('colors'),
       auto: 'auto',

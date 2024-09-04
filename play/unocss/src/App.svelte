@@ -5,6 +5,9 @@
       bg-cbd-brand-5 fcc border-success">
     Hello world! 7600
   </p>
+  <p class="bg-baiwu fcc border-success">
+    Hello world! 7600
+  </p>
   <p class="pf-regular-24">pf-regular-24 </p>
   <p class="pf-medium-24"> pf-medium-24 </p>
   <p class="pf-regular-20">pf-regular-20 </p>

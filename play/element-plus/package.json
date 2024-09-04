@@ -12,7 +12,7 @@
     "element-plus": "^2.8.0",
     "@element-plus/icons-vue": "^2.3.1",
     "vue": "^3.4.38",
-    "@chapanda/style-preset": "workspace:*"
+    "@chapanda/style-preset-ep": "0.0.1-beta.14"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",

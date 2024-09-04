@@ -1,6 +1,7 @@
 import { Flex, ConfigProvider } from 'antd';
 
-import { genChaPandaAntdTheme } from '@chapanda/style-preset/antd'
+// import { genChaPandaAntdTheme } from '@chapanda/style-preset/antd'
+import { genChaPandaAntdTheme } from '@chapanda/style-preset-antd'
 import RadioDemo from './components/radio.tsx'
 import AvatarDemo from './components/avatar.tsx'
 import ButtonDemo from './components/button.tsx'
@@ -44,7 +45,7 @@ function App() {
   return (
     <ConfigProvider theme={genChaPandaAntdTheme()}>
       <Flex gap="small" wrap>
-       <ButtonDemo/>
+        <ButtonDemo/>
       </Flex>
       <Flex gap="small" wrap>
         <AvatarDemo/>
@@ -191,8 +192,17 @@ function App() {
       </Flex>
 
       <Flex gap="small" wrap>
-        <CalendarDemo />
+        <CalendarDemo/>
       </Flex>
+      <p className="pf-regular-24">pf-regular-24 </p>
+      <p className="pf-medium-24"> pf-medium-24 </p>
+      <p className="pf-regular-20">pf-regular-20 </p>
+      <p className="pf-medium-20"> pf-medium-20 </p>
+
+      <p className="font-din">din 9999 </p>
+      <p className="font-din-bold"> din-bold 7600</p>
+      <p className="font-din-heavy">din-heavy 9999</p>
+      <p className="font-din-heavy-lighter"> din-heavy-lighter 9999</p>
     </ConfigProvider>
   )
 }

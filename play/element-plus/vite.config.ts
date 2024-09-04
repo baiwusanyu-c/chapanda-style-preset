@@ -8,26 +8,10 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      // TODO 写入文档
+      // TODO 使用 @chapanda/style-preset 写入文档
       // '@chapanda/style-preset-base/theme/font': path.resolve(
       //   __dirname, 'node_modules/@chapanda/style-preset/theme/font'
       // ),
-
-      // '@chapanda/style-preset-base/theme/font': path.resolve(
-      //   __dirname, 'node_modules/@chapanda/style-preset-base/theme/font'
-      // ),
-
-      // TODO 使用 @chapanda/style-preset 写入文档
-      '@chapanda/style-preset-base/theme/font': path.resolve(
-        __dirname, 'node_modules/@chapanda/style-preset/theme/font'
-      ),
     },
   },
-
-  // assetsInclude: [
-  //   '/node_modules/@chapanda/style-preset-base/*.ttf',
-  //   '/node_modules/@chapanda/style-preset-base/*.otf',
-  //   '**/*.ttf',
-  //   '**/*.otf'
-  // ],
 })

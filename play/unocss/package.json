@@ -10,7 +10,7 @@
     "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json"
   },
   "dependencies": {
-    "@chapanda/style-preset": "workspace:*"
+    "@chapanda/style-preset-unocss": "0.0.1-beta.14"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.1.1",

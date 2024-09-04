@@ -32,11 +32,4 @@ export default defineConfig({
       ],
     },
   },
-  resolve: {
-    alias: {
-      '@chapanda/style-preset-base/theme/font': path.resolve(
-        __dirname, 'node_modules/@chapanda/style-preset-base/theme/font'
-      ),
-    },
-  },
 });
