@@ -130,6 +130,10 @@
    $slider :(
     'runway-bg-color': cbd.get-color-value('--cbd-gray-3'),
    ),
+    // $notification:
+   $notification :(
+     'radius': 4px,
+   ),
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
@@ -148,6 +152,7 @@
 // el-upload （无需）
 // el-radio （无需）
 // el-dropdown（无需）
+// el-drawer（无需）
 // el-popover （已完成）
 // el-breadcrumb （已完成）
 // el-pagination（已完成）
@@ -202,7 +207,6 @@
 // el-steps（无法实现）
 
 // el-alert（已完成）
-// el-drawer
 // el-message
 // el-notification
 
