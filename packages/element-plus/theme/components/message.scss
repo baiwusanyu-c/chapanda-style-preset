@@ -1,0 +1,13 @@
+
+.el-message {
+  --el-message-border-color: var(--cbd-gray-3);
+  background-color: var(--cbd-gray-1);
+  box-shadow: var(--el-box-shadow-lighter)
+}
+
+.el-message.el-message--info .el-message__content,
+.el-message.el-message--error .el-message__content,
+.el-message.el-message--warning .el-message__content,
+.el-message.el-message--success .el-message__content{
+  color: var(--el-text-color-primary);
+}
