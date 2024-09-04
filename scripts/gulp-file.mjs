@@ -72,11 +72,11 @@ const copyPackageJsonFiles = async(
           },
           "./theme": "./theme/index.scss",
         }
-        if(srcDir.includes('@chapanda/style-preset-ep')) {
+        if(srcDir.includes('element-plus')) {
           packageJson.exports["./theme/component"] = "./theme/components/index.scss"
         }
 
-        if(srcDir.includes('@chapanda/style-preset-base')) {
+        if(srcDir.includes('base')) {
           packageJson.exports["./theme/font/DIN-Bold.otf"] = "./theme/font/DIN-Bold.otf"
           packageJson.exports["./theme/font/DINNextLTPro-Medium.ttf"] = "./theme/font/DINNextLTPro-Medium.ttf"
           packageJson.exports["./theme/font/DINNextLTPro-Bold.ttf"] = "./theme/font/DINNextLTPro-Bold.ttf"
