@@ -61,6 +61,7 @@
   <StepsDemo/>
   <AlertDemo/>
   <NotificationDemo/>
+  <MessageDemo/>
 </template>
 <!--
 <style scoped lang="scss">
@@ -124,4 +125,5 @@ import PageHeaderDemo from './components/page-header.vue'
 import StepsDemo from './components/steps.vue'
 import AlertDemo from './components/alert.vue'
 import NotificationDemo from './components/notification.vue'
+import MessageDemo from './components/message.vue'
 </script>
