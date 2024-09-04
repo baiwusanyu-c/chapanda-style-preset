@@ -126,13 +126,13 @@ const moveThemePostToRootDist = async(entryPkg) => {
   }
 }
 
-// const moveREADMEToRootDist = async(entryPkg) => {
-//   for (const srcKey in entryPkg) {
-//     await fs.copy(
-//         `${entryPkg[srcKey]}/README.md`,
-//         `${distRoot}/${srcKey}/README.md`)
-//   }
-// }
+const moveREADMEToRootDist = async(entryPkg) => {
+  for (const srcKey in entryPkg) {
+    await fs.copy(
+        `${entryPkg[srcKey]}/README.md`,
+        `${distRoot}/${srcKey}/README.md`)
+  }
+}
 
 export default gulp.series(
   // 移动 package.json 到 dist
@@ -147,8 +147,8 @@ export default gulp.series(
   },
 
   // 移动 README 到 dist
-  // async() => {
-  //   const res = await moveREADMEToRootDist(entryPkg)
-  //   return res
-  // },
+  async() => {
+    const res = await moveREADMEToRootDist(entryPkg)
+    return res
+  },
 )

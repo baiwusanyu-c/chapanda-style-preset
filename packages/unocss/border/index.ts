@@ -8,7 +8,7 @@ export const chaPandaBorderRules = (
     'border-style': 'solid',
   }
   return {
-    'gen-border-basic': {
+    'gen-border-style': {
       'border-style': 'solid',
       'border-color': colors["cbd-gray-3"]
     },
