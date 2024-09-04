@@ -1,0 +1,11 @@
+.el-alert--warning.is-light .el-alert__title,
+.el-alert--success.is-light .el-alert__title,
+.el-alert--info.is-light .el-alert__title,
+.el-alert--error.is-light .el-alert__title{
+  color: var(--el-text-color-primary);
+}
+
+.el-alert--info.is-light{
+  color:  var(--cbd-brand-5);
+  background-color: var(--cbd-brand-1);
+}
