@@ -1,4 +1,4 @@
-@import "@chapanda/style-preset-tailwind/theme/index";
+@import "@chapanda/style-preset-tailwind/theme";
 
 @tailwind base;
 @tailwind components;
