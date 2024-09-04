@@ -1,27 +1,21 @@
 # chapanda-style-preset
 chapanda style preset
 
-## ✅ 提供基础颜色 js & ✅颜色扩展与覆盖
-## ✅ 提供基础颜色 js & ✅颜色扩展与覆盖
+## 基础层
+* base 提供基础的 scss 预设、颜色
+* unocss 提供基础的 unocss 预设 + scss 字体
+* tailwind 提供基础的 tailwindcss 预设 + scss 字体
 
-## scss 打包脚本
+## 服务层
+* antd 提供 antd 主题预设  + scss 颜色
+* ep 提供 element 主题预设  + scss 颜色
+* vant 提供 vant 主题预设  + scss 颜色
 
-### ✅ base
-
-###  chapanda-style-preset
-#### TODO: element-plus
-#### ✅TODO: vant
-
-
-## ✅ 提供样式预设 scss(✅布局，✅border, ✅字体，✅font-family)
-## ✅ 提供样式预设 tailwind(✅颜色，✅布局，✅border, ✅字体，✅font-family)
-## ✅ 提供样式预设 unocss(✅颜色，✅布局，✅border, ✅字体，✅font-family) 
+## 应用层
+* preset 提供全部功能支持
 
 
-## ✅ 提供 chapanda 主题的 antd
 
-## 提供 chapanda 主题的 ep（是否会和 unocss 预设、tailwind预设，scss 预设冲突？）
-## ✅ 提供 chapanda 主题的 vant（是否会和 unocss 预设、tailwind预设，scss 预设冲突？）
 
 ## 使用文档
 ## 使用查询

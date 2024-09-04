@@ -26,7 +26,7 @@
       "require": "./dist/index.js",
       "import": "./dist/index.mjs"
     },
-    "./theme/index": "./theme/index.scss",
+    "./theme": "./theme/index.scss",
     "./theme/component": "./theme/components/index.scss"
   },
   "scripts": {

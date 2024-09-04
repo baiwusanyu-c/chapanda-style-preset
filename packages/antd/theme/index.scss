@@ -1,4 +1,4 @@
-@use '@chapanda/style-preset-base/theme/index' as cbd;
+@use '@chapanda/style-preset-base/theme' as cbd;
 :root {
   @include cbd.generate-root-css-variables();
 }

@@ -1,29 +1,29 @@
 
 // @public
-@forward '@chapanda/style-preset-base/theme/index' show generate-root-css-variables;
+@forward '@chapanda/style-preset-base/theme' show generate-root-css-variables;
 // @public
-@forward '@chapanda/style-preset-base/theme/index' show generate-color-map;
+@forward '@chapanda/style-preset-base/theme' show generate-color-map;
 
 // @public
-@forward '@chapanda/style-preset-base/theme/index' show gen-border-style;
+@forward '@chapanda/style-preset-base/theme' show gen-border-style;
 // @public
-@forward '@chapanda/style-preset-base/theme/index' show gen-border-error;
+@forward '@chapanda/style-preset-base/theme' show gen-border-error;
 // @public
-@forward '@chapanda/style-preset-base/theme/index' show gen-border-success;
+@forward '@chapanda/style-preset-base/theme' show gen-border-success;
 // @public
-@forward '@chapanda/style-preset-base/theme/index' show gen-border-warning;
+@forward '@chapanda/style-preset-base/theme' show gen-border-warning;
 
 // @public
-@forward '@chapanda/style-preset-base/theme/index' show font-pingfang;
+@forward '@chapanda/style-preset-base/theme' show font-pingfang;
 // @public
-@forward '@chapanda/style-preset-base/theme/index' show font-din;
+@forward '@chapanda/style-preset-base/theme' show font-din;
 // @public
-@forward '@chapanda/style-preset-base/theme/index' show font-din-bold;
+@forward '@chapanda/style-preset-base/theme' show font-din-bold;
 // @public
-@forward '@chapanda/style-preset-base/theme/index' show font-din-heavy;
+@forward '@chapanda/style-preset-base/theme' show font-din-heavy;
 // @public
-@forward '@chapanda/style-preset-base/theme/index' show font-din-heavy-lighter;
+@forward '@chapanda/style-preset-base/theme' show font-din-heavy-lighter;
 
-@use '@chapanda/style-preset-base/theme/index' as border;
-@use '@chapanda/style-preset-base/theme/index' as layout;
-@use '@chapanda/style-preset-base/theme/index' as font;
+@use '@chapanda/style-preset-base/theme' as border;
+@use '@chapanda/style-preset-base/theme' as layout;
+@use '@chapanda/style-preset-base/theme' as font;

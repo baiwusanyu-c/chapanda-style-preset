@@ -55,7 +55,7 @@ const copyPackageJsonFiles = async(
             "require": "./utils/index.js",
             "import": "./utils/index.mjs"
           },
-          "./theme/index": "./theme/index.scss",
+          "./theme": "./theme/index.scss",
           "./theme/antd": "./theme/antd/index.scss",
           "./theme/vant": "./theme/vant/index.scss",
           "./theme/element-plus": "./theme/element-plus/index.scss",
@@ -70,7 +70,7 @@ const copyPackageJsonFiles = async(
             require: './index.js',
             import: './index.mjs',
           },
-          "./theme/index": "./theme/index.scss",
+          "./theme": "./theme/index.scss",
           "./theme/component": "./theme/components/index.scss"
         }
       }
