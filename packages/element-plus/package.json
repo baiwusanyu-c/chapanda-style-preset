@@ -27,7 +27,7 @@
       "import": "./dist/index.mjs"
     },
     "./theme": "./theme/index.scss",
-    "./theme/component": "./theme/components/index.scss"
+    "./theme/components": "./theme/components/index.scss"
   },
   "scripts": {
     "publish:npm": "pnpm publish --no-git-checks --access public"

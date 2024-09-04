@@ -195,9 +195,9 @@ importers:
 
   play/element-plus:
     dependencies:
-      '@chapanda/style-preset-ep':
-        specifier: 0.0.1-beta.14
-        version: 0.0.1-beta.14(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(element-plus@2.8.0(vue@3.4.38(typescript@5.5.4)))
+      '@chapanda/style-preset':
+        specifier: workspace:*
+        version: link:../../packages/chapanda-style-preset
       '@element-plus/icons-vue':
         specifier: ^2.3.1
         version: 2.3.1(vue@3.4.38(typescript@5.5.4))
@@ -598,11 +598,6 @@ packages:
     resolution: {integrity: sha512-tYTr3ohjtnUceZrU0Jo5QuzroNft/Q6WAWoMC2jQiX6r9ezQMpzcq17QL2PWHKqd1lOJoYbcPl+NrxI3HfFxfQ==}
     peerDependencies:
       baiwusanyu-utils: ^1.0.18
-
-  '@chapanda/style-preset-ep@0.0.1-beta.14':
-    resolution: {integrity: sha512-UaSW+m3XiU2JpcfqQx3rHTAMYuYWGqS81ZHHv6uYVVuUF/yVWPFkX5n8cEa7h4yE51D9IxmFS7jvVN9Mf4BaXQ==}
-    peerDependencies:
-      element-plus: ^2.8.0
 
   '@chapanda/style-preset-unocss@0.0.1-beta.14':
     resolution: {integrity: sha512-Ydmn1yNU43WpArfYHlTD4wlQOju1+88QqZcUWtIiV8aXRKFbuw2r+QV6VRl7RFUNPz/rwbbds2OmLiJMyGNLZA==}
@@ -4833,14 +4828,6 @@ snapshots:
   '@chapanda/style-preset-base@0.0.1-beta.15(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))':
     dependencies:
       baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
-
-  '@chapanda/style-preset-ep@0.0.1-beta.14(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(element-plus@2.8.0(vue@3.4.38(typescript@5.5.4)))':
-    dependencies:
-      '@chapanda/style-preset-base': 0.0.1-beta.15(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))
-      '@chapanda/style-preset-utils': 0.0.1-beta.14
-      element-plus: 2.8.0(vue@3.4.38(typescript@5.5.4))
-    transitivePeerDependencies:
-      - baiwusanyu-utils
 
   '@chapanda/style-preset-unocss@0.0.1-beta.14(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(unocss@0.62.1(postcss@8.4.41)(rollup@4.20.0)(vite@5.4.0(@types/node@22.3.0)(sass@1.77.8)))':
     dependencies:

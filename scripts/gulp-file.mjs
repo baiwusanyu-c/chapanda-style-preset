@@ -59,7 +59,7 @@ const copyPackageJsonFiles = async(
           "./theme/antd": "./theme/antd/index.scss",
           "./theme/vant": "./theme/vant/index.scss",
           "./theme/element-plus": "./theme/element-plus/index.scss",
-          "./theme/element-plus/component": "./theme/element-plus/component.scss"
+          "./theme/element-plus/components": "./theme/element-plus/components.scss"
         }
       } else {
         packageJson.main = './index.mjs'
@@ -73,7 +73,7 @@ const copyPackageJsonFiles = async(
           "./theme": "./theme/index.scss",
         }
         if(srcDir.includes('element-plus')) {
-          packageJson.exports["./theme/component"] = "./theme/components/index.scss"
+          packageJson.exports["./theme/components"] = "./theme/components/index.scss"
         }
 
         if(srcDir.includes('base')) {
