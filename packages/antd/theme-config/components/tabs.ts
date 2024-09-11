@@ -6,7 +6,7 @@ export const genTabsToken  = (colors: Record<string, string>) => {
       'colorBorderSecondary': colors['cbd-gray-3'],
       'colorText': colors['cbd-gray-7'],
       'colorTextDisabled': colors['cbd-gray-4'],
-      'borderRadius': 2,
+     
     }
   }
 }

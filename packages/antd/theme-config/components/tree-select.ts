@@ -5,9 +5,6 @@ export const genTreeSelectToken  = (colors: Record<string, string>) => {
       'colorTextDisabled': colors['cbd-gray-4'],
       'colorBgContainerDisabled': colors['cbd-gray-2'],
       'colorText': colors['cbd-gray-7'],
-      'borderRadius': 2,
-      'borderRadiusLG': 2,
-      'borderRadiusSM': 2,
     }
   }
 }

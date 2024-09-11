@@ -7,9 +7,6 @@ export const genRadioToken  = (colors: Record<string, string>) => {
       'buttonCheckedBgDisabled': colors['cbd-gray-2'],
       'buttonCheckedColorDisabled': colors['cbd-gray-4'],
       'colorTextDisabled': colors['cbd-gray-4'],
-      "borderRadius": 2,
-      "borderRadiusLG": 2,
-      "borderRadiusSM": 2
     }
   }
 }

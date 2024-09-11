@@ -1,4 +1,4 @@
-import { genButtonToken } from "./button";
+
 import { genAvatarToken } from "./avatar";
 import { genCalendarToken } from "./calendar";
 import { genCardToken } from "./card";
@@ -38,7 +38,6 @@ import { genMenuToken } from "./menu";
 import { genPaginationToken } from "./pagination";
 import { genStepsToken } from "./steps";
 
-export { genButtonToken } from "./button";
 export { genAvatarToken } from "./avatar";
 export { genCalendarToken } from "./calendar";
 export { genCardToken } from "./card";
@@ -80,7 +79,6 @@ export { genStepsToken } from "./steps";
 
 export function genComponentToken(colors: Record<string, string>){
   return {
-    ...genButtonToken(),
     ...genAvatarToken(colors),
     ...genCalendarToken(colors),
     ...genCardToken(colors),

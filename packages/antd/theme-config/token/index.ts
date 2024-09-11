@@ -146,10 +146,10 @@ export const genToken = (colors: Record<string, string>) => {
     // 浮层的背景蒙层颜色
     // "colorBgMask": '',
     // 全局圆角
-    "borderRadius": 4,
-    "borderRadiusXs": 4,
-    "borderRadiusSm": 4,
-    "borderRadiusLg": 4,
+    "borderRadius": 2,
+    "borderRadiusXs": 2,
+    "borderRadiusSm": 2,
+    "borderRadiusLg": 2,
     "wireframe": false
   }
 }

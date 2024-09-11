@@ -1,8 +1,6 @@
 import { genToken } from "./token";
 import { genComponentToken } from "./components";
 import { genThemeColors } from "@chapanda/style-preset-base";
-
-export { genButtonToken } from "./components";
 export { genAvatarToken } from "./components";
 export { genCalendarToken } from "./components";
 export { genCardToken } from "./components";
