@@ -59,3 +59,16 @@
 .ant-transfer .ant-transfer-list-header {
   background-color: var(--cbd-gray-1);
 }
+
+/** 覆盖 date-picker **/
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-end) .ant-picker-cell-inner,
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-start) .ant-picker-cell-inner,
+.ant-picker-date-panel .ant-picker-cell-inner,
+.ant-picker-date-panel .ant-picker-cell.ant-picker-cell-range-end .ant-picker-cell-inner,
+.ant-picker-date-panel .ant-picker-cell.ant-picker-cell-range-start .ant-picker-cell-inner{
+  border-radius: var(--ant-border-radius-sm);
+  border-start-start-radius:var(--ant-border-radius-sm);
+  border-end-start-radius: var(--ant-border-radius-sm);
+  border-start-end-radius: var(--ant-border-radius-sm);
+  border-end-end-radius: var(--ant-border-radius-sm);
+}

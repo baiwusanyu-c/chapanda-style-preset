@@ -2,7 +2,6 @@ import type { ThemeConfig } from "antd";
 import { mergeObjects } from '@chapanda/style-preset-utils'
 import { genAntdTheme } from "./theme-config";
 
-export { genButtonToken } from "./theme-config";
 export { genAvatarToken } from "./theme-config";
 export { genCardToken } from "./theme-config";
 export { genCollapseToken } from "./theme-config";

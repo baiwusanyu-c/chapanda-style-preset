@@ -54,6 +54,13 @@
             placeholder="Pick one or more months"
         />
       </div>
+      <el-date-picker
+          v-model="value1"
+          type="daterange"
+          range-separator="To"
+          start-placeholder="Start date"
+          end-placeholder="End date"
+      />
     </div>
   </div>
 </template>

@@ -5,7 +5,7 @@ import { DatePicker, Space } from 'antd';
 const onChange: DatePickerProps['onChange'] = (date, dateString) => {
     console.log(date, dateString);
 };
-
+const { RangePicker } = DatePicker;
 const App: React.FC = () => (
   <Space direction="vertical">
       <DatePicker onChange={onChange} />
@@ -13,6 +13,7 @@ const App: React.FC = () => (
       <DatePicker onChange={onChange} picker="month" />
       <DatePicker onChange={onChange} picker="quarter" disabled/>
       <DatePicker onChange={onChange} picker="year" />
+      <RangePicker />
   </Space>
 );
 
