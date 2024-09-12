@@ -6,18 +6,19 @@ const html = `
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>chapanda style preset docs</title>
-    <script type="module" crossorigin src="https://cdn.jsdelivr.net/npm/@chapanda/style-preset-interactive-client@latest/+esm"></script>
-    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/npm/@chapanda/style-preset-interactive-client@latest/index.css">
+    <script type="module" crossorigin src=${process.env.CBD_DOCS_JS}></script>
+    <link rel="stylesheet" crossorigin href=${process.env.CBD_DOCS_CSS}>
   </head>
   <body>
     <div id="root"></div>
   </body>
 </html>`
+
 export const vitePresetDocs = () => {
   return {
     name: 'chapanda:style:preset:docs',
-    async configureServer(server) {
-      console.log(html)
+    apply: "serve",
+    configureServer(server) {
       server.middlewares.use((req, res, next) => {
         console.log(req.url)
         if(req.url === ('/__chanpanda_preset') && req.method === 'GET') {
@@ -31,4 +32,3 @@ export const vitePresetDocs = () => {
   } as Plugin
 }
 // TODO: dev mode
-// TODO: client 主包、docs 主包

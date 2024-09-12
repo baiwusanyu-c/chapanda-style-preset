@@ -5,7 +5,7 @@
   "private": false,
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite build --emptyOutDir --watch",
     "build": "vite build --emptyOutDir",
     "preview": "vite preview",
     "publish:npm": "pnpm publish --no-git-checks --access public"
@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "typescript": "^5.5.3",
-    "vite": "^5.4.1",
+    "vite": "^5.4.4",
     "vite-plugin-solid": "^2.10.2"
   }
 }

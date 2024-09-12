@@ -2,6 +2,15 @@ import * as process from 'process'
 import * as path from 'path'
 import { defineConfig } from 'tsup'
 import { entry as entryConfig } from './dir.mjs'
+
+function normalizePath(filename) {
+  const res =  filename.split(path.win32.sep).join(path.posix.sep);
+  if (path.win32.isAbsolute(res)) {
+    return res.replace(/^[a-zA-Z]:/, ''); // 移除盘符
+  }
+  return res
+};
+
 let entry = {}
 const buildMode = process.env.BUILD_MODE
 const baseConfig = {
@@ -33,10 +42,15 @@ if (buildMode === 'prod') {
     config.outDir = path.resolve(process.cwd(), `../dist/${entry[i].outputPath}`)
     config.dts = true
     configOptions.push(config)
+    config.define = {
+      'process.env.CBD_DOCS_JS': JSON.stringify('https://cdn.jsdelivr.net/npm/@chapanda/style-preset-interactive-client@latest/+esm'),
+      'process.env.CBD_DOCS_CSS': JSON.stringify('https://cdn.jsdelivr.net/npm/@chapanda/style-preset-interactive-client@latest/index.css')
+    }
   }
 }
 
 if (buildMode === 'dev') {
+  const currentDir = process.cwd();
   entry = entryConfig
   for (let i = 0; i < entry.length; i++) {
     const config = JSON.parse(JSON.stringify(baseConfig))
@@ -56,8 +70,14 @@ if (buildMode === 'dev') {
     ]
     config.external = [/@chapanda/]
     config.dts = true
-    config.outDir = path.resolve(process.cwd(), `../packages/${entry[i].outputPath}/dist`)
+    config.outDir = path.resolve(currentDir, `../packages/${entry[i].outputPath}/dist`)
     configOptions.push(config)
+    const clientPath = normalizePath(path.resolve(currentDir, `../dist/interactive-client`))
+    console.log(clientPath)
+    config.define = {
+      'process.env.CBD_DOCS_JS': JSON.stringify(`${clientPath}/index.js`),
+      'process.env.CBD_DOCS_CSS': JSON.stringify(`${clientPath}/index.css`),
+    }
   }
 }
 
