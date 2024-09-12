@@ -22,7 +22,8 @@
   "bugs": "https://github.com/baiwusanyu-c/chapanda-style-preset/issues",
   "scripts": {
     "dev": "cross-env BUILD_MODE=dev tsup-node --config index.mjs",
-    "build": "cross-env BUILD_MODE=prod tsup-node --config index.mjs && pnpm run gulp:script",
+    "build": "cross-env BUILD_MODE=prod tsup-node --config index.mjs && pnpm run build:interactive:client && pnpm run gulp:script",
+    "build:interactive:client": "pnpm run --filter @chapanda/style-preset-interactive-client build",
     "gulp:script": "gulp -f gulp-file.mjs",
     "publish:npm": "gulp -f publish.mjs",
     "clean": "node clean.mjs"

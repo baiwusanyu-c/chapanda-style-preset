@@ -1,0 +1,36 @@
+{
+  "name": "@chapanda/style-preset-interactive-client",
+  "version": "0.0.3",
+  "description": "chapanda style preset interactive document client",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --emptyOutDir",
+    "preview": "vite preview",
+    "publish:npm": "pnpm publish --no-git-checks --access public"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.js",
+      "import": "./index.js"
+    },
+    "./index.css": "./index.scss",
+    "./index.js": "./index.js"
+  },
+  "files": [
+    "index.html",
+    "index.js",
+    "index.css",
+    "README.md"
+  ],
+  "dependencies": {
+    "solid-js": "^1.8.20"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1",
+    "vite-plugin-solid": "^2.10.2"
+  }
+}

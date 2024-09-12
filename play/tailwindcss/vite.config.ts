@@ -1,10 +1,12 @@
 import { defineConfig } from 'vite'
 import solid from 'vite-plugin-solid'
-import path from "path";
+
+import { vitePresetDocs } from "@chapanda/style-preset-interactive";
 
 export default defineConfig({
   plugins: [
-    solid()
+    solid(),
+    vitePresetDocs(),
   ],
   resolve: {
     alias: {},

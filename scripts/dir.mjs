@@ -47,6 +47,10 @@ export const entry = [
     entryPath: "../packages/chapanda-style-preset/utils/index.ts",
     outputPath: "chapanda-style-preset/utils",
   },
+  {
+    entryPath: "../packages/interactive-plugin/index.ts",
+    outputPath: "interactive",
+  },
 ]
 
 
@@ -59,6 +63,8 @@ export const entryPkg = {
   'chapanda-style-preset': '../packages/chapanda-style-preset',
   'base': '../packages/base',
   'utils': '../packages/utils',
+  'interactive-client': '../packages/interactive-client',
+  'interactive': '../packages/interactive-plugin',
 }
 
 export const entryTheme = {

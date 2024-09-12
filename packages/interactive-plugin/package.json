@@ -1,0 +1,40 @@
+{
+  "name": "@chapanda/style-preset-interactive",
+  "description": "chapanda style preset interactive document",
+  "private": false,
+  "type": "module",
+  "version": "0.0.3",
+  "packageManager": "pnpm@9.7.1",
+  "keywords": [
+    "typescript",
+    "javascript",
+    "utils",
+    "vue",
+    "vue3",
+    "vite",
+    "react",
+    "web component"
+  ],
+  "license": "MIT",
+  "author": "baiwusanyu-c",
+  "homepage": "https://github.com/baiwusanyu-c/chapanda-style-preset",
+  "repository": "https://github.com/baiwusanyu-c/chapanda-style-preset",
+  "bugs": "https://github.com/baiwusanyu-c/chapanda-style-preset/issues",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./theme": "./theme/index.scss",
+    "./theme/components": "./theme/components/index.scss"
+  },
+  "scripts": {
+    "publish:npm": "pnpm publish --no-git-checks --access public"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "fs-extra": "^11.2.0",
+    "vite": "^5.4.1"
+  }
+}
