@@ -1,5 +1,6 @@
 import { Plugin } from 'vite'
-const html = `
+import { setGlobalPrefix, log } from 'baiwusanyu-utils'
+export const html = `
 <!doctype html>
 <html lang="en">
   <head>
@@ -20,7 +21,6 @@ export const vitePresetDocs = () => {
     apply: "serve",
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
-        console.log(req.url)
         if(req.url === ('/__chanpanda_preset') && req.method === 'GET') {
           res.setHeader('Content-Type', 'text/html');
           res.end(html)
@@ -28,7 +28,12 @@ export const vitePresetDocs = () => {
           next()
         }
       })
+
+      log('info', '  ➜  【@chapanda/style-preset】')
+      log('info', '  ➜  样式预设交互式文档请查看: ')
+      log('info', '  ➜  www.baidu.com')
     },
   } as Plugin
 }
-// TODO: dev mode
+
+// TODO: log
