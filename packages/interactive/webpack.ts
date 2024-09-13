@@ -1,8 +1,8 @@
 import { html } from './vite'
 import type { Application } from 'express'
-import type { Middleware, Configuration } from 'webpack-dev-server'
+import type { Middleware, Configuration  } from 'webpack-dev-server'
 import { setGlobalPrefix, log } from 'baiwusanyu-utils'
-export const webpackPresetDocs = (middlewares: Middleware, devServer: Configuration) => {
+export const webpackPresetDocs = (middlewares: Middleware, devServer: Configuration ) => {
   if (!devServer) {
     throw new Error('webpack-dev-server is not defined');
   }
@@ -12,9 +12,8 @@ export const webpackPresetDocs = (middlewares: Middleware, devServer: Configurat
     res.send(html);
   });
 
-  setGlobalPrefix('[@chapanda/style-preset]');
-  log('info', '样式预设交互式文档请查看: ')
+  const { port, host } = (devServer as any).options;
+  log('info', '@chapanda/style-preset ')
+  log('info', `样式预设交互式文档请查看: http://${host}:${port}/__chanpanda_preset`)
   return middlewares;
 }
-
-// TODO: log

@@ -73,7 +73,6 @@ if (buildMode === 'dev') {
     config.outDir = path.resolve(currentDir, `../packages/${entry[i].outputPath}/dist`)
     configOptions.push(config)
     const clientPath = normalizePath(path.resolve(currentDir, `../dist/interactive-client`))
-    console.log(clientPath)
     config.define = {
       'process.env.CBD_DOCS_JS': JSON.stringify(`${clientPath}/index.js`),
       'process.env.CBD_DOCS_CSS': JSON.stringify(`${clientPath}/index.css`),
