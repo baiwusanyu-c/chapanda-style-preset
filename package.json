@@ -28,6 +28,7 @@
   "scripts": {
     "init": "pnpm i",
     "dev": "pnpm run --filter @chapanda/style-preset-scripts dev",
+    "dev:client": "pnpm run --filter @chapanda/style-preset-interactive-client dev",
     "dev:play:antd": "pnpm run --filter @chapanda/style-preset-play-antd dev",
     "dev:play:ep": "pnpm run --filter @chapanda/style-preset-play-ep dev",
     "dev:play:unocss": "pnpm run --filter @chapanda/style-preset-play-unocss dev",

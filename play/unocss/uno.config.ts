@@ -1,11 +1,14 @@
 
-import { chaPandaUnoConfig } from '@chapanda/style-preset-unocss'
+import { presetChapandaUno } from '@chapanda/style-preset-unocss'
 import { defineConfig } from 'unocss'
 
-export default defineConfig(chaPandaUnoConfig({
+export default defineConfig({
   theme: {
     colors: {
       'baiwu': '#00ffff'
     }
-  }
-}))
+  },
+  presets: [
+    presetChapandaUno(),
+  ]
+})

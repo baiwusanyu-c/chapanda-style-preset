@@ -30,9 +30,9 @@ import { chaPandaTailwindConfig } from '@chapanda/style-preset/tailwindcss'
 ## @chapanda/style-preset/unocss
 
 ```typescript jsx
-import { chaPandaUnoConfig } from '@chapanda/style-preset/unocss'
+import { presetChapandaUno } from '@chapanda/style-preset/unocss'
 // 等同于
-// import { chaPandaUnoConfig } from '@chapanda/style-preset-unocss'
+// import { presetChapandaUno } from '@chapanda/style-preset-unocss'
 ```
 更多详情请参考 `@chapanda/style-preset-unocss` 文档.
 

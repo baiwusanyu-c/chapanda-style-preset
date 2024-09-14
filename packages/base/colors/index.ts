@@ -1,5 +1,7 @@
 import { extend } from 'baiwusanyu-utils'
 import { defaultThemeColors } from './colors'
+import { defaultThemeColorsDescription } from './description'
+
 const COLOR_PREFIX = 'cbd'
 /**
  * 生成主题颜色变量
@@ -36,9 +38,27 @@ export const genThemeColors = (
       });
     }
   });
+
+  const colorsDescription: Record<string, any> = {}
+  Object.keys(defaultThemeColorsDescription).forEach((k) => {
+    const key = k as keyof typeof defaultThemeColorsDescription
+    if (typeof defaultThemeColorsDescription[key] === 'string') {
+      const resolveKey = `--${prefix}-${k}`
+      colorsDescription[resolveKey] = defaultThemeColorsDescription[key]
+
+    } else {
+      Object.keys(defaultThemeColorsDescription[key]).forEach((v) => {
+        const keyV = v as keyof typeof defaultThemeColorsDescription[typeof key]
+        const resolveKey = `--${prefix}-${k}-${v}`
+        colorsDescription[resolveKey] = defaultThemeColorsDescription[key][keyV]
+      });
+    }
+  });
+
   return {
     preflights,
     colorsVariable,
+    colorsDescription,
     colors,
   };
 };

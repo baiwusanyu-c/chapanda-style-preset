@@ -1,9 +1,10 @@
-/* @refresh reload */
-import { render } from 'solid-js/web'
-
-import './index.css'
-import App from './App'
-
-const root = document.getElementById('root')
-
-render(() => <App />, root!)
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import 'virtual:uno.css'
+// import "@chapanda/style-preset/theme"
+import App from './views/App'
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)

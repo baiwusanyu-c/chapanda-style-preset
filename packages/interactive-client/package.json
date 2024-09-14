@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite build --emptyOutDir --watch",
+    "dev:client": "vite dev",
     "build": "vite build --emptyOutDir",
     "preview": "vite preview",
     "publish:npm": "pnpm publish --no-git-checks --access public"
@@ -26,11 +27,21 @@
     "README.md"
   ],
   "dependencies": {
-    "solid-js": "^1.8.20"
+    "@chapanda/style-preset": "workspace: *",
+    "baiwusanyu-utils": "1.0.18",
+    "tinycolor2": "^1.6.0",
+    "unocss": "^0.62.3",
+    "antd": "^5.20.1",
+    "@ant-design/icons": "^5.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@types/tinycolor2": "^1.4.6",
     "typescript": "^5.5.3",
     "vite": "^5.4.4",
-    "vite-plugin-solid": "^2.10.2"
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react-swc": "^3.7.0"
   }
 }
