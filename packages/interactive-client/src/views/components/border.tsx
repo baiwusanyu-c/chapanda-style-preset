@@ -13,7 +13,7 @@ export interface RulesItem {
 export const BorderComponent = () => {
   const [ rulesCode, setRulesCode ] = useState<RulesItem[]>([])
   const [messageApi, contextHolder] = message.useMessage();
-  const layoutRules = useMemo<RulesItem[]>(() => {
+  const resolveRules = useMemo<RulesItem[]>(() => {
     const borderRules = chaPandaBorderRules(genThemeColors().colors)
     return Object.keys(borderRules).map((key) => {
       const value = borderRules[key as keyof typeof borderRules]
@@ -47,8 +47,8 @@ export const BorderComponent = () => {
      setRulesCode(res)
    }
   useEffect(() => {
-    genHTMLCode(layoutRules)
-  }, [layoutRules])
+    genHTMLCode(resolveRules)
+  }, [resolveRules])
 
   const onCopy = (value: string) => {
     copyText(value)

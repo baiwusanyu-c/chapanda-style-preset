@@ -1,9 +1,9 @@
 
 
 export const chaPandaFontShortcut = () => {
-  const basicFontFamily = `-apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol"`
+  const basicFontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI",' +
+    'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",' +
+    '"Segoe UI Emoji", "Segoe UI Symbol"'
   const pfFontFamily = `PingFang-SC, ${basicFontFamily}`
   const hmFontFamily = `'HarmonyOS Sans SC', ${basicFontFamily}`
 

@@ -27,7 +27,7 @@
       "import": "./dist/index.mjs"
     },
     "./theme": "./theme/index.scss",
-    "./theme/font/DIN-Bold.otf": "./theme/font/DIN-Bold.ot",
+    "./theme/font/DIN-Bold.otf": "./theme/font/DIN-Bold.otf",
     "./theme/font/DINNextLTPro-Medium.ttf": "./theme/font/DINNextLTPro-Medium.ttf",
     "./theme/font/DINNextLTPro-Bold.ttf": "./theme/font/DINNextLTPro-Bold.ttf",
     "./theme/font/DINNextLTPro-Heavy.ttf": "./theme/font/DINNextLTPro-Heavy.ttf"

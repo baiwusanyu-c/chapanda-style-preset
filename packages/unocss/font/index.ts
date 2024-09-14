@@ -3,9 +3,9 @@ import type {Theme} from "@unocss/preset-uno";
 
 
 export const chaPandaFontRules = () => {
-  const basicFontFamily = `-apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol"`
+  const basicFontFamily = '-apple-system, BlinkMacSystemFont, "Segoe UI",' +
+    'Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",' +
+    '"Segoe UI Emoji", "Segoe UI Symbol"'
   const pfFontFamily = `PingFang-SC, ${basicFontFamily}`
   const hmFontFamily = `'HarmonyOS Sans SC', ${basicFontFamily}`
   const regular = [24,22,20,18,17,16,15,14,12]
