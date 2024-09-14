@@ -28,7 +28,7 @@
   ],
   "dependencies": {
     "@ant-design/icons": "^5.4.0",
-    "@chapanda/style-preset": "workspace: *",
+    "@chapanda/style-preset": "1.2.3",
     "antd": "^5.20.1",
     "baiwusanyu-utils": "1.0.18",
     "react": "^18.3.1",
@@ -41,7 +41,6 @@
     "@types/react-dom": "^18.3.0",
     "@types/tinycolor2": "^1.4.6",
     "@vitejs/plugin-react-swc": "^3.7.0",
-    "shiki": "^1.17.6",
     "typescript": "^5.5.3",
     "vite": "^5.4.4"
   }

@@ -16,6 +16,10 @@ export default defineConfig({
         chunkFileNames: '[name].js',
         assetFileNames: '[name].[ext]'
       }
-    }
+    },
+    minify: false
   }
 })
+
+// TODO: interactive-client css 字体走 cdn
+// TODO: interactive 要打成 cjs

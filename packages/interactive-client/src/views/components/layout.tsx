@@ -1,6 +1,6 @@
 import React, {useEffect, useMemo, useState} from 'react'
 import { chaPandaLayoutRules } from '@chapanda/style-preset/unocss'
-import { codeToHtml } from 'shiki'
+import { codeToHtml } from 'https://esm.sh/shiki@1.0.0'
 
 export interface RulesItem {
   name:string

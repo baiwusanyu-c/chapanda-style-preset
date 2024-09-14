@@ -1,6 +1,6 @@
 import React, {useEffect, useMemo, useState} from 'react'
 import { chaPandaBorderRules, genThemeColors } from '@chapanda/style-preset/unocss'
-import { codeToHtml } from 'shiki'
+import { codeToHtml } from 'https://esm.sh/shiki@1.0.0'
 import { copyText } from 'baiwusanyu-utils'
 import {  message } from 'antd';
 export interface RulesItem {

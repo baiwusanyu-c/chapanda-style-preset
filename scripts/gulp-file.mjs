@@ -90,7 +90,11 @@ const copyPackageJsonFiles = async(
               "import": "./index.js"
             },
             "./index.css": "./index.css",
-            "./index.js": "./index.js"
+            "./index.js": "./index.js",
+            "./DIN-Bold.otf": "./DIN-Bold.otf",
+            "./DINNextLTPro-Medium.ttf": "./DINNextLTPro-Medium.ttf",
+            "./DINNextLTPro-Bold.ttf": "./DINNextLTPro-Bold.ttf",
+            "./DINNextLTPro-Heavy.ttf": "./DINNextLTPro-Heavy.ttf"
           }
         }
       }
