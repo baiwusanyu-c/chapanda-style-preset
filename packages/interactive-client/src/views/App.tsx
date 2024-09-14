@@ -1,6 +1,7 @@
 import React from 'react'
 import { ColorsComponent } from "./components/colors";
 import { LayoutComponent } from "./components/layout";
+import { BorderComponent } from "./components/border";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <div>
           <h2 className='font-pingfang text-cbd-gray-6 px-20px box-border'>边框预设</h2>
           <div className='w-70vw bg-cbd-gray-1 p-20px border-rounded box-border grid-cols-2 gap-4 grid'>
+            <BorderComponent/>
           </div>
         </div>
 

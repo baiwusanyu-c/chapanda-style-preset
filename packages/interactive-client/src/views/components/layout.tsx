@@ -40,7 +40,7 @@ export const LayoutComponent = () => {
          html,
        })
      }
-     
+
      setRulesCode(res)
    }
   useEffect(() => {
@@ -49,12 +49,12 @@ export const LayoutComponent = () => {
 
   const renderRulesCode = (rulesItem: RulesItem[]) => {
     return rulesItem.map(ruleItem => {
-      return <div className='fcc h-122px'>
+      return <div className='fcc h-122px' key={ruleItem.name}>
         <div className="rounded-lt rounded-lb flex-1 bg-cbd-brand-2 h-100% pr">
           <div style={ruleItem.value} className='h-100%'>
-            <div className='w-80px h-30px bg-cbd-brand-3 rounded m-4px'>
+            <div className='w-30px h-30px bg-cbd-brand-3 rounded m-4px'>
             </div>
-            <div className='w-80px h-30px bg-cbd-brand-3 rounded m-4px'>
+            <div className='w-30px h-30px bg-cbd-brand-3 rounded m-4px'>
             </div>
           </div>
         </div>

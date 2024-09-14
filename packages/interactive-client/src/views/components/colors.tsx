@@ -2,7 +2,7 @@ import { genThemeColors } from "@chapanda/style-preset";
 import tinyColor from 'tinycolor2'
 import { copyText } from 'baiwusanyu-utils'
 import {  message } from 'antd';
-import { useState}  from "react";
+import { useState }  from "react";
 interface ColorItem  {
   name: string
   value: string
@@ -42,7 +42,7 @@ export const ColorsComponent = () => {
   }
   const renderColorItem = (color: ColorItem) => {
     return (
-      <div>
+      <div key={color.name}>
         {contextHolder}
         <div className='pf-regular-12 mb-8px text-cbd-gray-5'>说明: {setDescription(color.name)}</div>
         <div className='fsc'>
