@@ -2,6 +2,9 @@ import { chaPandaLayoutRules } from '../layout'
 import { chaPandaBorderRules } from "../border";
 import { chaPandaFontRules } from "../font";
 
+export { chaPandaLayoutRules } from '../layout'
+export { chaPandaBorderRules } from "../border";
+export { chaPandaFontRules } from "../font";
 function normalizeRules(staticRules: Record<string, any>) {
   const res: Array<Array<Record<string, any>>> = [];
   // transform staticRules

@@ -2,7 +2,7 @@ import { genThemeColors } from "@chapanda/style-preset";
 import tinyColor from 'tinycolor2'
 import { copyText } from 'baiwusanyu-utils'
 import {  message } from 'antd';
-import {useState} from "react";
+import { useState}  from "react";
 interface ColorItem  {
   name: string
   value: string
