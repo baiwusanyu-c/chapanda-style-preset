@@ -21,6 +21,10 @@
     "./index.js": "./index.js"
   },
   "files": [
+    "DIN-Bold.otf",
+    "DINNextLTPro-Medium.ttf",
+    "DINNextLTPro-Bold.ttf",
+    "DINNextLTPro-Heavy.ttf",
     "index.html",
     "index.js",
     "index.css",
