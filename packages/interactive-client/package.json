@@ -1,6 +1,6 @@
 {
   "name": "@chapanda/style-preset-interactive-client",
-  "version": "0.0.3",
+  "version": "1.2.3",
   "description": "chapanda style preset interactive document client",
   "private": false,
   "type": "module",
