@@ -41,11 +41,16 @@ if (buildMode === 'prod') {
     config.external = [/@chapanda/]
     config.outDir = path.resolve(process.cwd(), `../dist/${entry[i].outputPath}`)
     config.dts = true
-    configOptions.push(config)
+    config.outExtension = (format) => {
+      return {
+        js: `.${format.format === 'cjs' ? 'cjs' : 'mjs'}`,
+      }
+    }
     config.define = {
       'process.env.CBD_DOCS_JS': JSON.stringify('https://cdn.jsdelivr.net/npm/@chapanda/style-preset-interactive-client@latest/+esm'),
       'process.env.CBD_DOCS_CSS': JSON.stringify('https://cdn.jsdelivr.net/npm/@chapanda/style-preset-interactive-client@latest/index.css')
     }
+    configOptions.push(config)
   }
 }
 
@@ -71,12 +76,17 @@ if (buildMode === 'dev') {
     config.external = [/@chapanda/]
     config.dts = true
     config.outDir = path.resolve(currentDir, `../packages/${entry[i].outputPath}/dist`)
-    configOptions.push(config)
+    config.outExtension = (format) => {
+      return {
+        js: `.${format.format === 'cjs' ? 'cjs' : 'mjs'}`,
+      }
+    }
     const clientPath = normalizePath(path.resolve(currentDir, `../dist/interactive-client`))
     config.define = {
       'process.env.CBD_DOCS_JS': JSON.stringify(`${clientPath}/index.js`),
       'process.env.CBD_DOCS_CSS': JSON.stringify(`${clientPath}/index.css`),
     }
+    configOptions.push(config)
   }
 }
 

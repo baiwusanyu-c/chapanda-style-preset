@@ -26,4 +26,18 @@ export default defineConfig({
 
 ```
 
-### webpack(TODO)
+### webpack
+
+const  { webpackPresetDocs } = require("../node_modules/@chapanda/style-preset-interactive/index");
+```typescript jsx
+module.exports = {
+  // ...
+  devServer: {
+    // ...
+    setupMiddlewares: (middlewares, devServer) => {
+      middlewares = webpackPresetDocs(middlewares, devServer)
+      return middlewares
+    },
+  },
+}
+```

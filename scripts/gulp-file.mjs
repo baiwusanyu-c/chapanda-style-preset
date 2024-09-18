@@ -22,37 +22,37 @@ const copyPackageJsonFiles = async(
         packageJson.exports = {
           ".": {
             "types": "./index.d.ts",
-            "require": "./index.js",
+            "require": "./index.cjs",
             "import": "./index.mjs"
           },
           "./antd": {
             "types": "./antd/index.d.ts",
-            "require": "./antd/index.js",
+            "require": "./antd/index.cjs",
             "import": "./antd/index.mjs"
           },
           "./element-plus": {
             "types": "./element-plus/index.d.ts",
-            "require": "./element-plus/index.js",
+            "require": "./element-plus/index.cjs",
             "import": "./element-plus/index.mjs"
           },
           "./tailwindcss": {
             "types": "./tailwindcss/index.d.ts",
-            "require": "./tailwindcss/index.js",
+            "require": "./tailwindcss/index.cjs",
             "import": "./tailwindcss/index.mjs"
           },
           "./unocss": {
             "types": "./unocss/index.d.ts",
-            "require": "./unocss/index.js",
+            "require": "./unocss/index.cjs",
             "import": "./unocss/index.mjs"
           },
           "./vant": {
             "types": "./vant/index.d.ts",
-            "require": "./vant/index.js",
+            "require": "./vant/index.cjs",
             "import": "./vant/index.mjs"
           },
           "./utils": {
             "types": "./utils/index.d.ts",
-            "require": "./utils/index.js",
+            "require": "./utils/index.cjs",
             "import": "./utils/index.mjs"
           },
           "./theme": "./theme/index.scss",
@@ -67,7 +67,7 @@ const copyPackageJsonFiles = async(
         packageJson.exports = {
           '.': {
             types: './index.d.ts',
-            require: './index.js',
+            require: './index.cjs',
             import: './index.mjs',
           },
           "./theme": "./theme/index.scss",
@@ -86,7 +86,7 @@ const copyPackageJsonFiles = async(
           packageJson.exports = {
             ".": {
               "types": "./index.d.ts",
-              "require": "./index.js",
+              "require": "./index.cjs",
               "import": "./index.js"
             },
             "./index.css": "./index.css",
