@@ -3,7 +3,7 @@
   "description": "chapanda style preset interactive document",
   "private": false,
   "type": "module",
-  "version": "1.2.3",
+  "version": "1.2.4-beta.2",
   "packageManager": "pnpm@9.7.1",
   "keywords": [
     "typescript",
@@ -45,6 +45,7 @@
   },
   "dependencies": {
     "baiwusanyu-utils": "1.0.18",
-    "picocolors": "^1.1.0"
+    "picocolors": "^1.1.0",
+    "@chapanda/style-preset-interactive-client": "latest"
   }
 }

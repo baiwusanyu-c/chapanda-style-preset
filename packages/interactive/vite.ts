@@ -1,19 +1,6 @@
 import { Plugin, ResolvedConfig } from 'vite'
 import c from 'picocolors'
-export const html = `
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>chapanda style preset docs</title>
-    <script type="module" crossorigin src=${process.env.CBD_DOCS_JS}></script>
-    <link rel="stylesheet" crossorigin href=${process.env.CBD_DOCS_CSS}>
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>`
+import { getFilesContent, getPath, html } from "./utils";
 
 export const vitePresetDocs = () => {
   let config: ResolvedConfig
@@ -24,12 +11,19 @@ export const vitePresetDocs = () => {
       // 存储最终解析的配置
       config = resolvedConfig
     },
-    configureServer(server) {
+    async configureServer(server) {
+      const content = await getFilesContent(getPath(), ['index.js', 'index.css'])
       server.middlewares.use((req, res, next) => {
         if(req.url === ('/__chanpanda_preset') && req.method === 'GET') {
           res.setHeader('Content-Type', 'text/html');
           res.end(html)
-        }else{
+        } else if(req.url === ('/__chanpanda_preset/index.js') && req.method === 'GET') {
+          res.setHeader('Content-Type', 'text/javascript');
+          res.end(content['index.js'] as string)
+        } else if(req.url === ('/__chanpanda_preset/index.css') && req.method === 'GET') {
+          res.setHeader('Content-Type', 'text/javascript');
+          res.end(content['index.css'] as string)
+        } else{
           next()
         }
       })
