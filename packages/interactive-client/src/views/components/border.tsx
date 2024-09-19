@@ -54,7 +54,7 @@ export const BorderComponent = () => {
     copyText(value)
     messageApi.open({
       type: 'success',
-      content: '复制成功！',
+      content: `复制 ${value} 成功！`,
     });
   }
 

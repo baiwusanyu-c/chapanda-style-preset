@@ -34,7 +34,7 @@ export const ColorsComponent = () => {
     copyText(value)
     messageApi.open({
       type: 'success',
-      content: '复制成功！',
+      content: `复制 ${value} 成功！`,
     });
   }
   const setDescription = (name: string) => {

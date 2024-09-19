@@ -14,14 +14,38 @@ export const webpackPresetDocs = (middlewares: Middleware, devServer: Configurat
 
   (devServer.app as unknown as Application)?.get('/__chanpanda_preset/index.js', async (_, res) => {
     res.setHeader('Content-Type', 'text/javascript');
-    const content = await getFilesContent(getPath(), ['index.js']);
+    const content = await getFilesContent(getPath(), [['index.js', 'utf-8']]);
     res.end(content['index.js'])
   });
 
   (devServer.app as unknown as Application)?.get('/__chanpanda_preset/index.css', async (_, res) => {
     res.setHeader('Content-Type', 'text/css');
-    const content = await getFilesContent(getPath(), ['index.css']);
+    const content = await getFilesContent(getPath(), [['index.css', 'utf-8']]);
     res.end(content['index.css'])
+  });
+
+  (devServer.app as unknown as Application)?.get('/__chanpanda_preset/DINNextLTPro-Heavy.ttf', async (_, res) => {
+    res.setHeader('Content-Type', 'text/css');
+    const content = await getFilesContent(getPath(), [['DINNextLTPro-Heavy.ttf']]);
+    res.end(content['DINNextLTPro-Heavy.ttf'])
+  });
+
+  (devServer.app as unknown as Application)?.get('/__chanpanda_preset/DINNextLTPro-Medium.ttf', async (_, res) => {
+    res.setHeader('Content-Type', 'text/css');
+    const content = await getFilesContent(getPath(), [['DINNextLTPro-Medium.ttf']]);
+    res.end(content['DINNextLTPro-Medium.ttf'])
+  });
+
+  (devServer.app as unknown as Application)?.get('/__chanpanda_preset/DINNextLTPro-Bold.ttf', async (_, res) => {
+    res.setHeader('Content-Type', 'text/css');
+    const content = await getFilesContent(getPath(), [['DINNextLTPro-Bold.ttf']]);
+    res.end(content['DINNextLTPro-Bold.ttf'])
+  });
+
+  (devServer.app as unknown as Application)?.get('/__chanpanda_preset/DIN-Bold.otf', async (_, res) => {
+    res.setHeader('Content-Type', 'text/css');
+    const content = await getFilesContent(getPath(), [['DIN-Bold.otf']]);
+    res.end(content['DIN-Bold.otf'])
   });
 
   const { port, host } = (devServer as any).options;

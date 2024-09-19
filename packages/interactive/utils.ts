@@ -13,11 +13,11 @@ export function getPath() {
   ))
 }
 
-export async function getFilesContent(path: string, names: string[]) {
-  const res: Record<string, string> = {}
+export async function getFilesContent(path: string, names: Array<string[]>) {
+  const res: Record<string, string | Buffer> = {}
   for (let i = 0; i < names.length; i++) {
-    const content = await fs.readFile(`${path}/${names[i]}`, 'utf8');
-    res[names[i]] = content
+    const content = await fs.readFile(`${path}/${names[i][0]}`, names[i][1] as any);
+    res[names[i][0]] = content
   }
   return res
 }

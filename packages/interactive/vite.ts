@@ -12,7 +12,14 @@ export const vitePresetDocs = () => {
       config = resolvedConfig
     },
     async configureServer(server) {
-      const content = await getFilesContent(getPath(), ['index.js', 'index.css'])
+      const content = await getFilesContent(getPath(), [
+        ['index.js', 'utf-8'],
+        ['index.css', 'utf-8'],
+        ['DINNextLTPro-Heavy.ttf'],
+        ['DINNextLTPro-Medium.ttf'],
+        ['DINNextLTPro-Bold.ttf'],
+        ['DIN-Bold.otf'],
+      ])
       server.middlewares.use((req, res, next) => {
         if(req.url === ('/__chanpanda_preset') && req.method === 'GET') {
           res.setHeader('Content-Type', 'text/html');
@@ -23,6 +30,18 @@ export const vitePresetDocs = () => {
         } else if(req.url === ('/__chanpanda_preset/index.css') && req.method === 'GET') {
           res.setHeader('Content-Type', 'text/css');
           res.end(content['index.css'] as string)
+        }else if(req.url === ('/__chanpanda_preset/DINNextLTPro-Heavy.ttf') && req.method === 'GET') {
+          res.setHeader('Content-Type', 'font/ttf');
+          res.end(content['DINNextLTPro-Heavy.ttf'] as string)
+        }else if(req.url === ('/__chanpanda_preset/DINNextLTPro-Medium.ttf') && req.method === 'GET') {
+          res.setHeader('Content-Type', 'font/ttf');
+          res.end(content['DINNextLTPro-Medium.ttf'] as string)
+        }else if(req.url === ('/__chanpanda_preset/DINNextLTPro-Bold.ttf') && req.method === 'GET') {
+          res.setHeader('Content-Type', 'font/ttf');
+          res.end(content['DINNextLTPro-Bold.ttf'] as string)
+        }else if(req.url === ('/__chanpanda_preset/DIN-Bold.otf') && req.method === 'GET') {
+          res.setHeader('Content-Type', 'font/otf');
+          res.end(content['DIN-Bold.otf'] as string)
         } else{
           next()
         }
