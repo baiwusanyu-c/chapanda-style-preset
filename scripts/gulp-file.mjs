@@ -82,21 +82,6 @@ const copyPackageJsonFiles = async(
           packageJson.exports["./theme/font/DINNextLTPro-Bold.ttf"] = "./theme/font/DINNextLTPro-Bold.ttf"
           packageJson.exports["./theme/font/DINNextLTPro-Heavy.ttf"] = "./theme/font/DINNextLTPro-Heavy.ttf"
         }
-        if(srcDir.includes('interactive-client')) {
-          packageJson.exports = {
-            ".": {
-              "types": "./index.d.ts",
-              "require": "./index.cjs",
-              "import": "./index.js"
-            },
-            "./index.css": "./index.css",
-            "./index.js": "./index.js",
-            "./DIN-Bold.otf": "./DIN-Bold.otf",
-            "./DINNextLTPro-Medium.ttf": "./DINNextLTPro-Medium.ttf",
-            "./DINNextLTPro-Bold.ttf": "./DINNextLTPro-Bold.ttf",
-            "./DINNextLTPro-Heavy.ttf": "./DINNextLTPro-Heavy.ttf"
-          }
-        }
       }
       const packageDir = path.dirname(filePath)
       const relativePath = path.relative(srcDir, packageDir)

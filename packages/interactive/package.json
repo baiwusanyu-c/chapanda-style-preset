@@ -3,7 +3,7 @@
   "description": "chapanda style preset interactive document",
   "private": false,
   "type": "module",
-  "version": "1.2.4-beta.2",
+  "version": "1.2.4-beta.5",
   "packageManager": "pnpm@9.7.1",
   "keywords": [
     "typescript",
@@ -20,6 +20,15 @@
   "homepage": "https://github.com/baiwusanyu-c/chapanda-style-preset",
   "repository": "https://github.com/baiwusanyu-c/chapanda-style-preset",
   "bugs": "https://github.com/baiwusanyu-c/chapanda-style-preset/issues",
+   "files": [
+     "index.cjs",
+     "index.js",
+     "index.d.ts",
+     "index.d.mts",
+     "package.json",
+     "README.md",
+     "client"
+   ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -45,7 +54,6 @@
   },
   "dependencies": {
     "baiwusanyu-utils": "1.0.18",
-    "picocolors": "^1.1.0",
-    "@chapanda/style-preset-interactive-client": "latest"
+    "picocolors": "^1.1.0"
   }
 }

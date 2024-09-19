@@ -10,7 +10,7 @@ export default defineConfig({
   build:{
     rollupOptions: {
       output: {
-        dir: path.resolve(__dirname, '../../dist/interactive-client'),
+        dir: path.resolve(__dirname, '../../dist/interactive/client'),
         name: 'interactive-client',
         entryFileNames: '[name].js',
         chunkFileNames: '[name].js',
@@ -21,5 +21,4 @@ export default defineConfig({
   }
 })
 
-// TODO: interactive-client css 字体走 cdn
-// TODO: interactive 要打成 cjs
+// TODO: 客户端有部分样式丢失

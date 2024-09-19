@@ -9,7 +9,7 @@ function normalizePath(filename) {
     return res.replace(/^[a-zA-Z]:/, ''); // 移除盘符
   }
   return res
-};
+}
 
 let entry = {}
 const buildMode = process.env.BUILD_MODE
@@ -47,8 +47,7 @@ if (buildMode === 'prod') {
       }
     }
     config.define = {
-      'process.env.CBD_DOCS_JS': JSON.stringify('https://cdn.jsdelivr.net/npm/@chapanda/style-preset-interactive-client@latest/+esm'),
-      'process.env.CBD_DOCS_CSS': JSON.stringify('https://cdn.jsdelivr.net/npm/@chapanda/style-preset-interactive-client@latest/index.css')
+      'process.env.CBD_DOCS': JSON.stringify('./node_modules/@chapanda/style-preset-interactive/client'),
     }
     configOptions.push(config)
   }
@@ -81,10 +80,9 @@ if (buildMode === 'dev') {
         js: `.${format.format === 'cjs' ? 'cjs' : 'mjs'}`,
       }
     }
-    const clientPath = normalizePath(path.resolve(currentDir, `../dist/interactive-client`))
+    const clientPath = normalizePath(path.resolve(currentDir, `../dist/interactive/client`))
     config.define = {
-      'process.env.CBD_DOCS_JS': JSON.stringify(`${clientPath}/index.js`),
-      'process.env.CBD_DOCS_CSS': JSON.stringify(`${clientPath}/index.css`),
+      'process.env.CBD_DOCS': JSON.stringify(clientPath),
     }
     configOptions.push(config)
   }

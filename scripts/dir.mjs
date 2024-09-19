@@ -63,7 +63,6 @@ export const entryPkg = {
   'chapanda-style-preset': '../packages/chapanda-style-preset',
   'base': '../packages/base',
   'utils': '../packages/utils',
-  'interactive-client': '../packages/interactive-client',
   'interactive': '../packages/interactive',
 }
 
