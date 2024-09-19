@@ -21,7 +21,7 @@ export const vitePresetDocs = () => {
           res.setHeader('Content-Type', 'text/javascript');
           res.end(content['index.js'] as string)
         } else if(req.url === ('/__chanpanda_preset/index.css') && req.method === 'GET') {
-          res.setHeader('Content-Type', 'text/javascript');
+          res.setHeader('Content-Type', 'text/css');
           res.end(content['index.css'] as string)
         } else{
           next()

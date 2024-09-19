@@ -19,7 +19,7 @@ export const webpackPresetDocs = (middlewares: Middleware, devServer: Configurat
   });
 
   (devServer.app as unknown as Application)?.get('/__chanpanda_preset/index.css', async (_, res) => {
-    res.setHeader('Content-Type', 'text/javascript');
+    res.setHeader('Content-Type', 'text/css');
     const content = await getFilesContent(getPath(), ['index.css']);
     res.end(content['index.css'])
   });
