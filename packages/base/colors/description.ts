@@ -31,6 +31,7 @@ const green = {
   '6': '不在设计规范中但UI使用',
   '7': '不在设计规范中但UI使用',
   '8': '不在设计规范中但UI使用',
+  '9': '不在设计规范中但UI使用',
 }
 
 const mint = {
@@ -143,6 +144,7 @@ const brand = {
   '16': '不在设计规范中但UI使用',
   '17': '不在设计规范中但UI使用',
   '18': '不在设计规范中但UI使用',
+  '19': '不在设计规范中但UI使用',
 }
 
 export const defaultThemeColorsDescription: ThemeColors = {

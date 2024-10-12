@@ -44,7 +44,7 @@ $colorsRed: generate-color-map(
 $colorsGreen: generate-color-map(
 "--cbd",
 "green",
-(1, 2, 3, 4, 5, 6, 7, 8),
+(1, 2, 3, 4, 5, 6, 7, 8, 9),
 (
         #F1F7EA,
         #95DB42,
@@ -55,6 +55,7 @@ $colorsGreen: generate-color-map(
         #c5f89b,
         #06A561,
         #33D65F,
+        #6ACC48,
 ));
 
 $colorsMint: generate-color-map(
@@ -163,7 +164,8 @@ $colorsBrand: generate-color-map(
 "brand",
 (
         1, 2, 3, 4, 5, 6, 7, 8, 9,
-        10, 11, 12, 13, 14, 15, 16, 17, 18,
+        10, 11, 12, 13, 14, 15, 16,
+        17, 18, 19
 ),
 (
         // 浅色背景
@@ -191,6 +193,7 @@ $colorsBrand: generate-color-map(
         #3f9fe9,
         #1a5da1,
         #1E5EFF,
+        #2457FF
 ));
 
 $colorsTransparent: generate-color-map(
