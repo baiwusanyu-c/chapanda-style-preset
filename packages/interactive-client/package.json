@@ -32,7 +32,7 @@
   ],
   "dependencies": {
     "@ant-design/icons": "^5.4.0",
-    "@chapanda/style-preset": "1.2.3",
+    "@chapanda/style-preset": "1.3.1",
     "antd": "^5.20.1",
     "baiwusanyu-utils": "1.0.18",
     "react": "^18.3.1",
