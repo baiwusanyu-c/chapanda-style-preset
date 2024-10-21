@@ -8,6 +8,7 @@
     "dev": "vite build --emptyOutDir --watch",
     "dev:client": "vite dev",
     "build": "vite build --emptyOutDir",
+    "build:docs": "cross-env NODE_ENV_IS_DOCS=true vite build --emptyOutDir",
     "preview": "vite preview",
     "publish:npm": "pnpm publish --no-git-checks --access public"
   },
@@ -46,6 +47,7 @@
     "@types/tinycolor2": "^1.4.6",
     "@vitejs/plugin-react-swc": "^3.7.0",
     "typescript": "^5.5.3",
-    "vite": "^5.4.4"
+    "vite": "^5.4.4",
+    "cross-env": "^7.0.3"
   }
 }
