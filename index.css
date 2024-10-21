@@ -216,7 +216,7 @@
 
 @font-face {
   font-family: "DIN";
-  src: url("/DIN-Bold.otf");
+  src: url("https://baiwusanyu-c.github.io/chapanda-style-preset/DIN-Bold.otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -226,7 +226,7 @@
 
 @font-face {
   font-family: "DIN-Bold";
-  src: url("/DINNextLTPro-Bold.ttf");
+  src: url("https://baiwusanyu-c.github.io/chapanda-style-preset/DINNextLTPro-Bold.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -236,7 +236,7 @@
 
 @font-face {
   font-family: "DIN-Heavy";
-  src: url("/DINNextLTPro-Heavy.ttf");
+  src: url("https://baiwusanyu-c.github.io/chapanda-style-preset/DINNextLTPro-Heavy.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -246,7 +246,7 @@
 
 @font-face {
   font-family: "DIN-Heavy-Lighter";
-  src: url("/DINNextLTPro-Medium.ttf");
+  src: url("https://baiwusanyu-c.github.io/chapanda-style-preset/DINNextLTPro-Medium.ttf");
   font-weight: normal;
   font-style: normal;
 }
