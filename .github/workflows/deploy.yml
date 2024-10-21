@@ -28,7 +28,7 @@ jobs:
 
      # 安装依赖
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       # 运行 build 指令
       - name: Run build
