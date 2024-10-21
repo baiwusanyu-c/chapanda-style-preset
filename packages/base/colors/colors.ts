@@ -143,6 +143,7 @@ const brand = {
   '17': '#1a5da1',
   '18': '#1E5EFF',
   '19': '#2457FF',
+  '20': '#E6F7FF',
 }
 
 export declare type ThemeColors = Record<string, string |  Record<string, string >>
