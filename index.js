@@ -11513,7 +11513,8 @@ var require_index = __commonJS({
       "16": "#3f9fe9",
       "17": "#1a5da1",
       "18": "#1E5EFF",
-      "19": "#2457FF"
+      "19": "#2457FF",
+      "20": "#E6F7FF"
     };
     var defaultThemeColors = {
       transparent: "transparent",
