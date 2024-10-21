@@ -22,6 +22,10 @@ jobs:
           node-version: '16' # 可根据项目要求修改 Node.js 版本
 
       # 安装依赖
+      - name: Install pnpm
+        run: npm install pnpm -G
+
+     # 安装依赖
       - name: Install dependencies
         run: pnpm install
 
