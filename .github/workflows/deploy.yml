@@ -32,7 +32,7 @@ jobs:
 
       # 运行 build 指令
       - name: Run build
-        run: pnpm run build
+        run: pnpm run --filter @chapanda/style-preset-interactive-client build:docs
 
       # 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
