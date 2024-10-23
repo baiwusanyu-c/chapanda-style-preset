@@ -64,10 +64,9 @@ export const vitePresetDocs = () => {
         }
 
         _print()
-        const base = server.config.base || '/'
         const colorUrl = (url: string) => c.green(url.replace(/:(\d+)\//, (_, port) => `:${c.bold(port)}/`))
         config.logger.info(`  ${c.green('➜')}  ${c.bold('样式预设交互式文档请查看')}`)
-        config.logger.info(`  ${c.green('➜')}  ${c.bold('@chapanda/style-preset')}: ${colorUrl(`${host}${base}__chanpanda_preset`)}`)
+        config.logger.info(`  ${c.green('➜')}  ${c.bold('@chapanda/style-preset')}: ${colorUrl(`${host}/__chanpanda_preset`)}`)
       }
     },
   } as Plugin
