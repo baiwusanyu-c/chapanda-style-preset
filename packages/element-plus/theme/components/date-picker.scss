@@ -16,3 +16,7 @@
 .el-picker-panel{
   background-color: var(--cbd-gray-1);
 }
+
+.el-picker-panel *[slot=sidebar], .el-picker-panel__sidebar{
+  background-color:  var(--cbd-gray-1);
+}
