@@ -3,7 +3,7 @@
   "description": "chapanda style preset interactive document",
   "private": false,
   "type": "module",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "packageManager": "pnpm@9.12.3",
   "keywords": [
     "typescript",
