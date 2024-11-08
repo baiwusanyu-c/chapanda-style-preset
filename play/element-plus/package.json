@@ -9,16 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "element-plus": "^2.8.0",
+    "@chapanda/style-preset": "workspace:*",
     "@element-plus/icons-vue": "^2.3.1",
-    "vue": "^3.4.38",
-    "@chapanda/style-preset": "workspace:*"
+    "element-plus": "^2.8.7",
+    "vue": "^3.5.12"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.1.2",
-    "typescript": "^5.5.4",
-    "vite": "^5.4.4",
-    "vue-tsc": "^2.0.29",
-    "sass": "^1.77.8"
+    "@vitejs/plugin-vue": "^5.1.4",
+    "sass": "^1.80.6",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vue-tsc": "^2.1.10"
   }
 }

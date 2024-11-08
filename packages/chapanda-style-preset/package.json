@@ -4,7 +4,7 @@
   "private": false,
   "type": "module",
   "version": "1.4.0",
-  "packageManager": "pnpm@9.7.1",
+  "packageManager": "pnpm@9.12.3",
   "keywords": [
     "typescript",
     "javascript",
@@ -67,12 +67,12 @@
   },
   "dependencies": {
     "@chapanda/style-preset-antd": "workspace:*",
+    "@chapanda/style-preset-base": "workspace:*",
     "@chapanda/style-preset-ep": "workspace:*",
     "@chapanda/style-preset-tailwind": "workspace:*",
     "@chapanda/style-preset-unocss": "workspace:*",
     "@chapanda/style-preset-utils": "workspace:*",
-    "@chapanda/style-preset-vant": "workspace:*",
-    "@chapanda/style-preset-base": "workspace:*"
+    "@chapanda/style-preset-vant": "workspace:*"
   },
   "devDependencies": {}
 }

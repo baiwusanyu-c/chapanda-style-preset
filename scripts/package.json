@@ -4,7 +4,7 @@
   "private": false,
   "type": "commonjs",
   "version": "0.0.0",
-  "packageManager": "pnpm@9.7.1",
+  "packageManager": "pnpm@9.12.3",
   "keywords": [
     "typescript",
     "javascript",
@@ -32,15 +32,15 @@
     "@types/fs-extra": "^11.0.4",
     "@types/gulp": "^4.0.17",
     "baiwusanyu-utils": "^1.0.18",
-    "del": "^7.1.0",
+    "del": "^8.0.0",
     "fast-glob": "^3.3.2",
     "fs-extra": "^11.2.0",
     "gulp": "^5.0.0",
     "npm-run-all": "^4.1.5",
     "rimraf": "^5.0.10",
-    "rollup": "^4.20.0",
+    "rollup": "^4.24.4",
     "shelljs": "^0.8.5",
-    "tsup": "^8.2.4",
-    "vite": "^5.4.4"
+    "tsup": "^8.3.5",
+    "vite": "^5.4.10"
   }
 }

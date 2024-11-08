@@ -32,22 +32,22 @@
     "README.md"
   ],
   "dependencies": {
-    "@ant-design/icons": "^5.4.0",
+    "@ant-design/icons": "^5.5.1",
     "@chapanda/style-preset": "1.4.0",
-    "antd": "^5.20.1",
+    "antd": "^5.21.6",
     "baiwusanyu-utils": "1.0.18",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tinycolor2": "^1.6.0",
-    "unocss": "^0.62.3"
+    "unocss": "^0.64.0"
   },
   "devDependencies": {
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "@types/tinycolor2": "^1.4.6",
-    "@vitejs/plugin-react-swc": "^3.7.0",
-    "typescript": "^5.5.3",
-    "vite": "^5.4.4",
-    "cross-env": "^7.0.3"
+    "@vitejs/plugin-react-swc": "^3.7.1",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
   }
 }

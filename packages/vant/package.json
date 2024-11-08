@@ -4,7 +4,7 @@
   "private": false,
   "type": "module",
   "version": "1.4.0",
-  "packageManager": "pnpm@9.7.1",
+  "packageManager": "pnpm@9.12.3",
   "keywords": [
     "typescript",
     "javascript",
@@ -35,9 +35,9 @@
     "vant": "^4.6.7"
   },
   "dependencies": {
-    "vant": "^4.9.4",
+    "@chapanda/style-preset-base": "workspace:*",
     "@chapanda/style-preset-utils": "workspace:*",
-    "@chapanda/style-preset-base": "workspace:*"
+    "vant": "^4.9.8"
   },
   "devDependencies": {}
 }
