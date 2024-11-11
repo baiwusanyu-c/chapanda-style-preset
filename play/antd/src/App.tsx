@@ -40,7 +40,7 @@ import PaginationDemo from './components/pagination.tsx'
 import InputNumberDemo from './components/input-number.tsx'
 import SwitchDemo from './components/switch.tsx'
 import CalendarDemo from './components/calendar.tsx'
-
+import ModalMsgDemo from './components/modal-msg.tsx'
 function App() {
   return (
     <ConfigProvider theme={genChaPandaAntdTheme()}>
@@ -169,6 +169,10 @@ function App() {
 
       <Flex gap="small" wrap>
         <ModalDemo/>
+      </Flex>
+
+      <Flex gap="small" wrap>
+        <ModalMsgDemo/>
       </Flex>
 
       <Flex gap="small" wrap>
