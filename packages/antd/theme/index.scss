@@ -38,11 +38,12 @@
   margin-bottom: 16px;
 }
 .ant-modal .ant-modal-body{
-  padding: 0 24px 0 24px;
+  padding: 0 24px 24px 24px;
 }
 
 .ant-modal .ant-modal-footer{
   border-top: 1px solid var(--cbd-gray-3);
+  margin-top: 0;
   padding: 16px 20px 16px 20px;
 }
 

@@ -16,6 +16,20 @@ const App: React.FC = () => {
         setIsModalOpen(false);
     };
 
+  const [isModalOpen2, setIsModalOpen2] = useState(false);
+
+  const showModal2 = () => {
+    setIsModalOpen2(true);
+  };
+
+  const handleOk2 = () => {
+    setIsModalOpen2(false);
+  };
+
+  const handleCancel2 = () => {
+    setIsModalOpen2(false);
+  };
+
     return (
       <>
           <Button type="primary" onClick={showModal}>
@@ -26,6 +40,14 @@ const App: React.FC = () => {
               <p>Some contents...</p>
               <p>Some contents...</p>
           </Modal>
+        <Button type="primary" onClick={showModal2}>
+          Open Modal2
+        </Button>
+        <Modal title="Basic Modal" open={isModalOpen2} onOk={handleOk2} onCancel={handleCancel2} footer={null}>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+          <p>Some contents...</p>
+        </Modal>
       </>
     );
 };
