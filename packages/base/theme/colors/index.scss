@@ -1,3 +1,4 @@
+@use "sass:meta";
 @use './colors' as *;
 @forward './colors' show generate-color-map;
 @forward './colors' show get-color-value;
@@ -20,7 +21,7 @@
   @include generate-css-variables($colorsPurple);
   @include generate-css-variables($colorsGray);
   @include generate-css-variables($colorsBrand);
-  @if type-of($customColor) != null {
+  @if meta.type-of($customColor) != null {
     @include generate-css-variables($customColor);
   }
 }
