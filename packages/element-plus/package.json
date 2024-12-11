@@ -4,7 +4,7 @@
   "private": false,
   "type": "module",
   "version": "1.4.3",
-  "packageManager": "pnpm@9.12.3",
+  "packageManager": "pnpm@9.15.0",
   "keywords": [
     "typescript",
     "javascript",
@@ -38,7 +38,7 @@
   "dependencies": {
     "@chapanda/style-preset-base": "workspace:*",
     "@chapanda/style-preset-utils": "workspace:*",
-    "element-plus": "^2.8.7"
+    "element-plus": "^2.9.0"
   },
   "devDependencies": {}
 }

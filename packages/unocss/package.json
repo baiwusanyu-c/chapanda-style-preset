@@ -4,7 +4,7 @@
   "private": false,
   "type": "module",
   "version": "1.4.3",
-  "packageManager": "pnpm@9.12.3",
+  "packageManager": "pnpm@9.15.0",
   "keywords": [
     "typescript",
     "javascript",
@@ -37,9 +37,9 @@
   "dependencies": {
     "@chapanda/style-preset-base": "workspace:*",
     "@chapanda/style-preset-utils": "workspace:*",
-    "unocss": "^0.64.0"
+    "unocss": "^0.65.1"
   },
   "devDependencies": {
-    "@unocss/preset-uno": "^0.64.0"
+    "@unocss/preset-uno": "^0.65.1"
   }
 }
