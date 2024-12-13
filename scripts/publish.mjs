@@ -10,4 +10,5 @@ export default gulp.series(
   runTask('publish @chapanda/style-preset-ep', 'cd dist/element-plus && pnpm run publish:npm'),
   runTask('publish @chapanda/style-preset-base', 'cd dist/base && pnpm run publish:npm'),
   runTask('publish @chapanda/style-preset', 'cd dist/chapanda-style-preset && pnpm run publish:npm'),
+  runTask('publish @chapanda/style-preset-interactive', 'cd dist/interactive && pnpm run publish:npm'),
 )
