@@ -47,6 +47,11 @@ const App: React.FC = () => {
           <p>Some contents...</p>
           <p>Some contents...</p>
           <p>Some contents...</p>
+          <Button
+            type="primary"
+            ghost>
+            下载模板
+          </Button>
         </Modal>
       </>
     );

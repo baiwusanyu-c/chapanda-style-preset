@@ -46,13 +46,14 @@
    border-color: var(--cbd-red-2);
  }
 
-  .ant-btn-variant-solid:not(:disabled):not(.ant-btn-disabled):hover{
+  .ant-btn-variant-solid:not(:disabled):not(.ant-btn-disabled):not(.ant-btn-background-ghost):hover{
     background-color: var(--cbd-brand-3);
   }
-  .ant-btn-variant-solid{
+  .ant-btn-variant-solid:not(.ant-btn-background-ghost){
     background: var(--cbd-brand-5);
   }
 }
+
 .ant-modal .ant-modal-header {
   display: flex;
   justify-content: center;
