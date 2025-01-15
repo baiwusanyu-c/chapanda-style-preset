@@ -1,7 +1,8 @@
 import { extend } from 'baiwusanyu-utils'
 import { defaultThemeColors } from './colors'
 import { defaultThemeColorsDescription } from './description'
-
+export { defaultThemeColors } from './colors'
+export { defaultThemeColorsDescription } from './description'
 const COLOR_PREFIX = 'cbd'
 /**
  * 生成主题颜色变量
@@ -14,7 +15,7 @@ export const genThemeColors = (
   mix = false,
   prefix = COLOR_PREFIX,
 ) => {
-  const resolveThemeColors = mix ? extend(themeColors, defaultThemeColors): themeColors
+  const resolveThemeColors = mix ? extend(defaultThemeColors, themeColors): themeColors
   let preflights = '';
   const colorsVariable: Record<string, any> = {}
   const colors : Record<string, string> = {}
