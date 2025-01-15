@@ -39,7 +39,11 @@ export { genSliderToken } from "./theme-config";
 export { genModalToken } from "./theme-config";
 export { genPaginationToken } from "./theme-config";
 export { genTreeToken } from "./theme-config";
+
 export { genThemeColors } from '@chapanda/style-preset-base'
+export { genToken } from "./theme-config";
+export { genComponentToken } from "./theme-config";
+
 export function genChaPandaAntdTheme(theme: ThemeConfig = {}){
   return {
     ...mergeObjects<ThemeConfig>(genAntdTheme(), theme),

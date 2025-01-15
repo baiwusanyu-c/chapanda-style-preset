@@ -4,7 +4,6 @@ import { genThemeColors } from "@chapanda/style-preset-base";
 
 export { genToken } from "./token";
 export { genComponentToken } from "./components";
-export { genThemeColors } from "@chapanda/style-preset-base";
 
 export { genAvatarToken } from "./components";
 export { genCalendarToken } from "./components";

@@ -1,1 +1,5 @@
-export { genThemeColors } from './colors'
+export {
+  genThemeColors,
+  defaultThemeColors,
+  defaultThemeColorsDescription,
+} from './colors'
