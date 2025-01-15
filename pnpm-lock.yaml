@@ -127,8 +127,8 @@ importers:
         specifier: ^5.5.2
         version: 5.5.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
       '@chapanda/style-preset':
-        specifier: 1.4.0
-        version: 1.4.0(@ant-design/colors@7.1.0)(antd@5.22.4(moment@2.30.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(element-plus@2.9.0(vue@3.5.13(typescript@5.7.2)))(tailwindcss@3.4.16)(unocss@0.65.1(postcss@8.4.49)(rollup@4.28.1)(vite@6.0.3(@types/node@22.10.2)(jiti@2.4.1)(sass@1.82.0)(terser@5.32.0)(tsx@4.17.0)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2)))(vant@4.9.10(vue@3.5.13(typescript@5.7.2)))
+        specifier: ^1.4.7
+        version: 1.4.7(@ant-design/colors@7.1.0)(antd@5.22.4(moment@2.30.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(element-plus@2.9.0(vue@3.5.13(typescript@5.7.2)))(tailwindcss@3.4.16)(unocss@0.65.1(postcss@8.4.49)(rollup@4.28.1)(vite@6.0.3(@types/node@22.10.2)(jiti@2.4.1)(sass@1.82.0)(terser@5.32.0)(tsx@4.17.0)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2)))(vant@4.9.10(vue@3.5.13(typescript@5.7.2)))
       antd:
         specifier: ^5.22.4
         version: 5.22.4(moment@2.30.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -613,42 +613,42 @@ packages:
   '@baiwusanyu/utils-task@1.0.18':
     resolution: {integrity: sha512-/0hlK00c3vje4XtOUW2UTrhneAYopX/vEqN5OcpZLGppstU02Fo82QpyJUSVZgO2XH3fGouJl/97bTmWjuFXsA==}
 
-  '@chapanda/style-preset-antd@1.4.0':
-    resolution: {integrity: sha512-DVNnpj0o2QN6fovwOhm3LlJmpm2JRYflLgQ0srtp+ncE4KAAdPgWdOLld6DDwzCkHwRK9PODMoC8LpriELDoaQ==}
+  '@chapanda/style-preset-antd@1.4.7':
+    resolution: {integrity: sha512-MHczhqPGcs6JHoUh/3XCue+ViAB4cNR32nXmgOsIrak8Fg95D9n/R/RnXboRcPdhdR7EM08G8ApcnSQykciJAw==}
     peerDependencies:
       '@ant-design/colors': ^7.0.2
       antd: ^5.12.8
 
-  '@chapanda/style-preset-base@1.4.0':
-    resolution: {integrity: sha512-0MtX2PqhULTJRv0BUZjafjPxOghfW+nuIKA8fvmlXZ1Ip17rC+rOtYBWvsu0usjOCNGv8KYBROZahiRKAgFE/A==}
+  '@chapanda/style-preset-base@1.4.7':
+    resolution: {integrity: sha512-jH1aOt//nl3NW8OQEq70wigpIBJdoGDmOgK7znsQxvKNDe5TsCRdeIjS2S71azzoDIwZEdAnYlK5+Fai8jZuPw==}
     peerDependencies:
       baiwusanyu-utils: ^1.0.18
 
-  '@chapanda/style-preset-ep@1.4.0':
-    resolution: {integrity: sha512-BLe6m4QiXYPvZRgeHXqcAGrQf+a2+cLO4kSBnpGuqRtoCbQ9/rM0Yh/TkSmG+WIrDiA+ucCm1Bmg9CB5zPaO1w==}
+  '@chapanda/style-preset-ep@1.4.7':
+    resolution: {integrity: sha512-VHbHYZUVEYaiAEuGcjJuJlZKP1/gGaoC0jqlAOALtm8oNU1cYXVfVSzhWFJbY9+b6xd/09aqmRRyEZDsCKutTA==}
     peerDependencies:
       element-plus: ^2.8.0
 
-  '@chapanda/style-preset-tailwind@1.4.0':
-    resolution: {integrity: sha512-+0yU/Yw7A67CIxUkwj5W2bew8q8I+yZkn1jJOYQbDa4uUfFTGICjW1dyiPBR+xTkV0L3s3jFC9fb9s2GgmYi+Q==}
+  '@chapanda/style-preset-tailwind@1.4.7':
+    resolution: {integrity: sha512-02A2EMENgTdcgGKNQ90NYG/1ulwy7udGURIIaf0tQ2tPCQwf4UBZzDVCQEmPJHfYSZDyQEzncetzwK7UJnVq9w==}
     peerDependencies:
       tailwindcss: ^3.4.10
 
-  '@chapanda/style-preset-unocss@1.4.0':
-    resolution: {integrity: sha512-pV2jiZhR6bevggH4cZvteRBHkXpdRmIrSFtQglmKuOtRCeXCgK0l5QqSXzTAniVTWfEYWfjd8jfW7JRuAZhYlw==}
+  '@chapanda/style-preset-unocss@1.4.7':
+    resolution: {integrity: sha512-C2otQlmrgQ0VEEBdteOiakOPqXxun2b8qlIruJZz6NHRzOSMmPGQFyVq7vwaEggroUKxRCFGElS/yOCgCYN/7w==}
     peerDependencies:
       unocss: ^0.62.3
 
-  '@chapanda/style-preset-utils@1.4.0':
-    resolution: {integrity: sha512-pvGvZ6nwh2WXeHryF3uJdygA5j+Lpry050Mtok7ZSLWoB9sq9yJizPWWrKUrkHGGf9v5CeYgtNy/o2i1vgEQhA==}
+  '@chapanda/style-preset-utils@1.4.7':
+    resolution: {integrity: sha512-hpzzfaUMaYUU+YQtgfLPjHyJdsmIR+OAkVG8B2BU9uJkiyx0OR17ZtY69QsSNnY9fOuqEKXVg+DJBSD0tLj9Qw==}
 
-  '@chapanda/style-preset-vant@1.4.0':
-    resolution: {integrity: sha512-XRmeRj84uR3vdEXAyHkp+beEd8MEFEEbsNmXLkqZwJB1CyHxlDo2D0ea9vV0LWm/BqvElaKAtx1bcDbu5GdJnQ==}
+  '@chapanda/style-preset-vant@1.4.7':
+    resolution: {integrity: sha512-iV1CyzrPclZ288vMktULxvQJwCkkVxrPhJ+bMGcUnTtV0omU+GZtJtyPvtPnuSr8D8DWrcszF6V5S6+QcWSO1w==}
     peerDependencies:
       vant: ^4.6.7
 
-  '@chapanda/style-preset@1.4.0':
-    resolution: {integrity: sha512-/DhkIEErXXB+ZXbx++SxcCRSx9Wa3hnwszG1ep+ZCzxCCqb8Zh7KyeCzwTRwpJ+PE2pCSnRyd2NKaLKxaBXjYA==}
+  '@chapanda/style-preset@1.4.7':
+    resolution: {integrity: sha512-5AtVfLlxSj1RYPEOdq5/XhVz+kfsH4jqwEAYEZRISNudIX0h54ymyqooB29wlB/+0iS6toi1NlcYNlbqvfr7wg==}
 
   '@ctrl/tinycolor@3.6.1':
     resolution: {integrity: sha512-SITSV6aIXsuVNV3f3O0f2n/cgyEDWoSqtZMYiAmcsYHydcKrOz3gUxB/iXd/Qf08+IZX4KpgNbvUdMBmWz+kcA==}
@@ -5603,62 +5603,62 @@ snapshots:
 
   '@baiwusanyu/utils-task@1.0.18': {}
 
-  '@chapanda/style-preset-antd@1.4.0(@ant-design/colors@7.1.0)(antd@5.22.4(moment@2.30.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))':
+  '@chapanda/style-preset-antd@1.4.7(@ant-design/colors@7.1.0)(antd@5.22.4(moment@2.30.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))':
     dependencies:
       '@ant-design/colors': 7.1.0
-      '@chapanda/style-preset-base': 1.4.0(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))
-      '@chapanda/style-preset-utils': 1.4.0
+      '@chapanda/style-preset-base': 1.4.7(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))
+      '@chapanda/style-preset-utils': 1.4.7
       antd: 5.22.4(moment@2.30.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
     transitivePeerDependencies:
       - baiwusanyu-utils
 
-  '@chapanda/style-preset-base@1.4.0(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))':
+  '@chapanda/style-preset-base@1.4.7(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))':
     dependencies:
       baiwusanyu-utils: 1.0.18(ansi-colors@4.1.3)(moment@2.30.1)
 
-  '@chapanda/style-preset-ep@1.4.0(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(element-plus@2.9.0(vue@3.5.13(typescript@5.7.2)))':
+  '@chapanda/style-preset-ep@1.4.7(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(element-plus@2.9.0(vue@3.5.13(typescript@5.7.2)))':
     dependencies:
-      '@chapanda/style-preset-base': 1.4.0(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))
-      '@chapanda/style-preset-utils': 1.4.0
+      '@chapanda/style-preset-base': 1.4.7(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))
+      '@chapanda/style-preset-utils': 1.4.7
       element-plus: 2.9.0(vue@3.5.13(typescript@5.7.2))
     transitivePeerDependencies:
       - baiwusanyu-utils
 
-  '@chapanda/style-preset-tailwind@1.4.0(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(tailwindcss@3.4.16)':
+  '@chapanda/style-preset-tailwind@1.4.7(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(tailwindcss@3.4.16)':
     dependencies:
-      '@chapanda/style-preset-base': 1.4.0(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))
-      '@chapanda/style-preset-utils': 1.4.0
+      '@chapanda/style-preset-base': 1.4.7(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))
+      '@chapanda/style-preset-utils': 1.4.7
       tailwindcss: 3.4.16
     transitivePeerDependencies:
       - baiwusanyu-utils
 
-  '@chapanda/style-preset-unocss@1.4.0(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(unocss@0.65.1(postcss@8.4.49)(rollup@4.28.1)(vite@6.0.3(@types/node@22.10.2)(jiti@2.4.1)(sass@1.82.0)(terser@5.32.0)(tsx@4.17.0)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2)))':
+  '@chapanda/style-preset-unocss@1.4.7(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(unocss@0.65.1(postcss@8.4.49)(rollup@4.28.1)(vite@6.0.3(@types/node@22.10.2)(jiti@2.4.1)(sass@1.82.0)(terser@5.32.0)(tsx@4.17.0)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2)))':
     dependencies:
-      '@chapanda/style-preset-base': 1.4.0(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))
-      '@chapanda/style-preset-utils': 1.4.0
+      '@chapanda/style-preset-base': 1.4.7(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))
+      '@chapanda/style-preset-utils': 1.4.7
       unocss: 0.65.1(postcss@8.4.49)(rollup@4.28.1)(vite@6.0.3(@types/node@22.10.2)(jiti@2.4.1)(sass@1.82.0)(terser@5.32.0)(tsx@4.17.0)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2))
     transitivePeerDependencies:
       - baiwusanyu-utils
 
-  '@chapanda/style-preset-utils@1.4.0': {}
+  '@chapanda/style-preset-utils@1.4.7': {}
 
-  '@chapanda/style-preset-vant@1.4.0(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(vant@4.9.10(vue@3.5.13(typescript@5.7.2)))':
+  '@chapanda/style-preset-vant@1.4.7(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(vant@4.9.10(vue@3.5.13(typescript@5.7.2)))':
     dependencies:
-      '@chapanda/style-preset-base': 1.4.0(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))
-      '@chapanda/style-preset-utils': 1.4.0
+      '@chapanda/style-preset-base': 1.4.7(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))
+      '@chapanda/style-preset-utils': 1.4.7
       vant: 4.9.10(vue@3.5.13(typescript@5.7.2))
     transitivePeerDependencies:
       - baiwusanyu-utils
 
-  '@chapanda/style-preset@1.4.0(@ant-design/colors@7.1.0)(antd@5.22.4(moment@2.30.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(element-plus@2.9.0(vue@3.5.13(typescript@5.7.2)))(tailwindcss@3.4.16)(unocss@0.65.1(postcss@8.4.49)(rollup@4.28.1)(vite@6.0.3(@types/node@22.10.2)(jiti@2.4.1)(sass@1.82.0)(terser@5.32.0)(tsx@4.17.0)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2)))(vant@4.9.10(vue@3.5.13(typescript@5.7.2)))':
+  '@chapanda/style-preset@1.4.7(@ant-design/colors@7.1.0)(antd@5.22.4(moment@2.30.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(element-plus@2.9.0(vue@3.5.13(typescript@5.7.2)))(tailwindcss@3.4.16)(unocss@0.65.1(postcss@8.4.49)(rollup@4.28.1)(vite@6.0.3(@types/node@22.10.2)(jiti@2.4.1)(sass@1.82.0)(terser@5.32.0)(tsx@4.17.0)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2)))(vant@4.9.10(vue@3.5.13(typescript@5.7.2)))':
     dependencies:
-      '@chapanda/style-preset-antd': 1.4.0(@ant-design/colors@7.1.0)(antd@5.22.4(moment@2.30.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))
-      '@chapanda/style-preset-base': 1.4.0(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))
-      '@chapanda/style-preset-ep': 1.4.0(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(element-plus@2.9.0(vue@3.5.13(typescript@5.7.2)))
-      '@chapanda/style-preset-tailwind': 1.4.0(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(tailwindcss@3.4.16)
-      '@chapanda/style-preset-unocss': 1.4.0(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(unocss@0.65.1(postcss@8.4.49)(rollup@4.28.1)(vite@6.0.3(@types/node@22.10.2)(jiti@2.4.1)(sass@1.82.0)(terser@5.32.0)(tsx@4.17.0)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2)))
-      '@chapanda/style-preset-utils': 1.4.0
-      '@chapanda/style-preset-vant': 1.4.0(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(vant@4.9.10(vue@3.5.13(typescript@5.7.2)))
+      '@chapanda/style-preset-antd': 1.4.7(@ant-design/colors@7.1.0)(antd@5.22.4(moment@2.30.1)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))
+      '@chapanda/style-preset-base': 1.4.7(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))
+      '@chapanda/style-preset-ep': 1.4.7(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(element-plus@2.9.0(vue@3.5.13(typescript@5.7.2)))
+      '@chapanda/style-preset-tailwind': 1.4.7(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(tailwindcss@3.4.16)
+      '@chapanda/style-preset-unocss': 1.4.7(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(unocss@0.65.1(postcss@8.4.49)(rollup@4.28.1)(vite@6.0.3(@types/node@22.10.2)(jiti@2.4.1)(sass@1.82.0)(terser@5.32.0)(tsx@4.17.0)(yaml@2.6.1))(vue@3.5.13(typescript@5.7.2)))
+      '@chapanda/style-preset-utils': 1.4.7
+      '@chapanda/style-preset-vant': 1.4.7(baiwusanyu-utils@1.0.18(ansi-colors@4.1.3)(moment@2.30.1))(vant@4.9.10(vue@3.5.13(typescript@5.7.2)))
     transitivePeerDependencies:
       - '@ant-design/colors'
       - antd

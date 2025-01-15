@@ -33,7 +33,7 @@
   ],
   "dependencies": {
     "@ant-design/icons": "^5.5.2",
-    "@chapanda/style-preset": "^1.4.7",
+    "@chapanda/style-preset": "workspace:*",
     "antd": "^5.22.4",
     "baiwusanyu-utils": "1.0.18",
     "react": "^19.0.0",
