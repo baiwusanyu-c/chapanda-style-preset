@@ -29,7 +29,8 @@ const green = {
   '6': '#c5f89b',
   '7': '#06A561',
   '8': '#33D65F',
-  '9': '#6ACC48'
+  '9': '#6ACC48',
+  '10': '#C6F0C5',
 }
 
 const mint = {
@@ -114,6 +115,9 @@ const gray = {
   '55': '#7f8fa4',
   '56': '#f4f4f4',
   '57': '#e6e6e7',
+  '58': '#BBC0C7',
+  '59': '#eeeeee',
+  '60': '#eaeef9',
 }
 
 const brand = {
@@ -144,6 +148,7 @@ const brand = {
   '18': '#1E5EFF',
   '19': '#2457FF',
   '20': '#E6F7FF',
+  '21': '#D1E0FF',
 }
 
 export declare type ThemeColors = Record<string, string |  Record<string, string >>
