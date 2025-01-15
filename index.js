@@ -16343,7 +16343,8 @@ var require_index = __commonJS({
       "6": "#c5f89b",
       "7": "#06A561",
       "8": "#33D65F",
-      "9": "#6ACC48"
+      "9": "#6ACC48",
+      "10": "#C6F0C5"
     };
     var mint = {
       "1": "#E9F7F9",
@@ -16424,7 +16425,10 @@ var require_index = __commonJS({
       "54": "#EAEDF0",
       "55": "#7f8fa4",
       "56": "#f4f4f4",
-      "57": "#e6e6e7"
+      "57": "#e6e6e7",
+      "58": "#BBC0C7",
+      "59": "#eeeeee",
+      "60": "#eaeef9"
     };
     var brand = {
       // 浅色背景
@@ -16453,7 +16457,8 @@ var require_index = __commonJS({
       "17": "#1a5da1",
       "18": "#1E5EFF",
       "19": "#2457FF",
-      "20": "#E6F7FF"
+      "20": "#E6F7FF",
+      "21": "#D1E0FF"
     };
     var defaultThemeColors = {
       transparent: "transparent",
@@ -16496,7 +16501,8 @@ var require_index = __commonJS({
       "6": "不在设计规范中但UI使用",
       "7": "不在设计规范中但UI使用",
       "8": "不在设计规范中但UI使用",
-      "9": "不在设计规范中但UI使用"
+      "9": "不在设计规范中但UI使用",
+      "10": "不在设计规范中但UI使用"
     };
     var mint2 = {
       "1": "基础青 1",
@@ -16577,7 +16583,10 @@ var require_index = __commonJS({
       "54": "不在设计规范中但UI使用",
       "55": "不在设计规范中但UI使用",
       "56": "不在设计规范中但UI使用",
-      "57": "不在设计规范中但UI使用"
+      "57": "不在设计规范中但UI使用",
+      "58": "不在设计规范中但UI使用",
+      "59": "不在设计规范中但UI使用",
+      "60": "不在设计规范中但UI使用"
     };
     var brand2 = {
       // 浅色背景
@@ -16605,7 +16614,9 @@ var require_index = __commonJS({
       "16": "不在设计规范中但UI使用",
       "17": "不在设计规范中但UI使用",
       "18": "不在设计规范中但UI使用",
-      "19": "不在设计规范中但UI使用"
+      "19": "不在设计规范中但UI使用",
+      "20": "不在设计规范中但UI使用",
+      "21": "不在设计规范中但UI使用"
     };
     var defaultThemeColorsDescription = {
       transparent: "透明色",
@@ -16621,7 +16632,7 @@ var require_index = __commonJS({
     };
     var COLOR_PREFIX = "cbd";
     var genThemeColors = (themeColors = defaultThemeColors, mix2 = false, prefix = COLOR_PREFIX) => {
-      const resolveThemeColors = mix2 ? extend$1(themeColors, defaultThemeColors) : themeColors;
+      const resolveThemeColors = mix2 ? extend$1(defaultThemeColors, themeColors) : themeColors;
       let preflights = "";
       const colorsVariable = {};
       const colors = {};
