@@ -35,6 +35,7 @@
     "dev:play:tailwindcss": "pnpm run --filter @chapanda/style-preset-play-tailwind dev",
     "dev:play:vant": "pnpm run --filter @chapanda/style-preset-play-vant dev",
     "build": "pnpm run --filter @chapanda/style-preset-scripts build",
+    "build:docs:preset": "pnpm run --filter @chapanda/style-preset-scripts build:docs:preset",
     "oxlint:fix": "oxlint -c .oxlintrc.json --fix",
     "release": "bumpp package.json packages/*/package.json  --commit --push --tag",
     "publish:script": "pnpm run --filter @chapanda/style-preset-scripts publish:npm",

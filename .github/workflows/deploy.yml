@@ -31,7 +31,11 @@ jobs:
         run: pnpm install --no-frozen-lockfile
 
       # 运行 build 指令
-      - name: Run build
+      - name: Run build preset
+        run: pnpm run build:docs:preset
+
+      # 运行 build document 指令
+      - name: Run build document
         run: pnpm run --filter @chapanda/style-preset-interactive-client build:docs
 
       # 部署到 GitHub Pages

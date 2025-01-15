@@ -53,7 +53,7 @@ if (buildMode === 'prod') {
   }
 }
 
-if (buildMode === 'dev') {
+if (buildMode === 'dev' || buildMode === 'docs') {
   const currentDir = process.cwd();
   entry = entryConfig
   for (let i = 0; i < entry.length; i++) {
