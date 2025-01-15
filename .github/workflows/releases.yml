@@ -30,6 +30,10 @@ jobs:
       - name: Install
         run: pnpm install --no-frozen-lockfile
 
+      # 运行 build 指令
+      - name: Run build preset
+        run: pnpm run build:docs:preset
+
       - name: Build
         run: pnpm run build
 
