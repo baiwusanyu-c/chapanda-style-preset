@@ -20,6 +20,10 @@
   filter: brightness(0.8);
   background-color: var(--cbd-brand-5);
 }
+.el-button.is-disabled, .el-button.is-disabled:hover{
+  border-color: var(--cbd-brand-3);
+  background-color: var(--cbd-brand-3);
+}
 .el-button--primary {
   --el-button-bg-color: var(--cbd-brand-5);
   --el-button-text-color: var(--cbd-white);
