@@ -15,7 +15,11 @@
   --el-button-hover-link-text-color: var(--cbd-gray-4);
   --el-button-active-color: var(--cbd-gray-6);
 }
-
+.el-button:active{
+  border-color: var(--cbd-brand-5);
+  filter: brightness(0.8);
+  background-color: var(--cbd-brand-5);
+}
 .el-button--primary {
   --el-button-bg-color: var(--cbd-brand-5);
   --el-button-text-color: var(--cbd-white);
