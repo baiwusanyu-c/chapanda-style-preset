@@ -1,0 +1,23 @@
+@use '@chapanda/style-preset/theme' as cbdPreset;
+
+$colorsHCustom: cbdPreset.generate-color-map(
+  // 前缀
+  "--cbd",
+  // 名称
+  "brand",
+  // 后缀列表
+  (1, 2, 3, 4, 5),
+  // 颜色列表
+  (
+      #f4f0ff,
+      #ede8ff,
+      #cabfff,
+      #a496ff,
+      #7769F3
+  ),
+);
+
+// 挂载预设颜色变量
+:root {
+  @include cbdPreset.generate-root-css-variables($colorsHCustom);
+}

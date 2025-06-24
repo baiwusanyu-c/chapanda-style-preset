@@ -272,6 +272,9 @@ importers:
       '@chapanda/style-preset':
         specifier: workspace:*
         version: link:../../packages/chapanda-style-preset
+      '@chapanda/style-preset-base':
+        specifier: workspace:*
+        version: link:../../packages/base
       '@element-plus/icons-vue':
         specifier: ^2.3.1
         version: 2.3.1(vue@3.5.13(typescript@5.7.2))

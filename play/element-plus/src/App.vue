@@ -19,6 +19,7 @@
   <p class="din-bold"> din-bold 7600</p>
   <p class="din-heavy">din-heavy 9999</p>
   <p class="din-heavy-lighter"> din-heavy-lighter 9999</p>-->
+  <button @click="changeTheme">change theme color</button>
   <ButtonDemo/>
   <BreadcrumbDemo/>
   <PaginationDemo/>
@@ -150,4 +151,37 @@ import StepsDemo from './components/steps.vue'
 import AlertDemo from './components/alert.vue'
 import NotificationDemo from './components/notification.vue'
 import MessageDemo from './components/message.vue'
+import { defaultThemeColors, genThemeColors, mountThemeColors } from "@chapanda/style-preset-base";
+import { onMounted } from "vue";
+// 动态主题变量生成挂载
+const themeColors = genThemeColors({
+  ...defaultThemeColors,
+  brand: {
+    ...defaultThemeColors.brand,
+    
+      "1": "#f4f0ff",
+      "2": "#ede8ff",
+      "3": "#cabfff",
+      "4": "#a496ff",
+      "5": "#7769F3",
+  },
+}).colors;
+function changeTheme(){
+  mountThemeColors(genThemeColors({
+    ...defaultThemeColors,
+    brand: {
+      ...defaultThemeColors.brand,
+      
+        "1": "#E9F7F9",
+        "2": "#77D5D4",
+        "3": "#14C7B8",
+        "4": "#77D5D4",
+        "5": "#008489",
+    },
+  }).colors)
+}
+onMounted(() => {
+  mountThemeColors(themeColors)
+
+})
 </script>

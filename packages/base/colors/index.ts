@@ -4,6 +4,7 @@ import { defaultThemeColorsDescription } from './description'
 export { defaultThemeColors } from './colors'
 export { defaultThemeColorsDescription } from './description'
 const COLOR_PREFIX = 'cbd'
+const CE_STYLE = 'cbd-custom'
 /**
  * 生成主题颜色变量
  * @param themeColors 主题色对象
@@ -63,6 +64,29 @@ export const genThemeColors = (
     colors,
   };
 };
+/**
+ *
+ * @param themeColors - 主题颜色变量对象
+ * @param ceStyle @Options - 自定义生成的 style 标签属性值， 默认值是cbd-custom
+ */
+export const mountThemeColors = (
+  themeColors = defaultThemeColors,
+  ceStyle = CE_STYLE,
+) => {
+  const el = document.querySelector(`[data-cbd-style="${ceStyle}"]`) as HTMLStyleElement
+  const content = `
+      :root {  ${Object.keys(themeColors).map(key => `--${key}:${themeColors[key]}`).join(';')} };
+    `
+  if(el){
+    el.textContent = content
+  } else {
+    const styleEl = document.createElement('style');
+    styleEl.setAttribute('data-cbd-style', ceStyle);
+    styleEl.setAttribute('type', 'text/css');
+    styleEl.textContent = content
+    document.head.appendChild(styleEl);
+  }
+}
 
 export * from './colors'
 export type {

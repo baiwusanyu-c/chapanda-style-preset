@@ -261,6 +261,24 @@ declare const genThemeColors: (themeColors?: ThemeColors, mix?: boolean, prefix?
     colors: Record<string, string>;
 };
 ```
+### `mountThemeColors` 挂载自定义颜色变量
+`mountThemeColors` 方法会将传入的颜色变量对象，在 `head` 末尾添加一个 `style` 标签来挂载生成的颜色变量，
+在外部控制，实现动态主题色切换时有用
+
+```typescript jsx
+declare type ThemeColors = Record<string, string | Record<string, string>>;
+/**
+ *
+ * @param themeColors - 主题颜色变量对象
+ * @param ceStyle @Options - 自定义生成的 style 标签属性值，默认值是cbd-custom
+ */
+declare const mountThemeColors: (
+  themeColors?: ThemeColors, 
+  ceStyle?: string
+) => void;
+
+```
+
 ### `border` 边框预设
 
 `border` 边框预设提供 `4` 中默认的情感边框
