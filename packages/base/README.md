@@ -3,7 +3,7 @@
 基于中心规范基础的样式预设，它包含有 `colors` 颜色预设， `font` 字体预设，`border` 边框预设、`layout` 对齐预设。
 
 ## 使用
-通过 `scss` 文件 引入，来使用其提供的预设方法或变量，详情方法或变量参考 `API` 不分
+通过 `scss` 文件 引入，来使用其提供的预设方法或变量，详情方法或变量参考 `API` 部分
 
 ```scss
 @use '@chapanda/style-preset-base/theme' as cbdPreset;

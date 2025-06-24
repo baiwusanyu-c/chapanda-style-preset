@@ -5,3 +5,6 @@
   background: var(--cbd-gray-2);
   opacity: 0.8;
 }
+.el-radio-button.is-active .el-radio-button__original-radio:not(:disabled) + .el-radio-button__inner{
+  background-color: var(--cbd-brand-5);
+}
