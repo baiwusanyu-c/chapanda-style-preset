@@ -157,8 +157,7 @@ import { onMounted } from "vue";
 const themeColors = genThemeColors({
   ...defaultThemeColors,
   brand: {
-    ...defaultThemeColors.brand,
-    
+    ...defaultThemeColors.brand as Record<string, string>,
       "1": "#f4f0ff",
       "2": "#ede8ff",
       "3": "#cabfff",
@@ -170,8 +169,7 @@ function changeTheme(){
   mountThemeColors(genThemeColors({
     ...defaultThemeColors,
     brand: {
-      ...defaultThemeColors.brand,
-      
+      ...defaultThemeColors.brand as Record<string, string>,
         "1": "#E9F7F9",
         "2": "#77D5D4",
         "3": "#14C7B8",
@@ -182,6 +180,5 @@ function changeTheme(){
 }
 onMounted(() => {
   mountThemeColors(themeColors)
-
 })
 </script>
