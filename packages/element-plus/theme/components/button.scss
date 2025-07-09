@@ -15,16 +15,13 @@
   --el-button-hover-link-text-color: var(--cbd-gray-4);
   --el-button-active-color: var(--cbd-gray-6);
 }
-.el-button.el-button--primary:active{
+.el-button.el-button--primary:not(.is-disabled):active{
   border-color: var(--cbd-brand-5);
   color: var(--cbd-white);
   filter: brightness(0.8);
   background-color: var(--cbd-brand-5);
 }
-.el-button.is-disabled, .el-button.is-disabled:hover{
-  border-color: var(--cbd-brand-3);
-  background-color: var(--cbd-brand-3);
-}
+
 .el-button--primary {
   --el-button-bg-color: var(--cbd-brand-5);
   --el-button-text-color: var(--cbd-white);
@@ -40,6 +37,9 @@
   --el-button-active-bg-color: var(--el-color-primary-dark-2);
   --el-button-active-border-color: var(--el-color-primary-dark-2);
   --el-button-active-text-color: var(--cbd-white);
+
+  --el-button-disabled-bg-color: var(--cbd-brand-3);
+  --el-button-disabled-border-color: var(--cbd-brand-3);
 
 }
 
@@ -126,4 +126,22 @@
   --el-button-active-bg-color: var(--el-color-info-dark-2);
   --el-button-active-border-color: var(--el-color-info-dark-2);
   --el-button-active-text-color: var(--cbd-white);
+}
+
+.el-button--primary.is-plain:hover{
+  color: var(--cbd-white);
+  background-color: var(--cbd-brand-5);
+  border-color: var(--cbd-brand-5);
+}
+.el-button--primary.is-plain{
+  color: var(--cbd-brand-5);
+  background-color: var(--cbd-brand-1);
+  border-color: var(--cbd-brand-5);
+}
+
+.el-button--primary.is-plain.is-disabled:hover,
+.el-button--primary.is-plain.is-disabled{
+  color: var(--cbd-brand-4);
+  background-color: var(--cbd-brand-1);
+  border-color: var(--cbd-brand-1);
 }
