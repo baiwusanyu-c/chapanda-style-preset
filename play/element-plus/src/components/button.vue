@@ -9,12 +9,48 @@
   </div>
 
   <div class="mb-4">
+    <el-button disabled>Default disabled</el-button>
+    <el-button disabled type="primary">Primary disabled</el-button>
+    <el-button disabled type="success">Success disabled</el-button>
+    <el-button disabled type="info">Info disabled</el-button>
+    <el-button disabled type="warning">Warning disabled</el-button>
+    <el-button disabled type="danger">Danger disabled</el-button>
+  </div>
+
+  <div class="mb-4">
     <el-button plain>Plain</el-button>
     <el-button type="primary" plain>Primary</el-button>
     <el-button type="success" plain>Success</el-button>
     <el-button type="info" plain>Info</el-button>
     <el-button type="warning" plain>Warning</el-button>
     <el-button type="danger" plain>Danger</el-button>
+  </div>
+
+  <div class="mb-4">
+    <el-button disabled plain>Plain disabled</el-button>
+    <el-button disabled type="primary" plain>Primary disabled</el-button>
+    <el-button disabled type="success" plain>Success disabled</el-button>
+    <el-button disabled type="info" plain>Info disabled</el-button>
+    <el-button disabled type="warning" plain>Warning disabled</el-button>
+    <el-button disabled type="danger" plain>Danger disabled</el-button>
+  </div>
+
+  <div class="mb-4">
+    <el-button link >Plain disabled</el-button>
+    <el-button link type="primary" >Primary disabled</el-button>
+    <el-button link type="success" >Success disabled</el-button>
+    <el-button link type="info" >Info disabled</el-button>
+    <el-button link type="warning" >Warning disabled</el-button>
+    <el-button link type="danger" >Danger disabled</el-button>
+  </div>
+
+  <div class="mb-4">
+    <el-button disabled link >Plain disabled</el-button>
+    <el-button disabled link type="primary" >Primary disabled</el-button>
+    <el-button disabled link type="success" >Success disabled</el-button>
+    <el-button disabled link type="info" >Info disabled</el-button>
+    <el-button disabled link type="warning" >Warning disabled</el-button>
+    <el-button disabled link type="danger" >Danger disabled</el-button>
   </div>
 
   <div class="mb-4">
