@@ -16636,6 +16636,7 @@ var require_index = __commonJS({
       let preflights = "";
       const colorsVariable = {};
       const colors = {};
+      const colorsVariableImp = {};
       Object.keys(resolveThemeColors).forEach((k) => {
         const key = k;
         if (typeof resolveThemeColors[key] === "string") {
@@ -16643,6 +16644,7 @@ var require_index = __commonJS({
           const resolveValue = resolveThemeColors[key];
           colorsVariable[resolveKey] = resolveValue;
           colors[`${prefix}-${k}`] = `${resolveValue}`;
+          colorsVariableImp[`${prefix}-${k}`] = `var(${resolveKey})`;
           preflights = preflights + `
 ${resolveKey}:${resolveValue};`;
         } else {
@@ -16652,6 +16654,7 @@ ${resolveKey}:${resolveValue};`;
             const resolveValue = resolveThemeColors[key][keyV];
             colorsVariable[resolveKey] = resolveValue;
             colors[`${prefix}-${k}-${v}`] = `${resolveValue}`;
+            colorsVariableImp[`${prefix}-${k}-${v}`] = `var(${resolveKey})`;
             preflights = preflights + `
 ${resolveKey}:${resolveValue};`;
           });
@@ -16675,6 +16678,7 @@ ${resolveKey}:${resolveValue};`;
         preflights,
         colorsVariable,
         colorsDescription,
+        colorsVariableImp,
         colors
       };
     };
