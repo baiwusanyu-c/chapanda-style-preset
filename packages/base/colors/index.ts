@@ -20,6 +20,7 @@ export const genThemeColors = (
   let preflights = '';
   const colorsVariable: Record<string, any> = {}
   const colors : Record<string, string> = {}
+  const colorsVariableImp : Record<string, string> = {}
   Object.keys(resolveThemeColors).forEach((k) => {
     const key = k as keyof typeof resolveThemeColors
     if (typeof resolveThemeColors[key] === 'string') {
@@ -27,6 +28,7 @@ export const genThemeColors = (
       const resolveValue = resolveThemeColors[key]
       colorsVariable[resolveKey] = resolveValue
       colors[`${prefix}-${k}`] = `${resolveValue}`
+      colorsVariableImp[`${prefix}-${k}`] = `var(${resolveKey})`;
       preflights = preflights + '\n' + `${resolveKey}:${resolveValue};`;
     } else {
       Object.keys(resolveThemeColors[key]).forEach((v) => {
@@ -35,6 +37,7 @@ export const genThemeColors = (
         const resolveValue = resolveThemeColors[key][keyV]
         colorsVariable[resolveKey] = resolveValue
         colors[`${prefix}-${k}-${v}`] = `${resolveValue}`
+        colorsVariableImp[`${prefix}-${k}-${v}`] = `var(${resolveKey})`;
         preflights = preflights + '\n' + `${resolveKey}:${resolveValue};`;
 
       });
@@ -61,9 +64,11 @@ export const genThemeColors = (
     preflights,
     colorsVariable,
     colorsDescription,
+    colorsVariableImp,
     colors,
   };
 };
+
 /**
  *
  * @param themeColors - 主题颜色变量对象

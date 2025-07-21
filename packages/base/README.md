@@ -258,6 +258,7 @@ declare type ThemeColors = Record<string, string | Record<string, string>>;
 declare const genThemeColors: (themeColors?: ThemeColors, mix?: boolean, prefix?: string) => {
     preflights: string;
     colorsVariable: Record<string, any>;
+    colorsVariableImp: Record<string, any>;
     colors: Record<string, string>;
 };
 ```

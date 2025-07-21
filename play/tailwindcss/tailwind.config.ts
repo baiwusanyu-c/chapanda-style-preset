@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
-import { chaPandaTailwindConfig } from '@chapanda/style-preset-tailwind'
+import { chaPandaTailwindConfig, genThemeColors } from '@chapanda/style-preset-tailwind'
+const themeColors = genThemeColors().colorsVariableImp;
 export default chaPandaTailwindConfig({
   content: [
     "index.html",
@@ -11,6 +12,7 @@ export default chaPandaTailwindConfig({
     colors: ({ colors }) => {
       return {
         ...colors,
+        ...themeColors,
         bai: '#00ffff'
       }
     },
