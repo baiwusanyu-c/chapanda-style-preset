@@ -3,7 +3,7 @@
   "description": "chapanda style preset",
   "private": false,
   "type": "module",
-  "version": "1.4.15",
+  "version": "1.4.16",
   "packageManager": "pnpm@10.12.4",
   "keywords": [
     "typescript",
