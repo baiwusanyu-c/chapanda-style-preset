@@ -13,6 +13,7 @@
     "@ant-design/colors": "^7.1.0",
     "@ant-design/icons": "^5.5.2",
     "@chapanda/style-preset-antd": "workspace:*",
+    "@chapanda/style-preset": "workspace:*",
     "antd": "^5.22.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"

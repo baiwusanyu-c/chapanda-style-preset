@@ -1,2 +1,3 @@
-@use "@chapanda/style-preset-vant/theme/index";
+$inject-css-vars: true !default;
+@use "@chapanda/style-preset-vant/theme/index" with ($inject-css-vars: $inject-css-vars);
 

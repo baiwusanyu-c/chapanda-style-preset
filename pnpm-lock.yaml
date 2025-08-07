@@ -220,6 +220,9 @@ importers:
       '@ant-design/icons':
         specifier: ^5.5.2
         version: 5.5.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@chapanda/style-preset':
+        specifier: workspace:*
+        version: link:../../packages/chapanda-style-preset
       '@chapanda/style-preset-antd':
         specifier: workspace:*
         version: link:../../packages/antd
