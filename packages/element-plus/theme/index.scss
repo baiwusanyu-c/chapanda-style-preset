@@ -137,8 +137,14 @@
 );
 @use "element-plus/theme-chalk/src/index.scss" as *;
 
+$inject-css-vars: true !default;
+@if $inject-css-vars {
+  :root {
+    @include cbd.generate-root-css-variables();
+  }
+}
+
 :root {
-  @include cbd.generate-root-css-variables();
   --el-color-primary:var(--cbd-brand-5);
   --el-text-color-regular: var(--cbd-gray-6);
   --el-text-color-primary: var(--cbd-gray-7);

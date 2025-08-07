@@ -1,8 +1,11 @@
 @use '@chapanda/style-preset-base/theme' as cbd;
-:root {
-  @include cbd.generate-root-css-variables();
-}
 
+$inject-css-vars: true !default;
+@if $inject-css-vars {
+  :root {
+    @include cbd.generate-root-css-variables();
+  }
+}
 /** 覆盖 Calendar  **/
 .ant-picker-calendar-mode-switch .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
   color: var(--ant-radio-button-solid-checked-color);

@@ -1,8 +1,10 @@
 @use '@chapanda/style-preset-base/theme' as cbd;
-:root {
-  @include cbd.generate-root-css-variables();
+$inject-css-vars: true !default;
+@if $inject-css-vars {
+  :root {
+    @include cbd.generate-root-css-variables();
+  }
 }
-
 // 覆盖 vant 的 tab 组件
 .van-tabs__nav.van-tabs__nav--card{
   border: none;
