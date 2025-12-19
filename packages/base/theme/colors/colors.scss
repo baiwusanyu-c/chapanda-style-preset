@@ -1,11 +1,12 @@
 @use "sass:list";
 @use "sass:map";
 @use "sass:string";
+@use 'sass:meta';
 @function generate-color-map($prefix, $name, $suffixes, $values) {
   $color-map: ();
   @each $suffix in $suffixes {
     $index: list.index($suffixes, $suffix); // 获取当前 $suffix 的索引
-    $key: if($suffix == '', #{$prefix}-#{$name}, #{$prefix}-#{$name}-#{$suffix});
+    $key: if(sass($suffix == ''): #{$prefix}-#{$name}; else: #{$prefix}-#{$name}-#{$suffix});
     $value: list.nth($values, $index); // 使用正确的索引来获取 $value
     $color-map: map.merge($color-map, ($key: $value));
   }

@@ -154,17 +154,17 @@ import MessageDemo from './components/message.vue'
 import { defaultThemeColors, genThemeColors, mountThemeColors } from "@chapanda/style-preset-base";
 import { onMounted } from "vue";
 // 动态主题变量生成挂载
-const themeColors = genThemeColors({
-  ...defaultThemeColors,
-  brand: {
-    ...defaultThemeColors.brand as Record<string, string>,
-      "1": "#f4f0ff",
-      "2": "#ede8ff",
-      "3": "#cabfff",
-      "4": "#a496ff",
-      "5": "#7769F3",
-  },
-}).colors;
+// const themeColors = genThemeColors({
+//   ...defaultThemeColors,
+//   brand: {
+//     ...defaultThemeColors.brand as Record<string, string>,
+//       "1": "#f4f0ff",
+//       "2": "#ede8ff",
+//       "3": "#cabfff",
+//       "4": "#a496ff",
+//       "5": "#7769F3",
+//   },
+// }).colors;
 function changeTheme(){
   mountThemeColors(genThemeColors({
     ...defaultThemeColors,
@@ -179,6 +179,6 @@ function changeTheme(){
   }).colors)
 }
 onMounted(() => {
-  mountThemeColors(themeColors)
+  // mountThemeColors(themeColors)
 })
 </script>
